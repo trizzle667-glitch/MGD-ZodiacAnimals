@@ -1,0 +1,73 @@
+{
+    "name": "Bunny Mark Events",
+    "CardType": "Event",
+    "CardLimit": "0",
+    "Description": "Events related to the bunny zodiac mark",
+    "requires": [""],
+    "requiresEvent": [
+        {
+            "NameOfEvent": "",
+            "Progress": "99",
+            "Choice": "",
+            "ChoiceNumber": "-1"
+        }
+    ],
+    "Speakers": [
+        {
+            "name": "VanesaBunny",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "ApplyMarkAfterLoss",
+            "theScene": [
+                "DisplayCharacters", "1",
+                "EndLoop",
+                "IfHasPerk", "Greater Bunny Zodiac Mark", "AlreadyFullyMarked",
+                "IfHasPerk", "Minor Bunny Zodiac Mark", "UpdateMark",
+                "JumpToScene", "ApplyMinorMark"
+            ]
+        },
+        {
+            "NameOfScene": "ApplyMinorMark",
+            "theScene": [
+                "Vanesa pulses with a soft pink glow as she places her hands on your chest",
+                "Speaks",
+                "Just relax my little snack, this wont hurt a bit ♥",
+                "Her hands trace a small arcane symbol in the air slighty above your heart before pushing it into your skin.",
+                "Speaks",
+                "There, that's better ♥. It's not complete yet but it's a start. See you next time cutie ♥",
+                "As you fade away you feel a warm pulse of energy as the mark takes hold",
+                "GivePerk", "Minor Bunny Zodiac Mark"
+            ]
+        },
+        {
+            "NameOfScene": "UpdateMark",
+            "theScene": [
+                "Vanesa leans over you once again, as she begins to pulse with a soft pink energy you feel your zodiac mark begin to pulse in sync with her",
+                "Speaks",
+                "Are you ready to complete the mark cutie?♥",
+                "She leans in and gives you a light kiss on the lips as her hand delicately pulls out her arcane mark from your chest, leaving it floating an inch or so above you",
+                "Speaks",
+                "Ah♥ You're going to love this ♥",
+                "Her hand begins to add more intricate patterns to the floating mark, feeling your mind begin to drift to thoughts of the voluptuous bunny riding you",
+                "With the mark complete Vanesa lightly pushes it back into your chest, the feeling of her hands caressing your skin iliciting a soft moan from you",
+                "Speaks",
+                "All done ♥. You'll be a perfect meal for me next time ♥",
+                "As you fade away, a smile forms on your face as you think of being her personal dish to eat ♥",
+                "RemovePerkQuietly", "Minor Bunny Zodiac Mark",
+                "GivePerk", "Greater Bunny Zodiac Mark"
+            ]
+        },
+        {
+            "NameOfScene": "AlreadyFullyMarked",
+            "theScene": [
+                "As you fade away, Vanesa's voice echoes through the air",
+                "Speaks",
+                "You were delicious, make sure to come back with plenty for me to eat ♥"
+            ]
+        }
+    ]
+}

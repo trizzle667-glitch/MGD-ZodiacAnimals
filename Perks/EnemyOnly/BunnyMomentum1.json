@@ -1,0 +1,14 @@
+{
+    "name": "Minor Bunny Momentum",
+    "description": "She's beginning to build up a momentum",
+
+    "LevelReq": "0",
+    "PerkReq": [ ""],
+    "StatReq": [ ""],
+    "StatReqAmount": [ "0"],
+
+    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction", "StanceBoost"],
+    "EffectPower": [ "StatusIcons/Kiss1.png", "20", "5", "20"],
+
+    "PlayerCanPurchase": "No"
+}

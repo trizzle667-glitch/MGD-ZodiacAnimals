@@ -1,0 +1,127 @@
+{
+    "name": "Bunny Anal Counter Events",
+    "CardType": "",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "VanesaBunny",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "AnalAttempted",
+            "theScene": [
+                "SkipPlayerAttack",
+                "IfPlayerHasStance", "Breast Smother", "AnalAttemptedBreastSmother",
+                "HitMonsterWith", "Anal Penetration",
+                "ApplyStance", "Anal",
+                "You grab Vanesa's hips, getting her down on all fours and thrust your hard cock deep into her tight ass, making her gasp and moan as you start fucking her from behind. Her bunny tail twitches with each deep thrust as she braces herself.",
+                "Speaks",
+                "Ahhn!~ W-Wait, this isn't how the fight is suppose to go!",
+                "Despite her protests, she involuntarily starts to grind her ass back against your cock, her moans growing more desperate and needy."
+            ]
+        },
+        {
+            "NameOfScene": "AnalAttemptedBreastSmother",
+            "theScene": [
+                "You attempt to pull your face away from Vanesa's breasts, positioning your cock to insert into her bountiful rear. But she wraps her arms around your head and pulls you back into her fluffy busom.",
+                "Speaks",
+                "Don't be soo hasty.♥ Wouldn't you like to try something even {i}better{/i} with me?",
+                "Vanesa reaches down and tries to guide your hand into inserting your cock into her pussy",
+                "Menu",
+                "Fuck her ass! (Power)",
+                "Use the distraction to escape her breasts and slip away. (Technique)",
+                "Let her guide your cock into her pussy",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Fuck her ass! (Power)",
+            "theScene": [
+                "StatCheck",
+                "Power", "15",
+                "AnallyFucked",
+                "FailToAnalInsert"
+            ]
+        },
+        {
+            "NameOfScene": "FailToAnalInsert",
+            "theScene": [
+                "Despite your efforts to overpower her, Vanesa's grip remains firm as she guides your cock away from her ass.",
+                "HitPlayerWith", "Smothered Insertion",
+                "ApplyStance", "Sex",
+                "Before you can resist further, she smoothly guides your throbbing member to her wet entrance and pulls you inside with a satisfied moan.",
+                "Speaks",
+                "Ahh~♥ See? Isn't this so much nicer?♥",
+                "Before you have a chance to respond, she pulls you into her breasts and forces you to fall backwards onto your back.",
+                "Speaks",
+                "Shall we get started?♥",
+                "Still reeling from the impact Vanesa pulls herself into a riding position and starts smoothly riding you, the inner walls of her pussy squeezing and massaging your cock as she moves."
+            ]
+        },
+        {
+            "NameOfScene": "Use the distraction to escape her breasts and slip away. (Technique)",
+            "theScene": [
+                "StatCheck",
+                "Technique", "15",
+                "EscapeBreastSmother",
+                "FailToEscapeBreastSmother"
+            ]
+        },
+        {
+            "NameOfScene": "FailToEscapeBreastSmother",
+            "theScene": [
+                "Vanesa catches you as you attempt to slip away, her fuzzy breasts massaging away your willpower to resist.",
+                "Speaks",
+                "Mmm, I like it when my prey tries to escape.♥",
+                "HitPlayerWith", "Smothered Insertion",
+                "ApplyStance", "Sex",
+                "With a seductive giggle, Vanesa trips you backward onto your back with surprising deftness",
+                "Before you can scramble to your feet, she straddles you and plunges your dick into her lubricated pussy with a satisfied moan.",
+                "Speaks",
+                "Ahh~♥ That's much better.♥",
+                "Her inner walls squeeze and massage your cock as she starts to rock her hips, making it difficult to focus on anything else."
+            ]
+        },
+        {
+            "NameOfScene": "Let her guide your cock into her pussy",
+            "theScene": [
+                "HitPlayerWith", "Smothered Insertion",
+                "ApplyStance", "Sex",
+                "Not able to imagine a better way to continue the fight, you let Vanesa guide your cock into her pussy as she coos seductively into your ear.",
+                "Speaks",
+                "You made the right choice little snack.♥",
+                "In a charmed daze, you let Vanesa lead you to the ground on your back. Smiling down at you she gives her hips a little testing wiggle, her breasts bouncing with the motion.",
+                "Speaks",
+                "I'm sure you'll be just deliciously helpless in no time.♥"
+            ]
+        }, 
+        {
+            "NameOfScene": "EscapeBreastSmother",
+            "theScene": [
+                "ClearStanceFromMonsterAndPlayer", "Breast Smother",
+                "As Vanesa starts to guide your cock into her inviting pussy, you manage take advantage of her loosened grip and slip away from the soft embrace of her breasts. She briefly has a shocked expression before regaining her seductive grin",
+                "Speaks",
+                "That was rather clever of you, but I'll be sure to catch you again soon.♥"
+            ]
+        },
+        {
+            "NameOfScene": "AnallyFucked",
+            "theScene": [
+                "ClearStanceFromMonsterAndPlayer", "Breast Smother",
+                "With effort you grab Vanesa's shoulders, twist her away from you, and push her forcefully onto hands and knees as she gives a shocked yelp.",
+                "Speaks",
+                "Ooooh {i}Ouch{/i}!~ That was rather rude! Wait... What are you do-",
+                "HitMonsterWith", "Anal Penetration",
+                "ApplyStance", "Anal",
+                "Before she can finish her sentence you pull her hips upwards and towards you, plunging your cock deep into her tight ass. She gives a startled gasp as you start to fuck her from behind. Her ass clenches around your cock as you thrust into her, her moans growing more desperate and needy.",
+                "Speaks",
+                "Ahhn~♥ I-I ... you're in soo deep!♥"
+            ]
+        }
+    ]
+}

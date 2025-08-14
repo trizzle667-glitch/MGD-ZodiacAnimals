@@ -1,0 +1,14 @@
+{
+    "name": "Major Bunny Momentum",
+    "description": "Her momentum has reached its peak",
+
+    "LevelReq": "0",
+    "PerkReq": [ ""],
+    "StatReq": [ ""],
+    "StatReqAmount": [ "0"],
+
+    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction", "StanceBoost"],
+    "EffectPower": [ "StatusIcons/Kiss3.png", "50", "15", "50"],
+
+    "PlayerCanPurchase": "No"
+}

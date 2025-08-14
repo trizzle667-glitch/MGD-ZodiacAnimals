@@ -1,0 +1,14 @@
+{
+    "name": "Greater Bunny Zodiac Mark",
+    "description": "After losing to the bunny zodiac multiple times she's had the oportunity to complete the magical mark on your body, increasing your Sex Fetish by 25 and gives you an eager desire to be dominated by her. To better feed the hungry bunny, your body has a +5 boost to spirit at the cost of 25 max arousal and 5 willpower",
+
+    "LevelReq": "0",
+    "PerkReq": [ ""],
+    "StatReq": [ ""],
+    "StatReqAmount": [ "0"],
+
+    "PerkType": [ "IncreaseFetish",  "GainSpirit", "GainArousal", "GainWillpower"],
+    "EffectPower": [ "Sex|/|25",          "5",          "-25",          "-5"],
+
+    "PlayerCanPurchase": "No"
+}

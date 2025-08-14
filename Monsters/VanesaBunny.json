@@ -1,0 +1,133 @@
+{
+    "name": "Vanesa",
+    "IDname": "Vanesa",
+    "species": "Furry",
+    "gender": "female",
+    "description": "Vanesa is a stunning anthropomorphic bunny girl whose voluptuous figure commands attention wherever she goes. Her pristine white fur covers every inch of her body, creating a soft, inviting texture that begs to be touched. Her most striking feature is her massive breasts that strain against the tight red latex of her bunny suit, threatening to burst free with every seductive movement she makes.\n\nHer shoulder-length white hair cascades around her face in soft waves, framing her delicate features and drawing attention to her alluring eyes. There's a raw sexual hunger burning in those eyes that's impossible to ignore - a primal desire that speaks of untamed passion and insatiable need. The red latex bunny suit she wears is incredibly revealing that expose generous amounts of her white fur and leave very little to the imagination. The suit clings to her curves like a second skin, creating an enticing contrast between the glossy red material and her soft, fluffy coat.\n\nVanesa's seductive behavior is impossible to ignore - she moves with a deliberate grace that seems designed to entice and enthrall. Every gesture, every sway of her hips, and movement of her hands is calculated to draw attention to her most appealing features. Her voice both teasing and sultry, hinting at the pleasures she can provide.",
+    "encyclopedia": "",
+    "tags": "none",
+    "generic": "False",
+    "requires": [""],
+    "skillList": ["Bunny Charmed Indulgance", "Bunny Smothered Insertion","Bunny Swaying Waltz","Bunny Deceptive Waltz"],
+    "perks": ["Semen Eater"],
+    "stats": { "lvl": "50",
+              "Exp": "800",
+              "max_hp": "500",
+              "max_ep": "150",
+              "max_sp": "5",
+              "Power": "15",
+              "Technique": "35",
+              "Intelligence": "15",
+              "Allure": "70",
+              "Willpower": "15",
+              "Luck": "50"
+    },
+    "Fetishes": [""],
+    "BodySensitivity": {"Sex": "50",
+                        "Ass":"150",
+                        "Breasts":"50",
+                        "Mouth":"100",
+                        "Seduction": "100",
+                        "Magic": "100",
+                        "Pain": "150",
+                        "Holy": "150",
+                        "Unholy": "100"
+    },
+    "resistancesStatusEffects": {
+        "Stun": "50",
+        "Charm":"0",
+        "Aphrodisiac":"-50",
+        "Restraints":"50",
+        "Sleep":"-50",
+        "Trance":"50",
+        "Paralysis": "0",
+        "Debuff": "-20"
+    },
+    "moneyDropped": "1000",
+    "ItemDropList": [
+                      {
+                        "name": "Deluxe Heart Rune",
+                        "dropChance": "10"
+                      }
+                    ],
+    "lossScenes": [
+        {
+            "NameOfScene": "DefaultBunnyLoss",
+            "move": "",
+            "stance": "",
+            "includes": ["VanesaBunny"],
+            "theScene": [
+                "RefreshPlayer",
+                "You fall backward onto the ground, your resistance completely milked out of you",
+                "CallEventAndSceneThenReturn", "Bunny Loss Events", "DefaultBunnyLoss"
+            ],
+            "picture": ""
+        }
+    ],
+    "combatDialogue": [
+        {
+            "lineTrigger": "SetMusicTo",
+            "move": "",
+            "theText": ["music/Forest Dungeon/chain.mp3"]
+        },
+        {
+            "lineTrigger": "StartOfCombat",
+            "move": "",
+            "theText": [""]
+        },
+        {
+            "lineTrigger": "EndOfRound",
+            "move": "",
+            "theText": ["|f|CallCombatEventAndScene|/|Bunny Charge Events|/|EndOfRoundChargeCheck|n|"]
+        },
+        {
+            "lineTrigger": "OffenceCounter",
+            "move": "",
+            "theText": ["|f|CallCombatEventAndScene|/|Bunny Charge Events|/|CallCounterAttack|n|"]
+        },
+        {
+            "lineTrigger": "StartOfRound",
+            "move": "",
+            "theText": [""]
+        },
+        {
+            "lineTrigger": "Escape",
+            "move": "Distract",
+            "theText": [""]
+        },
+        {
+            "lineTrigger": "Escape",
+            "move": "Teleport",
+            "theText": [""]
+        },
+        {
+            "lineTrigger": "AutoCounter",
+            "move": ["Anal Penetration"],
+            "theText": ["|f|CallCombatEventAndScene|/|Bunny Anal Counter Events|/|AnalAttempted"]
+        }
+
+        
+    ],
+    "victoryScenes": [],
+    "pictures": [
+        {
+            "Name": "Base",
+            "StartOn": "1",
+            "AlwaysOn": "0",
+            "IsScene": "0",
+            "TheBody": "1",
+            "Overlay": "No",
+            "setXalign": "0.0",
+            "setYalign": "0.1",
+            "Images": [
+                {
+                    "Name": "Smug",
+                    "File": "../Mods/Zodiacs/CG/Bunny/Bunny_smug.png",
+                    "setXalign": "0.0",
+                    "setYalign": "0.0"
+                }
+            ]
+        }
+    ]
+
+}

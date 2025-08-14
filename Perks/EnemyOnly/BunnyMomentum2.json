@@ -1,0 +1,14 @@
+{
+    "name": "Bunny Momentum",
+    "description": "Her momentum is growing stronger",
+
+    "LevelReq": "0",
+    "PerkReq": [ ""],
+    "StatReq": [ ""],
+    "StatReqAmount": [ "0"],
+
+    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction", "StanceBoost"],
+    "EffectPower": [ "StatusIcons/Kiss2.png", "35", "10", "35"],
+
+    "PlayerCanPurchase": "No"
+}

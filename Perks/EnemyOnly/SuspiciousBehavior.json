@@ -1,0 +1,14 @@
+{
+    "name": "Suspicious Behavior",
+    "description": "There's something off about her stance...",
+
+    "LevelReq": "0",
+    "PerkReq": [ ""],
+    "StatReq": [ ""],
+    "StatReqAmount": [ "0"],
+
+    "PerkType": [ "StatusIcon" ],
+    "EffectPower": [ "StatusIcons/CrestOfTempt.png"],
+
+    "PlayerCanPurchase": "No"
+}

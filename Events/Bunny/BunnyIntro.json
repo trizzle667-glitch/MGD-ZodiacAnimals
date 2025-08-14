@@ -1,0 +1,182 @@
+{
+  "name": "Bunny Zodiac",
+  "CardType": "Event",
+  "CardLimit": "4",
+  "Description": "Vanesa the bunny zodiac is walking around the mystic forest, waiting for you to find her",
+  "requires": [""],
+  "Speakers": [
+    {
+      "name": "Vanesa",
+      "postName": "",
+      "SpeakerType": "Monster"
+    }
+  ],
+  "EventText": [
+    {
+      "NameOfScene": "EventStart",
+      "theScene": [
+        "StoreCurrentBG",
+        "ChangeBG",
+        "forest.png",
+        "While peacefully walking through the forest, you can't help but feel you're being watched...",
+        "DisplayCharacters",
+        "1",
+        "EndLoop",
+        "IfProgressEquals",
+        "1",
+        "VictoryRevisit",
+        "IfProgressEquals",
+        "2",
+        "LossRevisit",
+        "Speaks",
+        "This is the first time you met me!",
+        "JumpToScene", "TalkMenuBunny"
+      ]
+    },
+    {
+      "NameOfScene": "FightBunny",
+      "theScene": [
+        "CombatEncounter",
+        "NoRunning",
+        "VanesaBunny",
+        "StartCombat",
+        "With Vanesa defeated you're free to continue...",
+        "ChangeProgress",
+        "1",
+        "UseHeldBG"
+      ]
+    },
+    {
+        "NameOfScene": "VictoryRevisit",
+        "theScene": [
+            "Speaks",
+            "Hello again, let me try that one more time",
+            "JumpToScene", "TalkMenuBunny"
+        ]
+    },
+    {
+        "NameOfScene": "LossRevisit",
+        "theScene": [
+            "Speaks",
+            "Welcome back my little snack ♥. How is that mark treating you? I can't wait to see you squirming in pleasure again ♥",
+            "JumpToScene", "TalkMenuBunny"
+        ]
+    },
+    {
+        "NameOfScene": "TalkMenuBunny",
+        "theScene": [
+            "Menu",
+            "Ask about her zodiac",
+            "Fight her!",
+            "Magical mark?",
+            "RequiresChoice", "1", "magicMarkKnows", "HideOptionOnRequirementFail",
+            "How to remove the mark?",
+            "RequiresChoice", "1", "magicMarkKnows", "HideOptionOnRequirementFail",
+            "Ask to apply her magic mark on you",
+            "RequiresChoice", "2", "magicMarkFreeKnows", "RequiresPerk", "Minor Bunny Zodiac Mark", "HideOptionOnRequirementFail",
+            "Ask to remove her mark",
+            "RequiresChoice", "2", "magicMarkFreeKnows", "RequiresPerk", "Greater Bunny Zodiac Mark", "HideOptionOnRequirementFail",
+            "Ask to remove her mark",
+            "EndLoop"
+        ]
+
+    },
+    {
+        "NameOfScene": "Magical mark?",
+        "theScene": [
+            "Speaks",
+            "Before I send you back to the temple, I'll be sure to mark you with my magic",
+            "Speaks",
+            "It's no fun if you don't have a little... penalty... for losing to me",
+            "SetChoice", "1", "magicMarkKnows",
+            "JumpToScene", "TalkMenuBunny"
+        ]
+    },
+    {
+        "NameOfScene": "How to remove the mark?",
+        "theScene": [
+            "Speaks",
+            "Why would you want to remove the mark?",
+            "Speaks",
+            "It makes our time together so much more fun",
+            "Speaks",
+            "But I suppose if you really want to know, I'll tell you",
+            "Speaks",
+            "You can remove the mark by defeating me",
+            "Speaks",
+            "Or, if you ask me really nicely, I'll remove it for you",
+            "SetChoice", "2", "magicMarkFreeKnows",
+            "JumpToScene", "TalkMenuBunny"
+        ]
+    },
+    {
+        "NameOfScene": "Ask about her zodiac",
+        "theScene": [
+            "Speaks",
+            "I'm the bunny zodiac, the guardian of the forest. I'm here to protect the forest and its creatures.",
+            "JumpToScene", "TalkMenuBunny"
+        ]
+    },
+    {
+        "NameOfScene": "Fight her!",
+        "theScene": [
+            "Licking her lips seductively she begins to approuch you",
+            "Speaks",
+            "I hope you've saved up a big load for me to drain",
+            "JumpToScene", "FightBunny"
+        ]
+    },
+    {
+        "NameOfScene": "Ask to apply her magic mark on you",
+        "theScene": [
+            "Speaks",
+            "Shazam!",
+            "CallSceneThenReturn", "increase bunny mark level",
+            "JumpToScene", "TalkMenuBunny"
+        ]
+    },
+    {
+        "NameOfScene": "increase bunny mark level",
+        "theScene": [
+            "IfHasPerk", "Minor Bunny Zodiac Mark", "ApplyMajorMark",
+            "IfHasPerk", "Greater Bunny Zodiac Mark", "Do Nothing",
+            "JumpToScene", "ApplyMinorMark"
+        ]
+    },
+    {
+        "NameOfScene": "Ask to remove her mark",
+        "theScene": [
+            "Speaks",
+            "un-Shazam!",
+            "CallSceneThenReturn", "RemoveMark",
+            "JumpToScene", "TalkMenuBunny"
+        ]
+    },
+    {
+        "NameOfScene": "ApplyMajorMark",
+        "theScene": [
+            "RemovePerkQuietly", "Minor Bunny Zodiac Mark",
+            "GivePerk", "Greater Bunny Zodiac Mark"
+        ]
+    },
+    {
+        "NameOfScene": "ApplyMinorMark",
+        "theScene": [
+            "GivePerk", "Minor Bunny Zodiac Mark"
+        ]
+    },
+    {
+        "NameOfScene": "RemoveMark",
+        "theScene": [
+            "RemovePerk", "Minor Bunny Zodiac Mark",
+            "RemovePerk", "Greater Bunny Zodiac Mark"
+        ]
+    },
+    {
+        "NameOfScene": "Do Nothing",
+        "theScene": [
+        ]
+    }
+
+  ]
+}

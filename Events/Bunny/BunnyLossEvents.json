@@ -1,0 +1,36 @@
+{
+    "name": "Bunny Loss Events",
+    "CardType": "Event",
+    "CardLimit": "0",
+    "Description": "Events that happen when you lose to the bunny zodiac",
+    "requires": [""],
+    "requiresEvent": [
+        {
+            "NameOfEvent": "",
+            "Progress": "99",
+            "Choice": "",
+            "ChoiceNumber": "-1"
+        }
+    ],
+    "Speakers": [
+        {
+            "name": "VanesaBunny",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "DefaultBunnyLoss",
+            "theScene": [
+                "DisplayCharacters", "1",
+                "EndLoop",
+                "CallEventAndSceneThenReturn", "Bunny Mark Events", "ApplyMarkAfterLoss",
+                "ChangeFetish", "Sex", "10",
+                "ChangeFetish", "Breasts", "5",
+                "ChangeSensitivity", "Sex", "10",
+                "GetEventAndSetProgress", "Bunny Zodiac", "2"
+            ]
+        }
+    ]
+}

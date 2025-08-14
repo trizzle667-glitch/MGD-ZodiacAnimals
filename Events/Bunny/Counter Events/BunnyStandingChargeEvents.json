@@ -1,0 +1,29 @@
+{
+    "name": "Bunny Standing Charge Events",
+    "CardType": "",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "VanesaBunny",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "StandingChargeSuccess",
+            "theScene": [
+                "Specifically, a standing charge attack",
+                "JumpToEventThenScene", "Bunny Charge Events", "IncreaseMomentum"
+            ]
+        },
+        {
+            "NameOfScene": "StandingChargeCounter",
+            "theScene": [
+                "Specifically, a standing charge counter attack"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Mystic Forest",
+    "Addition": "Yes",
+    "Events": ["Bunny Zodiac"],
+    "Quests": [""],
+    "Adventures": [""],
+    "Monsters": [""],
+    "MonsterGroups": [
+        {
+            "Group": [""]
+        }
+    ],
+    "Treasure": [
+        {
+            "Common": [""]
+        },
+        {
+            "Uncommon": [""]
+        },
+        {
+            "Rare": [""]
+        }
+    ]
+}

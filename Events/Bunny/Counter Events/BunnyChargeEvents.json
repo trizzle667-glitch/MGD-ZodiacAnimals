@@ -1,0 +1,192 @@
+{
+    "name": "Bunny Charge Events",
+    "CardType": "",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "VanesaBunny",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "Standing Charge Call",
+            "theScene": [
+                "SetChoice", "3", "Standing Charge",
+                "SetChoice", "1", "ChargeCheckEndTurn"
+            ]
+        },
+        {
+            "NameOfScene": "Fake Standing Charge Call",
+            "theScene": [
+                "SetChoice", "3", "Standing Charge",
+                "SetChoice", "1", "ChargeCheckEndTurn",
+                "SetChoice", "4", "FakeCharge"
+            ]
+        },
+        {
+            "NameOfScene": "Remove Charge Checks",
+            "theScene": [
+                "SetChoice", "1", "",
+                "SetChoice", "2", "",
+                "SetChoice", "3", "",
+                "SetChoice", "4", "",
+                "RemovePerkFromMonster", "Suspicious Behavior",
+                "ResumeMonsterAttack"
+            ]
+        },
+        {
+            "NameOfScene": "EndOfRoundChargeCheck",
+            "theScene": [
+                "IfMonsterHasStatusEffect", "Sleep", "Remove Charge Checks",
+                "IfMonsterHasStatusEffect", "Stun", "Remove Charge Checks",
+                "IfMonsterHasStatusEffect", "Restrain", "Remove Charge Checks",
+                "IfChoice", "2", "Got Countered", "Momentum Interupted",
+                "IfChoice", "2", "Countered!", "Remove Charge Checks",
+                "IfChoice", "2", "charge set", "ChargeEnd",
+                "IfChoice", "1", "ChargeCheckEndTurn", "ChargeSetCheck"
+            ]
+        },
+        {
+            "NameOfScene": "ChargeSetCheck",
+            "theScene": [
+                "SetChoice", "1", "",
+                "IfMonsterHasStance", "Any", "DoAttack",
+                "SetChoice", "2", "charge set",
+                "SkipMonsterAttack",
+                "CallNextSceneJumpThenReturn",
+                "IfChoice", "4", "FakeCharge", "FakeChargePrep",
+                "IfChoice", "3", "Standing Charge", "StandingChargeInitText"
+            ]
+        },
+        {
+            "NameOfScene": "ChargeEnd",
+            "theScene": [
+                "SetChoice", "2", "",
+                "ResumeMonsterAttack",
+                "IfChoice", "4", "FakeCharge", "EndFakeCharge",
+                "She pulls off the charged attack!",
+                "IfChoice", "3", "Standing Charge", "StandingChargeSuccess"
+            ]
+        },
+        {
+            "NameOfScene": "CallCounterAttack",
+            "theScene": [
+                "IfMonsterHasStatusEffect", "Sleep", "Remove Charge Checks",
+                "IfMonsterHasStatusEffect", "Stun", "Remove Charge Checks",
+                "IfMonsterHasStatusEffect", "Restrain", "Remove Charge Checks",
+                "IfChoice", "2", "charge set", "InteruptCharge"
+            ]
+        },
+        {
+            "NameOfScene": "InteruptCharge",
+            "theScene": [
+                "IfChoice", "4", "FakeCharge", "GetBunnyCountered",
+                "SetChoice", "2", "Got Countered"
+            ]
+        },
+        {
+            "NameOfScene": "GetBunnyCountered",
+            "theScene": [
+                "RemovePerkFromMonster", "Suspicious Behavior",
+                "SkipPlayerAttack",
+                "You got bunny countered!",
+                "SetChoice", "2", "Countered!",
+                "SetChoice", "4", "",
+                "IfChoice", "3", "Standing Charge", "StandingChargeCounter"
+            ]
+        },
+        {
+            "NameOfScene": "DoAttack",
+            "theScene": [
+                "CallMonsterAttack"
+            ]
+        }, 
+        {
+            "NameOfScene": "StandingChargeInitText",
+            "theScene": [
+                "She is charging a powerful standing attack"
+            ]
+                
+        },
+        {
+            "NameOfScene": "StandingChargeSuccess",
+            "theScene": [
+                "SetChoice", "3", "",
+                "JumpToEventThenScene", "Bunny Standing Charge Events", "StandingChargeSuccess"
+            ]
+        },
+        {
+            "NameOfScene": "StandingChargeCounter",
+            "theScene": [
+                "SetChoice", "3", "",
+                "JumpToEventThenScene", "Bunny Standing Charge Events", "StandingChargeCounter"
+            ]
+        },
+        {
+            "NameOfScene": "FakeChargePrep",
+            "theScene": [
+                "GivePerkToMonster", "Suspicious Behavior"
+            ]
+        },
+        {
+            "NameOfScene": "EndFakeCharge",
+            "theScene": [
+                "RemovePerkFromMonster", "Suspicious Behavior",
+                "SetChoice", "2", "",
+                "SetChoice", "3", "",
+                "SetChoice", "4", "",
+                "ResumeMonsterAttack",
+                "She resumes her normal stance, looking a little disappointed"
+            ]
+        },
+        {
+            "NameOfScene": "Momentum Interupted",
+            "theScene": [
+                "Momentum Interupted!",
+                "SetChoice", "2", "",
+                "RemovePerkFromMonster", "Bunny Momentum",
+                "RemovePerkFromMonster", "Minor Bunny Momentum",
+                "RemovePerkFromMonster", "Major Bunny Momentum",
+                "ResumeMonsterAttack"
+            ]
+        },
+        {
+            "NameOfScene": "IncreaseMomentum",
+            "theScene": [
+                "IfMonsterHasPerk", "Major Bunny Momentum", "Nothing",
+                "IfMonsterHasPerk", "Bunny Momentum", "IncreaseToMajorMomentum",
+                "IfMonsterHasPerk", "Minor Bunny Momentum", "IncreaseToNormalMomentum",
+                "JumpToScene", "IncreaseToMinorMomentum"
+            ]
+        },
+        {
+            "NameOfScene": "Nothing",
+            "theScene": [
+            ]
+        },
+        {
+            "NameOfScene": "IncreaseToMinorMomentum",
+            "theScene": [
+                "GivePerkToMonster", "Minor Bunny Momentum"
+            ]
+        },
+        {
+            "NameOfScene": "IncreaseToNormalMomentum",
+            "theScene": [
+                "RemovePerkFromMonster", "Minor Bunny Momentum",
+                "GivePerkToMonster", "Bunny Momentum"
+            ]
+        },
+        {
+            "NameOfScene": "IncreaseToMajorMomentum",
+            "theScene": [
+                "RemovePerkFromMonster", "Bunny Momentum",
+                "GivePerkToMonster", "Major Bunny Momentum"
+            ]
+        }
+    ]
+}

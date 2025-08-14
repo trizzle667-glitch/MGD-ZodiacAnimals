@@ -1,0 +1,14 @@
+{
+    "name": "Minor Bunny Zodiac Mark",
+    "description": "After losing to the bunny zodiac you've been magically marked with a minor bunny zodiac mark, increasing your Sex Fetish by 10 and making you more suspseptible to her temptations. However, you've also been given a +3 boost to your spirit as your body grows accustomed to being drained.",
+
+    "LevelReq": "0",
+    "PerkReq": [ ""],
+    "StatReq": [ ""],
+    "StatReqAmount": [ "0"],
+
+    "PerkType": [ "IncreaseFetish",  "GainSpirit"],
+    "EffectPower": [ "Sex|/|10",          "3"],
+
+    "PlayerCanPurchase": "No"
+}

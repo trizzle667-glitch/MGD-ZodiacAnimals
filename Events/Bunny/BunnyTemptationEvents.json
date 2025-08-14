@@ -1,0 +1,95 @@
+{
+    "name": "Bunny Temptation Events",
+    "CardType": "",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "VanesaBunny",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "Hug Invitation",
+            "theScene": [
+                "HitPlayerWith", "BunnyTemptationDamage",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "You look a little tired my little snack. Why don't you come here and let me give you a nice, warm hug to help you relax?♥",
+                    "Let me pamper you with my soft, warm body. I'll take good care of you.♥",
+                    "You've been staring at my breasts for a while now. Why don't you come see them up close?♥",
+                "EndLoop",
+                "Menu",
+                    "Resist her invitation",
+                    "Walk into her embrace",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Walk into her embrace",
+            "theScene": [
+                "ApplyStance", "Breast Smother",
+                "You rush forward and eagerly bury your face in her fluffy cleavage with a smile plastered on your face. She giggles while softly petting your head.",
+                "Speaks",
+                "Well arn't you just the cutest little snack?♥",
+                "HitPlayerWith", "BunnyTemptationDamage",
+                "As you inhale the scent of her plush white body you feel her reach down and start to caress your cock, reminding you that she will not be satisfied with just a hug."
+            ]
+        },
+        {
+            "NameOfScene": "Resist her invitation",
+            "theScene": [
+                "IfFetishLevelEqualOrGreater", "Breasts", "50", "BreastHugResist",
+                "IfPlayerHasStatusEffect", "Charm", "CharmHugResist",
+                "JumpToScene", "ResistHug"
+            ]
+        },
+        {
+            "NameOfScene": "BreastHugResist",
+            "theScene": [
+                "Your love of breasts makes it difficult to resist her invitation...",
+                "JumpToScene", "HugTemptationCheck"
+            ]
+        },
+        {
+            "NameOfScene": "CharmHugResist",
+            "theScene": [
+                "Charmed as you are, you begin to slowly walk toward her...",
+                "JumpToScene", "HugTemptationCheck"
+            ]
+        },
+        {
+            "NameOfScene": "HugTemptationCheck",
+            "theScene": [
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "75", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "100", "2",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "Temptation", "15",
+                "ResistHug",
+                "HugTemptationFail"
+            ]
+        },
+        {
+            "NameOfScene": "ResistHug",
+            "theScene": [
+                "Vanesa's eyes narrow with a hint of disappointment as you resist her invitation, but she quickly recovers with a playful grin."
+            ]
+        },
+        {
+            "NameOfScene": "HugTemptationFail",
+            "theScene": [
+                "ApplyStance", "Breast Smother",
+                "Unable to control yourself, you walk into her embrace endulging in the feeling of her soft fur and skin-tight latex. She gently wraps her arms around you and pulls your head into her bountiful cleavage. Her soft fur and skin-tight latex rub against your face, making you moan softly as you feel her warm breath against your ear.",
+                "Speaks",
+                "Mmm, that's it. Just relax and let me take care of everything.♥",
+                "HitPlayerWith", "BunnyTemptationDamage",
+                "As you inhale the scent of her plush white body you feel her reach down and start to caress your cock, reminding you that she will not be satisfied with just a hug."
+            ]
+        }
+    ]
+
+}
