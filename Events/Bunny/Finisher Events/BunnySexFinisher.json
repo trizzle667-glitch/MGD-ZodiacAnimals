@@ -1,0 +1,494 @@
+{
+    "name": "Bunny Sex Finisher",
+    "CardType": "",
+    "CardLimit": "1",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "Vanesa",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "All-You-Can-Eat Buffet Intro",
+            "theScene": [
+                "DenyPlayerOrgasm",
+                "CallNextSceneJumpThenReturn",
+                "IfMonsterHasStance", "Breast Smother", "Breast Smother Release",
+                "SkipPlayerAttack",
+                "SetPostName", " - Bunny's All-You-Can-Eat Buffet",
+                "Vanesa keeps her hands locked with yours, slowly leaning up to give you a full view of her wide hips that have been devouring your cock.",
+                "Speaks",
+                "I think it's time for my feast.♥ I hope you're ready to.",
+                "Speaks",
+                "♥{i}Serve{i}♥",
+                "Speaks", 
+                "♥{i}It{i}♥",
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "Speaks",
+                "'♥{i}uuuuup~~~~~~{/i}♥' As Vanesa accentuates the last word, she lifts her hips with practiced and agonizing slowness. Her pussy sloppily sucking at your cock the entire way up until it's just the tip of your shaft inside her.",
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "You spasm in pleasure from the feeling of her pussy sucking your cock, barely having the presence of mind to notice her hips prepare to drop like a gilotine.",
+                "JumpToScene", "FightBack Menu"
+            ]
+        },
+        {
+            "NameOfScene": "AutoFailDrop",
+            "theScene": [
+                "SwapLineIf", "Random",
+                    "The empowered Zodiac mark pulses with overwhelming pleasure, completely clouding your mind and leaving you too infatuated with Vanesa to even attempt to resist her devastating hip slam. Your body goes limp with desire as you willingly accept your fate.",
+                    "The mark's energy floods your senses with pure ecstasy, making resistance impossible as your mind becomes completely focused on the pleasure. You can only moan helplessly as you watch her hips expectantly.",
+                    "After a sudden surge of pleasing energy from the mark, you wonder why you were considering to resist this. You numbingly hope that you'll be delicious enough for Vanesa to devour you♥♥",
+                    "The magical bond between you and Vanesa becomes overwhelming, leaving your resistance shattered as you dreamily compemlate how sexy she'll be as she drops down~~♥♥",
+                "EndLoop",
+                "JumpToScene", "♥Let the blade fall♥"
+            ]
+        },
+        {
+            "NameOfScene": "FightBack Menu",
+            "theScene": [
+                "Menu",
+                    "♥Let the blade fall♥",
+                    "Desperately push her away!",
+                "EndLoop"
+            ]
+        },
+        {
+             "NameOfScene": "Desperately push her away!",
+            "theScene": [
+                "IfHasPerk", "Greater Bunny Zodiac Mark", "AutoFailDrop",
+                "You fight against the overwhelming pleasure coursing through your body, desperately trying to muster enough strength to push her away before she can slam her hips down and end you.",
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "50", "1",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "75", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "2",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "5",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Minor Bunny Zodiac Mark", "2",
+                "Temptation", "15", "Escape In Time",
+                "Fail", "Failed Escape"
+            ]
+        },
+        {
+            "NameOfScene": "Escape In Time",
+            "theScene": [
+                "Before she can slam her hips down you push her away with all your mustered strength, your cock slipping out of her pussy with a wet pop.",
+                "ClearStanceFromMonsterAndPlayer", "Sex",
+                "CallNextSceneJumpThenReturn", "IfPlayerOrgasm", "ReleasedOrgasm",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Oh? My delicious meal is running away before I could devour it completely? How disappointing~",
+                    "Tsk tsk, my little snack thinks it can escape my grasp? How cute~",
+                    "Mmm, you're quite the slippery one, aren't you? But I'll catch you eventually~",
+                    "Hehe, running away from being my meal? How ungrateful~",
+                    "Oh my, my treat is being shy? Don't worry, I'll make sure I get my fill next time~",
+                "EndLoop",
+                "CallEventAndSceneThenReturn", "Bunny Charge Events", "ExpendMomentum",
+                "With a final effort you manage to push Vanesa off of you, her momentum spent as she's left slightly panting from the effort."
+            ]
+        },
+        {
+            "NameOfScene": "ReleasedOrgasm",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "As you pull out just in time, your cock erupts with a powerful burst, shooting your cum all over Vanesa's stomach and thighs as you narrowly avoid her devastating hip slam. [PlayerOrgasmLine]","EmptySpiritCounter"
+            ]
+        },
+        {
+            "NameOfScene": "Failed Escape",
+            "theScene": [
+                "SwapLineIf", "Random",
+                    "Vanesa notices your inner struggle and smirks as you fail to muster enough resistance against the overwhelming pleasure.",
+                    "You were too distracted by the sudden pleasure to even attempt to push her away, your body going limp with desire.",
+                    "Vanesa watches with amusement as your resistance crumbles under the weight of the intense sensations coursing through your body.",
+                    "The overwhelming pleasure proves too much to fight through, leaving you completely helpless as Vanesa prepares to claim her meal.",
+                "EndLoop",
+                "JumpToScene", "♥Let the blade fall♥"
+            ]
+        },
+        {
+            "NameOfScene": "Breast Smother Release",
+            "theScene": [
+                "ClearStanceFromMonsterAndPlayer", "Breast Smother",
+                "HitPlayerWith", "Bunny's Fluffy Smother",
+                "Still struggling for air from her smothering embrace she lifts her soft milky white breasts off you, illiciting a groan of pleasure from you as she repositions herself upright, your cock never leaving her pussy."
+            ]
+        },
+        {
+            "NameOfScene": "♥Let the blade fall♥",
+            "theScene": [
+                "IfPlayerOrgasm", "RandomOrgasmSlam",
+                "CallNextSceneJumpThenReturn",
+                "JumpToRandomScene",
+                    "EnduredWeightySlam",
+                    "EnduredPassOutSlam",
+                    "EnduredBreastsSlam",
+                    "EnduredKissingSlam",
+                    "EnduredSpiralSlam",
+                "EndLoop",
+                "JumpToScene", "RandomEnduredTease"
+            ]
+        },
+        {
+            "NameOfScene": "RandomOrgasmSlam",
+            "theScene": [
+                "CallNextSceneJumpThenReturn",
+                "JumpToRandomScene",
+                    "WeightySlam",
+                    "PassOutSlam",
+                    "BreastsSlam",
+                    "KissingSlam",
+                    "SpiralSlam",
+                "EndLoop",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "RandomOrgasmTease",
+            "theScene": [
+                "CallNextSceneJumpThenReturn",
+                "JumpToRandomScene",
+                    "EncouragingTease",
+                    "SavoryTease",
+                    "NotEnoughTease",
+                    "SadisticTease",
+                    "ContinueTease",
+                "EndLoop",
+                "IfPlayerSpiritGone", "FuckedIntoGround",
+                "JumpToScene", "RandomLiftUp"
+            ]
+        },
+        {
+            "NameOfScene": "RandomEnduredTease",
+            "theScene": [
+                "JumpToRandomScene",
+                    "EncouragingEnduredTease",
+                    "SavoryEnduredTease",
+                    "NotEnoughEnduredTease",
+                    "SadisticEnduredTease",
+                    "ContinueEnduredTease",
+                "EndLoop",
+                "JumpToScene", "RandomLiftUp"
+            ]
+        },
+        {
+            "NameOfScene": "EncouragingEnduredTease",
+            "theScene": [
+                "Vanesa's eyes gleam with approval as she looks down at your determined expression, impressed by your resistance despite the overwhelming pleasure.",
+                "Speaks",
+                "Mmm, you're stronger than I expected, my little snack~ But don't think that means I'm going easy on you~♥",
+                "She grinds her hips against you teasingly, her pussy still warm and wet as she prepares to test your endurance further."
+            ]
+        },
+        {
+            "NameOfScene": "SavoryEnduredTease",
+            "theScene": [
+                "Vanesa's expression shows genuine appreciation as she savors the challenge you're providing, her body still trembling with anticipation.",
+                "Speaks",
+                "Oh, you're quite the resilient little snack~ I love how you fight back~ It makes this so much more satisfying~♥",
+                "She moans softly as she continues to grind against you, clearly enjoying the resistance you're putting up against her overwhelming pleasure."
+            ]
+        },
+        {
+            "NameOfScene": "NotEnoughEnduredTease",
+            "theScene": [
+                "Vanesa's eyes narrow with renewed determination, her hunger growing stronger as she realizes you're not going to break easily.",
+                "Speaks",
+                "Hehe, you think you can keep resisting? My little snack is proving to be quite the challenge~ But I'm just getting started~♥",
+                "Her grip on your hands tightens as she positions herself for another devastating attack, her pussy still dripping with anticipation."
+            ]
+        },
+        {
+            "NameOfScene": "SadisticEnduredTease",
+            "theScene": [
+                "Vanesa's lips curl into a sadistic smirk as she enjoys the struggle, her eyes gleaming with cruel amusement at your resistance.",
+                "Speaks",
+                "Look at you, trying so hard to resist~ It's adorable how you think you can fight back against me, my little plaything♥",
+                "She giggles with cruel delight as she prepares for her next assault, clearly savoring every moment of your desperate struggle."
+            ]
+        },
+        {
+            "NameOfScene": "ContinueEnduredTease",
+            "theScene": [
+                "Vanesa's expression shows a mix of frustration and excitement, her body trembling with the need to break your resistance completely.",
+                "Speaks",
+                "Don't think your little show of strength means anything, my little snack~ I'm going to keep going until you finally give in~♥",
+                "She positions herself with renewed determination, her pussy still warm and wet as she prepares to continue her relentless assault."
+            ]
+        },
+        {
+            "NameOfScene": "RandomLiftUp",
+            "theScene": [
+                "CallNextSceneJumpThenReturn",
+                "JumpToRandomScene",
+                    "BreastLiftUp",
+                    "SuckingLiftUp",
+                    "PullLiftUp",
+                    "SquirmingLiftUp",
+                "EndLoop",
+                "JumpToScene", "RandomPrepTease"
+            ]
+        },
+        {
+            "NameOfScene": "RandomPrepTease",
+            "theScene": [
+                "CallNextSceneJumpThenReturn",
+                "JumpToRandomScene",
+                    "ReadyPrepTease",
+                    "FoodPrepTease",
+                    "ComplimentPrepTease",
+                    "RelaxPrepTease",
+                    "FocusPrepTease",
+                "EndLoop",
+                "JumpToScene", "FightBack Menu"
+            ]
+        },
+        {
+            "NameOfScene": "WeightySlam",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "Vanesa's thick hips slam down with devastating force, the impact shaking the ground beneath you as her pussy completely envelops your cock in a vice-like grip, triggering an instant eruption that floods her depths.",
+                "PlayerOrgasm", "1",
+                "Your cock continues to pulse and throb wildly as you keep cumming, the overwhelming pressure and stimulation making it impossible to stop as you release everything you have into her warm depths.[PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "SemenHeal", "75",
+                "Vanesa's body visibly relaxes as she savors her delicious meal, absorbing your semen with satisfaction as her arousal healing by [FinalDamage]."
+            ]
+        },
+        {
+            "NameOfScene": "PassOutSlam",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "Vanesa's hips slam down with such incredible force that the impact nearly knocks the wind out of you, her pussy squeezing your cock so tightly that you burst instantly, your seed shooting deep into her hungry depths.",
+                "PlayerOrgasm", "1",
+                "The sheer intensity of your orgasm is so powerful that your vision begins to blur and you nearly pass out, your cock convulsing violently as you continue to cum and almost lose consciousness from the overwhelming pleasure. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "SemenHeal", "75",
+                "Vanesa's muscles unclench as she devours her meal, drinking in your semen hungrily as her arousal decreases by [FinalDamage]."
+            ]
+        },
+        {
+            "NameOfScene": "BreastsSlam",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "In one swift motion, Vanesa hilts your cock deep inside of her pussy, the sudden penetration causing you to climax instantly as the overwhelming sensation takes complete control of your body.",
+                "PlayerOrgasm", "1",
+                "She sighs contentedly and leans onto you, the soft, fluffy fur of her massive breasts pressing warmly against your chest as she savors the feeling of your cock continuing to pulse and twitch inside of her while you keep cumming. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "SemenHeal", "75",
+                "Vanesa's breathing slows as she feasts on your essence, absorbing it with relish as her arousal dropping by [FinalDamage]."
+            ]
+        },
+        {
+            "NameOfScene": "KissingSlam",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "Slamming her hips down, Vanesa swiftly leans in to kiss you deeply, her tongue exploring your mouth with passionate intensity as her pussy squeezes your cock with incredible force, making you release instantly into her warm embrace.",
+                "PlayerOrgasm", "1",
+                "The combination of her passionate kiss and the tight grip of her pussy causes your cock to convulse violently, a second wave of cum being sucked out of you with a powerful gulping sensation as you lose yourself in the overwhelming pleasure. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "SemenHeal", "75",
+                "Vanesa's body visibly calms as she enjoys her tasty meal, consuming your seed with pleasure as her arousal healing by [FinalDamage]."
+            ]
+        },
+        {
+            "NameOfScene": "SpiralSlam",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "Vanesa's hips slam down with a twisting motion, her pussy creating a corkscrew-like grip around your cock as she grinds in a circular pattern, the unique stimulation causing you to erupt immediately within her spiraling depths.",
+                "PlayerOrgasm", "1",
+                "Her hips continue their hypnotic spiral motion, each rotation milking your cock for more cum as the twisting pressure creates waves of intense pleasure that make you spasm uncontrollably beneath her. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "SemenHeal", "75",
+                "Vanesa's body relaxes as she digests her satisfying meal, absorbing your semen contentedly as her arousal calming down by [FinalDamage]."
+            ]
+        },
+        {
+            "NameOfScene": "EnduredWeightySlam",
+            "theScene": [
+                "Vanesa's thick hips slam down with devastating force, the jiggly impact of her ass against your body sending shockwaves through your frame as her pussy tightly grips your cock.",
+                "Despite the overwhelming pressure and intense stimulation, you manage to hold back your orgasm, though your cock throbs desperately as you struggle to maintain control under her weight."
+            ]
+        },
+        {
+            "NameOfScene": "EnduredPassOutSlam",
+            "theScene": [
+                "Vanesa's hips slam down with brutal force, the impact nearly knocking the wind out of you as her pussy squeezes your cock with incredible pressure, making it difficult to breathe.",
+                "Despite the overwhelming sensation and the threat of passing out, you somehow manage to hold back your orgasm, though your cock twitches and throbs desperately as you fight to stay conscious."
+            ]
+        },
+        {
+            "NameOfScene": "EnduredBreastsSlam",
+            "theScene": [
+                "Vanesa hilts your cock deep inside her pussy as her hips slam down with incredible force, the sudden penetration sending waves of intense pleasure through your body as her fluffy breasts press warmly against your chest.",
+                "Despite the overwhelming sensation of being completely filled and the soft comfort of her breasts, you manage to resist the urge to orgasm, though your cock throbs desperately as you struggle to maintain control."
+            ]
+        },
+        {
+            "NameOfScene": "EnduredKissingSlam",
+            "theScene": [
+                "Slamming her hips down, Vanesa leans in to kiss you deeply, her tongue exploring your mouth with passionate intensity as her pussy squeezes your cock with incredible force, creating an overwhelming combination of sensations.",
+                "Despite the intense stimulation from both her passionate kiss and the tight grip of her pussy, you somehow manage to hold back your orgasm, though your cock twitches and throbs desperately as you fight against the overwhelming pleasure."
+            ]
+        },
+        {
+            "NameOfScene": "EnduredSpiralSlam",
+            "theScene": [
+                "Vanesa's hips slam down with a twisting motion, her pussy creating a corkscrew-like grip around your cock as she grinds in a circular pattern, the unique stimulation sending waves of intense pleasure through your body.",
+                "Despite the overwhelming spiral motion and the corkscrew-like pressure of her pussy, you somehow manage to resist the urge to orgasm, though your cock throbs desperately as you fight against the hypnotic rhythm of her grinding."
+            ]
+        },
+        {
+            "NameOfScene": "EncouragingTease",
+            "theScene": [
+                "Speaks",
+                "Mmm, that was absolutely delicious~ But I'm still so hungry, my little snack♥ I need much more from you~♥",
+                "She begins to grind her hips against you slowly, her pussy still warm and wet from your cum as she savors the sensation of being filled."
+            ]
+        },
+        {
+            "NameOfScene": "SavoryTease",
+            "theScene": [
+                "Vanesa closes her eyes and lets out a contented sigh, her body still quivering with pleasure as she feels your cum deep inside her.",
+                "Speaks",
+                "Mmm, so warm and thick... I can feel it filling me up so perfectly~♥ You taste absolutely divine~♥",
+                "She moans softly and grinds her hips against you, savoring every drop of your cum as it coats her inner walls."
+            ]
+        },
+        {
+            "NameOfScene": "NotEnoughTease",
+            "theScene": [
+                "Vanesa's eyes narrow with predatory hunger as she licks her lips, her body still trembling with anticipation despite just having consumed your essence.",
+                "Speaks",
+                "Mmm, that was just a delicious appetizer~ But I'm still absolutely starving, my little snack♥ I need so much more to satisfy my hunger~♥",
+                "Her crimson eyes gleam with insatiable desire as she positions herself to claim more of her feast, her pussy still dripping with your cum."
+            ]
+        },
+        {
+            "NameOfScene": "SadisticTease",
+            "theScene": [
+                "Vanesa's eyes gleam with sadistic amusement as she looks down at your dazed expression, her lips curling into a predatory smirk as she enjoys your helpless state.",
+                "Speaks",
+                "Look at you, completely helpless and mindless from pleasure~ This is exactly where you belong, my little plaything♥",
+                "She giggles with cruel delight as she watches you struggle to form coherent thoughts, savoring every moment of your complete submission."
+            ]
+        },
+        {
+            "NameOfScene": "ContinueTease",
+            "theScene": [
+                "Vanesa's eyes burn with insatiable hunger as she tightens her grip on your hands, your body trembling with anticipation for the next round of her relentless feast.",
+                "Speaks",
+                "Don't think we're done yet, my little snack~ I'm going to keep riding you until you have absolutely nothing left to give~♥",
+                "Her grip on your hands tightens possessively as she positions herself to continue her feast, her pussy still warm and wet from your previous load."
+            ]
+        },
+        {
+            "NameOfScene": "BreastLiftUp",
+            "theScene": [
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "Vanesa slowly lifts herself up, her massive breasts swaying hypnotically with each inch she rises, the soft fur tantalizingly close to your face as she gradually withdraws from your cock.",
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "The sensation of her slowly pulling away from your cock is agonizingly pleasurable, each inch of withdrawal sending waves of intense stimulation through your body until only the tip remains within her warm embrace."
+            ]
+        },
+        {
+            "NameOfScene": "SuckingLiftUp",
+            "theScene": [
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "As Vanesa begins to lift herself up, her pussy creates a powerful suction around your cock, making wet, sloppy sounds as she slowly rises. Her inner walls seem to cling to your shaft with desperate hunger, reluctant to let go as she withdraws.",
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "The intense suction and the way her pussy clings to your cock sends overwhelming waves of pleasure through your body, each inch of withdrawal feeling like an eternity of agonizing bliss until only the tip remains within her hungry grasp."
+            ]
+        },
+        {
+            "NameOfScene": "PullLiftUp",
+            "theScene": [
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "Vanesa's pussy creates such intense suction as she lifts herself up that you feel yourself being pulled slightly off the ground, her inner walls gripping your cock with incredible force as she slowly withdraws.",
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "The overwhelming suction and the sensation of being lifted off the ground sends shockwaves of pleasure through your body, your cock throbbing desperately as she withdraws until only the tip remains within her hungry grasp."
+            ]
+        },
+        {
+            "NameOfScene": "SquirmingLiftUp",
+            "theScene": [
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "You squirm and writhe beneath Vanesa as she slowly lifts herself up, the overwhelming pleasure of her pussy making it impossible to stay still. Your body twitches uncontrollably with each inch she rises, your cock throbbing desperately as she withdraws.",
+                "HitPlayerWith", "BunnyExecutionDamage",
+                "The agonizing slowness of her withdrawal and the way your body responds to every movement sends waves of intense stimulation through your frame, making you gasp and moan until only the tip remains within her warm depths."
+            ]
+        },
+        {
+            "NameOfScene": "ReadyPrepTease",
+            "theScene": [
+                "Vanesa's eyes burn with predatory hunger as she positions herself above you, her massive breasts heaving as she breathes heavily.",
+                "Speaks",
+                "Are you ready for more, my little snack? I'm about to devour you completely~♥",
+                "Her smile hints at an insatiable desire as she prepares to slam her hips down with overwhelming force, her pussy still warm and wet from your previous load."
+            ]
+        },
+        {
+            "NameOfScene": "FoodPrepTease",
+            "theScene": [
+                "Vanesa's tongue flicks out to lick her lips hungrily, her eyes gleaming with anticipation as she savors the thought of consuming more of her delicious meal.",
+                "Speaks",
+                "Mmm, such a delicious meal you are~ I can't wait to taste every drop you have to offer~♥",
+                "She licks her lips with predatory delight as she positions herself to claim more of her feast, her pussy still dripping with your previous essence."
+            ]
+        },
+        {
+            "NameOfScene": "ComplimentPrepTease",
+            "theScene": [
+                "Vanesa's expression softens with a surprisingly gentle smile, her eyes holding a mix of affection and hunger as she looks down at your helpless form.",
+                "Speaks",
+                "You're doing so well, my little snack~ Let me reward you with more pleasure~♥",
+                "Her voice is surprisingly gentle and caring as she prepares to slam down with devastating force, the contrast between her tone and her actions making it all the more terrifying."
+            ]
+        },
+        {
+            "NameOfScene": "RelaxPrepTease",
+            "theScene": [
+                "Vanesa's voice takes on a soothing, almost hypnotic quality as she looks down at you with a gentle expression, her eyes promising both comfort and overwhelming pleasure.",
+                "Speaks",
+                "Just relax and let me take care of everything, my little snack~ Don't fight the pleasure~♥",
+                "She coos softly with maternal warmth as she positions herself to continue her relentless assault, her soothing words masking the brutal intensity of what's about to come."
+            ]
+        },
+        {
+            "NameOfScene": "FocusPrepTease",
+            "theScene": [
+                "Vanesa's eyes meet yours with a seductive gaze, her voice taking on a soft, alluring quality as she speaks, her words gently guiding your attention to focus on the pleasure you're experiencing.",
+                "Speaks",
+                "Just focus on how good your cock feels right now, little one~ Let it consume you completely~♥",
+                "Her voice remains soft and seductive as she prepares to slam her hips down with overwhelming force, her words designed to keep your attention focused on the pleasure you're about to experience."
+            ]
+        },
+        {
+            "NameOfScene": "FuckedIntoGround",
+            "theScene": [
+                "Menu",
+                    "♥Let her continue♥",
+                    "Go limp (Lose)",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "♥Let her continue♥",
+            "theScene": [
+                "JumpToScene", "RandomLiftUp"
+            ]
+        },
+        {
+            "NameOfScene": "Go limp (Lose)",
+            "theScene": [
+                "SetPostName", "",
+                "You collapse under the weight of Vanesa, the fight throughly fucked out of you",
+                "CallEventAndSceneThenReturn", "Bunny Loss Events", "FeastBunnyLoss",
+                "GameOver"
+            ]
+        }
+    ]
+}

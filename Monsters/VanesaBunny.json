@@ -3,43 +3,93 @@
     "IDname": "Vanesa",
     "species": "Furry",
     "gender": "female",
-    "description": "Vanesa is a stunning anthropomorphic bunny girl whose voluptuous figure commands attention wherever she goes. Her pristine white fur covers every inch of her body, creating a soft, inviting texture that begs to be touched. Her most striking feature is her massive breasts that strain against the tight red latex of her bunny suit, threatening to burst free with every seductive movement she makes.\n\nHer shoulder-length white hair cascades around her face in soft waves, framing her delicate features and drawing attention to her alluring eyes. There's a raw sexual hunger burning in those eyes that's impossible to ignore - a primal desire that speaks of untamed passion and insatiable need. The red latex bunny suit she wears is incredibly revealing that expose generous amounts of her white fur and leave very little to the imagination. The suit clings to her curves like a second skin, creating an enticing contrast between the glossy red material and her soft, fluffy coat.\n\nVanesa's seductive behavior is impossible to ignore - she moves with a deliberate grace that seems designed to entice and enthrall. Every gesture, every sway of her hips, and movement of her hands is calculated to draw attention to her most appealing features. Her voice both teasing and sultry, hinting at the pleasures she can provide.",
+  "description": "Vanesa is a stunning anthropomorphic bunny girl whose voluptuous figure commands attention wherever she goes. Her pristine white fur covers every inch of her body, creating a soft, inviting texture that begs to be touched. Her most striking feature is her massive FF-cup breasts that strain against the tight red latex of her bunny suit, threatening to burst free with every seductive movement she makes. These pillowy mounds are impossibly soft and warm, their generous size making them the perfect tools for both smothering and seduction.\n\nHer shoulder-length white hair cascades around her face in soft waves, framing her delicate features and drawing attention to her alluring crimson eyes. There's a raw sexual hunger burning in those eyes that's impossible to ignore - a primal desire that speaks of untamed passion and insatiable need. Her cute pink nose twitches occasionally, adding to her adorable bunny charm, while her long, fluffy white ears stand tall and alert, their soft fur matching the rest of her pristine coat. A small, fluffy white tail tuft peeks out from beneath her bunny suit, twitching excitedly when she's particularly aroused or amused.\n\nThe red latex bunny suit she wears is incredibly revealing, exposing generous amounts of her white fur and leaving very little to the imagination. The suit clings to her curves like a second skin, creating an enticing contrast between the glossy red material and her soft, fluffy coat.\n\nVanesa's seductive behavior is impossible to ignore - she moves with a deliberate grace that seems designed to entice and enthrall. Every gesture, every sway of her hips, and movement of her hands is calculated to draw attention to her most appealing features. Her voice is both teasing and sultry, hinting at the pleasures she can provide. As the bunny zodiac of the mystic forest, she carries an air of authority and power that only enhances her already overwhelming allure.",
     "encyclopedia": "",
     "tags": "none",
     "generic": "False",
     "requires": [""],
-    "skillList": ["Bunny Charmed Indulgance", "Bunny Smothered Insertion","Bunny Swaying Waltz","Bunny Deceptive Waltz"],
-    "perks": ["Semen Eater"],
-    "stats": { "lvl": "50",
+  "skillList": [
+    "Bunny's Distracting Kiss",
+    "Bunny Charmed Indulgance",
+    "Bunny Hug Invitation",
+    "Bunny Hug Invitation",
+    "Bunny Breast Tempo",
+    "Bunny Sex Tempo",
+    "Bunny Breast Tempo",
+    "Bunny Sex Tempo",
+    "Bunny Swaying Waltz",
+    "Bunny Swaying Waltz",
+    "Bunny's Milking Hands",
+    "Bunny's Milking Hands",
+    "Bunny's Milking Hands",
+    "Bunny's Smothering Embrace",
+    "Bunny's Smothering Embrace",
+    "Bunny's Smothering Embrace",
+    "Bunny Sex Invitation",
+    "Bunny Sex Invitation",
+    "Bunny's All-You-Can-Eat Buffet",
+    "Bunny's All-You-Can-Eat Buffet",
+    "Bunny's All-You-Can-Eat Buffet",
+    "Bunny's Seductive Glance",
+    "Bunny's Breast Display",
+    "Bunny's Fluffy Smother",
+    "Bunny's Scent Kneading",
+    "Bunny's Rapid Slamming",
+    "Bunny's Circular Grinding",
+    "Bunny's Breast Bouncing",
+    "Bunny's Fluffy Grinding",
+    "Bunny's Tight Squeeze",
+    "Bunny's Lewd Promises",
+    "Bunny's Sex Invitation",
+    "Bunny's Smothered Insertion"
+  ],
+  "perks": [
+    "Semen Eater",
+    "Great Tits",
+    "Amazing Tits",
+    "Sex Adept",
+    "Sex Expert",
+    "Alluring",
+    "Honey Trap",
+    "Swift",
+    "Aphrodisiac Tolerant",
+    "Aphrodisiac Resistant",
+    "Sex Master",
+    "Enduring Soul",
+    "Lovers Passion"
+  ],
+  "stats": {
+    "lvl": "60",
               "Exp": "800",
-              "max_hp": "500",
-              "max_ep": "150",
-              "max_sp": "5",
+    "max_hp": "3000",
+    "max_ep": "300",
+    "max_sp": "1",
               "Power": "15",
               "Technique": "35",
-              "Intelligence": "15",
-              "Allure": "70",
-              "Willpower": "15",
+    "Intelligence": "35",
+    "Allure": "80",
+    "Willpower": "25",
               "Luck": "50"
     },
     "Fetishes": [""],
-    "BodySensitivity": {"Sex": "50",
-                        "Ass":"150",
-                        "Breasts":"50",
-                        "Mouth":"100",
+  "BodySensitivity": {
+    "Sex": "50",
+    "Ass": "150",
+    "Breasts": "50",
+    "Mouth": "150",
                         "Seduction": "100",
-                        "Magic": "100",
-                        "Pain": "150",
+                        "Magic": "150",
+                        "Pain": "20",
                         "Holy": "150",
                         "Unholy": "100"
     },
     "resistancesStatusEffects": {
         "Stun": "50",
-        "Charm":"0",
-        "Aphrodisiac":"-50",
-        "Restraints":"50",
-        "Sleep":"-50",
-        "Trance":"50",
+    "Charm": "0",
+    "Aphrodisiac": "-100",
+    "Restraints": "100",
+    "Sleep": "100",
+    "Trance": "50",
         "Paralysis": "0",
         "Debuff": "-20"
     },
@@ -52,14 +102,41 @@
                     ],
     "lossScenes": [
         {
+            "NameOfScene": "SexBunnyLoss",
+                "move": "",
+                "stance": "Sex",
+                "includes": ["Vanesa"],
+                "theScene": [
+                    "With your spirit completely spent, you stop fighting back against her riding you.",
+        "CallCombatEventAndScene",
+        "Bunny Loss Events",
+        "GenericSexLoss"
+                ],
+                "picture": ""
+        },
+        {
+            "NameOfScene": "BreastSmotherLoss",
+            "move": "",
+            "stance": "Breast Smother",
+            "includes": ["Vanesa"],
+            "theScene": [
+                "With your spirit completely spent, all you can do is let her hold you.",
+        "CallCombatEventAndScene",
+        "Bunny Loss Events",
+        "GenericBreastSmotherLoss"
+            ],
+            "picture": ""
+        },
+        {
             "NameOfScene": "DefaultBunnyLoss",
             "move": "",
             "stance": "",
-            "includes": ["VanesaBunny"],
+            "includes": ["Vanesa"],
             "theScene": [
-                "RefreshPlayer",
-                "You fall backward onto the ground, your resistance completely milked out of you",
-                "CallEventAndSceneThenReturn", "Bunny Loss Events", "DefaultBunnyLoss"
+                "With your spirit completely spent, all you can do is stand in a daze.",
+        "CallCombatEventAndScene",
+        "Bunny Loss Events",
+        "DefaultBunnyLossStart"
             ],
             "picture": ""
         }
@@ -73,61 +150,1546 @@
         {
             "lineTrigger": "StartOfCombat",
             "move": "",
-            "theText": [""]
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Mark Events|/|PowerUp Vanesa|n|"
+      ]
         },
         {
             "lineTrigger": "EndOfRound",
             "move": "",
-            "theText": ["|f|CallCombatEventAndScene|/|Bunny Charge Events|/|EndOfRoundChargeCheck|n|"]
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Charge Events|/|EndOfRoundChargeCheck|n|"
+      ]
         },
         {
             "lineTrigger": "OffenceCounter",
             "move": "",
-            "theText": ["|f|CallCombatEventAndScene|/|Bunny Charge Events|/|CallCounterAttack|n|"]
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Charge Events|/|CallCounterAttack|n|"
+      ]
         },
         {
             "lineTrigger": "StartOfRound",
             "move": "",
-            "theText": [""]
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Charge Events|/|StartOfRoundEvent|n|"
+      ]
         },
         {
             "lineTrigger": "Escape",
             "move": "Distract",
-            "theText": [""]
+      "theText": [
+        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Oh my~ You got away this time~ But I'll catch you again~♥'",
+                        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Hehe~ Clever little prey~ I'll find you soon enough~♥'",
+                        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Mmm~ You escaped for now~ But I'm not done hunting~♥'",
+                        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Well played~ But this bunny always catches her prey~♥'",
+        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Oh my~ You slipped away~ I'll track you down~♥'"
+      ]
         },
         {
             "lineTrigger": "Escape",
             "move": "Teleport",
-            "theText": [""]
+      "theText": [
+        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Oh my~ You vanished~ But I'll find you again~♥'",
+                        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Hehe~ Teleporting away? I'll hunt you down~♥'",
+                        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Mmm~ You disappeared~ But I always catch my prey~♥'",
+                        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Well, well~ You escaped~ But not for long~♥'",
+        "|f|ChangeImageLayer|/|ImageSetDontCarryOver|/|Normal|n||f|ChangeImageLayer|/|Expression|/|Slurp|n|'Oh my~ You're gone~ But I'll capture you next time~♥'"
+      ]
         },
+        
         {
             "lineTrigger": "AutoCounter",
             "move": ["Anal Penetration"],
-            "theText": ["|f|CallCombatEventAndScene|/|Bunny Anal Counter Events|/|AnalAttempted"]
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Move Counter Events|/|AnalAttempted"
+      ]
+        },
+        {
+            "lineTrigger": "AutoCounter",
+            "move": ["Make Out"],
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Move Counter Events|/|MakeOutAttempted"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Seductive Glance"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'Mmm, let me show you what a real bunny can do~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'You won't be able to look away from me~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'Let me captivate you completely~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'Your attention belongs to me now~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'Watch and fall under my spell~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Breast Display"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Like what you see, little snack?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'My breasts are quite impressive, aren't they?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Let me give you a better view~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'You can't resist staring, can you?~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Want to feel them?~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Fluffy Smother"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'Feel how soft and fluffy I am~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'Let my fur comfort you completely~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'So warm and velvety, isn't it?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'Just relax in my soft embrace~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'You'll never want to leave this~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Scent Kneading"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Tehe|n|'Let me mark you with my scent~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Tehe|n|'You'll smell like me forever~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Tehe|n|'My aroma will cling to you~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Tehe|n|'Breathe in my essence~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Tehe|n|'Why don't you take a whiff?~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Rapid Slamming"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Hungry|n|'Don't give out on me yet~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Hungry|n|'Why don't you stay still for a little bit?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Hungry|n|'Can you keep up with me?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Hungry|n|'Time to really ride you~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Hungry|n|'I'm not going to stop until you're begging for more~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Hungry|n|'Time for you to feed me~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Circular Grinding"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Nice~~~~ and~~~~ slow~~~~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Feel my gentle rhythm~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Just relax and enjoy~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Let me take your mind~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Just let my [SexAdjective][SexWord] pamper your cock~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Breast Bouncing"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Watch my breasts bounce~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Can't look away, can you?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Enjoying the view [ThePlayerName]?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Let me distract you~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Don't they look warm and soft?~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Fluffy Grinding"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Let's push all that resistance out of you~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Enough thinking~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'You're trapped in my softness~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Told you that they were warm and soft~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Don't fight it~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Tight Squeeze"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'Let me squeeze you tighter~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'Why don't we get a bit closer?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'You're completely enveloped~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'My softness surrounds you~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'You're trapped in my warmth~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Lewd Promises"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'Let me tell you how I'll devour you~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'I have such delicious plans for my meal~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'You'll love being my dinner~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'Let me whisper my hunger~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'I'll make you my perfect feast~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Sex Invitation"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Why fight when we could be having so much fun?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Want to know what bunnys are known for?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'I promise you won't regret it~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Come on, let's make this more interesting~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Hug Invitation"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'You look like you need a warm embrace~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'Let me comfort you with my soft fur~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'Come here, let me hold you close~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'You'll feel so much better in my arms~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Smothered Insertion"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Seductive|n|'I know a way we could get even more close~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Seductive|n|'I think I'm ready for the main course~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Seductive|n|'I'm done waiting~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Seductive|n|'You smell so good right now~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "UsesMove",
+            "move": ["Bunny's Distracting Kiss"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Let me give you a proper kiss~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'You won't be able to resist~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Just relax and enjoy~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'I'll make you forget everything~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Spank",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Ouch! That hurts! Don't spank me~'",
+                        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Hey! I don't like pain! Be gentle~'",
+                        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Stop that! I prefer pleasure, not pain~'",
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Oww! Why are you being so rough?~'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Whip",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Ouch! That hurts! Don't be so rough~'",
+                        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Hey! I don't like pain! Be gentle~'",
+                        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Stop that! I prefer pleasure, not pain~'",
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Oww! Why are you being so mean to me?~'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Demon Layer",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Nnngh~♥ That feels... so good~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Ahhh~♥ Lances of pleasure~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Mmm~♥ You know exactly what I like~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Ohhh~♥ Don't stop~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Nyaaa~♥ That's making me so hot~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Holy Headpat",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'Aren't they fluffy? I'm very proud of them!'",
+                        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'How nice of you to notice~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'I prefer your hands elsewhere~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": ["Bondage Net", "Magical Binding"],
+      "theText": [
+        "'Oh my~ You want to tie me up?~♥'",
+                        "'Hehe~ That won't work on me~♥'",
+                        "'I'm not that easy to restrain~♥'",
+        "'Try something else~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Pin",
+      "theText": [
+        "'Oh my~ You're so strong~♥'",
+                        "'Hehe~ But I can still move~♥'",
+                        "'That's not going to hold me~♥'",
+        "'I'm not that easy to pin~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Lewd Bottle",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Mmm~ What's in that bottle?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Oh my~ I'm starting to feel so warm~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I can feel the aphrodisiac working~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I'm getting so aroused~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": ["Cloying Mist", "Placebo Pheromone"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Mmm~ This mist is so intoxicating~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I'm starting to feel so warm~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I can feel the pheromones affecting me~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I'm getting so aroused~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": ["Grope Ass", "Squeeze Ass", "Massage Ass", "Fondle Ass"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Nnngh~♥ That feels... so good~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Oh my~ I'm getting so sensitive~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'That's making me melt~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'I can't think straight~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Breast Caress",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Mmm~ How do my breasts feel?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Oh my~ They're so soft, aren't they?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'My breasts love your attention~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'You couldn't help yourself, could you?~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": ["Breast Knead", "Breast Massage", "Breast Fondle"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'They'd feel even better in an embrace~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'Imagine how they'd feel around your face~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'You should hold me closer~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'My breasts would love to be squeezed against you~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Suckle",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'Mmm~ You really love my breasts, don't you?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'Oh my~ You can't get enough of them~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'We'll continue this after I ride you~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'You're such a breast lover~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Pinch Nipples",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Ouch! That's too rough~'",
+                        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Hey! Be gentle with my nipples~'",
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'That hurts~'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Finger",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I want your cock instead~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Don't tease me~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I know something I'd like more than your fingers~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Dildo",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Mmm~ That's nice~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'But I prefer the real thing~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Your cock would feel so much better~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Why would you want to use a dildo?~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": ["Kiss", "Make Out"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Mmm~ Your lips are so sweet~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Oh my~ You're such a good kisser~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'But I'd rather do something more fun~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'I'd rather use my other mouth~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+      "move": [
+        "Deep Kiss",
+        "Lovingly Rough Kiss",
+        "Skillfully Passionate Kiss",
+        "Misty Kiss",
+        "Sensually Seductive Kiss"
+      ],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Mmm~ You're so passionate~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Oh my~ I'm getting so hot~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'But I want something more exciting~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Let's do something more fun~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+      "move": ["Arouse", "Arousara", "Arousero", "Charm", "Charm Wave"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Mmm~ That magic feels so good~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Oh my~ I'm getting so aroused~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I can't think straight~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Ahh, I'm getting so wet~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Oh! I didn't expect that~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I'm getting all horny~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Electrify",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Ouch! That hurts! Stop it~'",
+                        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Hey! I don't like electricity~'",
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Ouch! I'm not into that kind of thing!~'",
+        "|f|ChangeImageLayer|/|Expression|/|Stern|n|'Be gentle with me~'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+      "move": [
+        "Seduce",
+        "Enamor",
+        "Smoldering Seduction",
+        "Smoldering Flaunt",
+        "Massaging Seduction",
+        "Mass Seduction",
+        "Disarming Appeal"
+      ],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Eep~ You're so... so charming~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Oh my~ I-I don't know what to say~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'You're making me all flustered~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'You're such a charmer~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'My meal is acting all flirty~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'What a cutie snack~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Ear Tease",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Eep~ My ears are so sensitive~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Oh my~ That's making me shiver~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I-I love when you touch my ears~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Please don't stop~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": ["Enfeeble", "Sensitize"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Mmm~ I feel so weak~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Oh my~ Everything feels so sensitive~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'You're just making me hungry~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'I'm going to need extra nourishment to keep me going~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Sleep",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'Mmm~ That sleep magic?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'Hehe~ I'm not that easy to put to sleep~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'I'm wide awake~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'Try something else~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Anal Penetration",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Ohhh~♥ Stop please~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Nnngh~♥ Too big~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Ahh~♥ Please stop~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Nnngh~♥ Too much~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWithA",
+            "move": ["Thrust", "Channeling Thrust"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Mmm~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Ahh~♥ Stop please~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Ohhh~♥ Too much~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Nnngh~♥ Pull out~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWithA",
+      "move": [
+        "Pound",
+        "Multi Thrust",
+        "Empowered Thrust",
+        "Carrying Fuck",
+        "Anal Piston"
+      ],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Ahhh~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Nnngh~♥ Please stop~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Ohhh~♥ Too big~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Mmm~♥ Stop~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWithA",
+            "move": ["Tantric Thrust", "Passionate Lovemaking"],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Mmm~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Ahh~♥ Stop please~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Ohhh~♥ Too much~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'Nnngh~♥ Pull out~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Penetrate",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|LongTongue|n|'Mmm~ Finally~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|LongTongue|n|'Oh my~ I've been waiting for this~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|LongTongue|n|'Focus on how my [SexWord] feels as you slide into me~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|LongTongue|n|'Maybe you don't want to win~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+      "move": [
+        "Thrust",
+        "Channeling Thrust",
+        "Pound",
+        "Multi Thrust",
+        "Empowered Thrust",
+        "Carrying Fuck",
+        "Tantric Thrust",
+        "Passionate Lovemaking"
+      ],
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Mmm~ Keep it up, I'm sure you'll make me cum~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pleasured|n|'Oh my~ I'm getting so wet~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'Make sure to focus on my [SexAdjective][SexWord] feels~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Lick|n|'Mmm~ Think about how amazing my [SexWord] must feel around your cock~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Oh my~ Your cock is throbbing so hard inside me~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'I can taste every inch of your delicious cock~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Tongue|n|'Mmm~ Your cock is so hot and hard inside me~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Oh my~ I bet my [SexWord] feels incredible around your cock~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Joy|n|'I love how your cock fills me up completely~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Joy|n|'Oh my~ You're such a determined little snack~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Mmm~ My delicious meal is really giving it their all~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|ClosedSmile|n|'You're making such a wonderful effort for me~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+            "move": "Analyze",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Mmm~ What are you learning about me?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Oh my~ Are you studying my body?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'Do you like what you see?~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'I hope you enjoy looking at me~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "HitWith",
+        "move": "Breast Nuzzle",
+        "theText": [
+            "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'Mmm~ What are you doing?~♥'",
+            "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'Oh my~ Are you nuzzling my breasts?~♥'",
+            "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'Do you like how my breasts feel?~♥'",
+            "|f|ChangeImageLayer|/|Expression|/|Laughing|n|'I hope you enjoy nuzzling me~♥'"
+        ]
+    },
+        {
+            "lineTrigger": "OnSurrender",
+            "move": "",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Oh my~ Finally realized you're my meal?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Hehe~ I was just getting started~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'Mmm~ Now I get to devour you completely~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'You're going to be such a delicious feast~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Slurp|n|'I'm going to savor every bite of you~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "OnOrgasm",
+            "move": "",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'NNNGH~♥ I'M C-CUMMING!♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'OHHHH~♥ I-I CAN'T STOP!♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'NYAAAA~♥ I'M LOSING MY MIND!♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'AHHHH~♥ THIS IS INCREDIBLE!♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Orgasm|n|'MMMMM~♥ I'M IN HEAVEN!♥'"
+      ]
+        },
+        {
+                "lineTrigger": "StanceStruggle",
+                "move": "Sex",
+      "theText": [
+        "[ThePlayerName] tries to pull out of [AttackerName]'s [SexAdjective][SexWord]..."
+      ]
+        },  
+        {
+            "lineTrigger": "StanceStruggleFail",
+            "move": "Sex",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'But as [ThePlayerName] tries to pull away, [AttackerName] grinds her hips against [ThePlayerName]'s groin, her [SexAdjective][SexWord] gripping [ThePlayerName]'s cock with overwhelming pleasure, making escape impossible.'",
+                        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'But [AttackerName]'s inner walls suddenly tighten around [ThePlayerName]'s shaft like a velvet vice, the intense heat and wetness causing [ThePlayerName] to lose focus and fail to escape.'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'But the moment [ThePlayerName] starts to pull out, [AttackerName] forces her hips down, her [SexAdjective][SexWord] sucking [ThePlayerName]'s cock back inside with irresistible force.'",
+        "|f|ChangeImageLayer|/|Expression|/|Pursed|n|'But [AttackerName] wraps her legs around [ThePlayerName]'s waist, her [SexAdjective][SexWord] clenching around [ThePlayerName]'s shaft with such intensity that escape becomes impossible.'"
+      ]
+        },
+        {
+            "lineTrigger": "StanceStruggleComment",
+            "move": "Sex",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Oh my~ Trying to escape from my delicious [SexWord]?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Hehe~ You're not going anywhere, my little prey~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Mmm~ My [SexWord] won't let you leave so easily~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'You're completely trapped inside me now~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Just focus on how amazing my hungry [SexWord] feels around your cock~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Mmm~ My [SexWord] is still enjoying its meal~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Oh my~ Your cock seems to like its new home~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'I love the taste of your cock too much to let you go~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'My [SexWord] is savoring every inch of you~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Hehe~ Your cock is twitching so nicely inside me~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Mmm~ I can feel your cock pulsing with desire~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Oh my~ Your cock fits so perfectly in my [SexWord]~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'I'm addicted to the taste of your delicious cock~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'My [SexWord] is milking your cock so well~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Smug|n|'Hehe~ Your cock is begging to stay inside me~♥'"
+      ]
+        }, 
+        {
+            "lineTrigger": "StanceStruggleFree",
+            "move": "Sex",
+      "theText": [
+        "And pulls free from [AttackerName]'s [SexAdjective][SexWord]!"
+      ]
+        },
+        {
+            "lineTrigger": "StanceStruggleFreeComment",
+            "move": "Sex",
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Charge Events|/|TrappedInStanceCheck|n|"
+      ]
+        },
+        {
+            "lineTrigger": "StanceStruggle",
+            "move": "Breast Smother",
+      "theText": [
+        "[ThePlayerName] tries to pull away from [AttackerName]'s smothering affection..."
+      ]
+        },
+        {
+            "lineTrigger": "StanceStruggleFail",
+            "move": "Breast Smother",
+      "theText": [
+        "But [AttackerName]'s soft, fluffy breasts press even tighter against [ThePlayerName]'s face, their overwhelming softness and warmth making any escape attempt impossible.",
+                        "But [AttackerName]'s pillowy breasts seem to envelop [ThePlayerName]'s face completely, their velvety softness and gentle warmth creating an inescapable embrace.",
+                        "But the moment [ThePlayerName] tries to move, [AttackerName]'s soft, warm breasts shift and mold around [ThePlayerName]'s face, their fluffy texture making escape futile.",
+        "But [AttackerName]'s soft, warm breasts feel like clouds against [ThePlayerName]'s face, their gentle pressure and comforting warmth making [ThePlayerName] lose the will to escape."
+      ]
+        },
+        {
+            "lineTrigger": "StanceStruggleComment",
+            "move": "Breast Smother",
+      "theText": [
+        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'Oh my~ Trying to escape my fluffy embrace?~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'Hehe~ You're not going anywhere, my little prey~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'Mmm~ My soft breasts won't let you leave so easily~♥'",
+                        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'You're completely smothered by my fluffiness now~♥'",
+        "|f|ChangeImageLayer|/|Expression|/|Whisper|n|'Focus on how soft and warm my breasts feel~♥'"
+      ]
+        },
+        {
+            "lineTrigger": "StanceStruggleFree",
+            "move": "Breast Smother",
+      "theText": [
+        "And pull free from [AttackerName]'s pampering hold!"
+      ]
+        },
+        {
+            "lineTrigger": "StanceStruggleFreeComment",
+            "move": "Breast Smother",
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Charge Events|/|TrappedInStanceCheck|n|"
+      ]
+        },
+        {
+            "lineTrigger": "OnPlayerOrgasm",
+            "move": "Sex",
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Orgasm Events|/|RandomSexOrgasm|n|"
+      ]
+    },
+    {
+      "lineTrigger": "OnPlayerOrgasm",
+      "move": "Breast Smother",
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Orgasm Events|/|RandomBreastSmotherOrgasm|n|"
+      ]
+    },
+    {
+      "lineTrigger": "OnPlayerOrgasm",
+      "move": "",
+      "theText": [
+        "|f|CallCombatEventAndScene|/|Bunny Orgasm Events|/|RandomDefaultOrgasm|n|"
+      ]
         }
-
-        
     ],
     "victoryScenes": [],
     "pictures": [
         {
-            "Name": "Base",
+      "Name": "Normal",
+      "Set": [
+        {
+          "Name": "Expression",
             "StartOn": "1",
-            "AlwaysOn": "0",
+          "AlwaysOn": "1",
             "IsScene": "0",
             "TheBody": "1",
             "Overlay": "No",
             "setXalign": "0.0",
-            "setYalign": "0.1",
+          "setYalign": "0.105",
             "Images": [
                 {
                     "Name": "Smug",
-                    "File": "../Mods/Zodiacs/CG/Bunny/Bunny_smug.png",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_smug.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Tehe",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_tehe.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Stern",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_stern.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Slurp",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_slurp.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Shocked",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_shocked.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Seductive",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_seductive.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Pursed",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_pursed.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Pleasure",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_pleasure.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Orgasm",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_orgasm.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Lick",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_lick.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Laughing",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_laughing.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Hungry",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_hungry.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "HotHug",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_hothug.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Hug",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_hug.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "ClosedSmile",
+              "File": "../Mods/Zodiacs/CG/Bunny/Standing/standing_closedsmile.png",
                     "setXalign": "0.0",
                     "setYalign": "0.0"
                 }
             ]
         }
     ]
-
+    },
+        {
+      "Name": "Breast Smother",
+      "Set": [
+        {
+            "Name": "Base",
+            "StartOn": "1",
+            "AlwaysOn": "1",
+            "IsScene": "0",
+            "TheBody": "1",
+            "Overlay": "No",
+            "setXalign": "0.0",
+            "setYalign": "0.105",
+            "Images": [
+                {
+                    "Name": "Base",
+                    "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_base.png",
+                    "setXalign": "0.0",
+                    "setYalign": "0.0"
+                }
+            ]
+        },
+        {
+          "Name": "Expression",
+          "StartOn": "1",
+          "AlwaysOn": "1",
+          "IsScene": "0",
+          "TheBody": "0",
+          "Overlay": "No",
+          "setXalign": "0.0",
+          "setYalign": "0.0",
+            "Images": [
+                {
+                    "Name": "Smug",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_smug.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Tongue",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_tongue.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+                "Name": "Whisper",
+                "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_whisper.png",
+                "setXalign": "0.0",
+                "setYalign": "0.0"
+            },
+            {
+              "Name": "Tehe",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_tehe.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Stern",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_stern.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Slurp",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_slurp.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Shy",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_shy.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Shocked",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_shocked.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Seductive",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_seductive.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Pleasure",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_pleasure.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Orgasm",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_orgasm.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Lick",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_lick.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Laughing",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_laughing.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Hungry",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_hungry.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "ClosedSmile",
+              "File": "../Mods/Zodiacs/CG/Bunny/Smother/smother_closedsmile.png",
+                    "setXalign": "0.0",
+                    "setYalign": "0.0"
+                }
+            ]
+        }
+    ]
+    },
+    {
+      "Name": "Sex",
+      "Set": [
+        {
+          "Name": "Expression",
+          "StartOn": "1",
+          "AlwaysOn": "1",
+          "IsScene": "0",
+          "TheBody": "0",
+          "Overlay": "No",
+          "setXalign": "0.0",
+          "setYalign": "0.0",
+          "Images": [
+            {
+              "Name": "Smug",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_smug.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "PleasureTongue",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_tongue.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Tehe",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_tehe.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Stern",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_stern.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Slurp",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_slurp.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Shy",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_shy.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Shocked",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_shocked.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Seductive",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_seductive.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Pursed",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_pursed.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Pleasured",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_pleasured.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "HappyOrgasm",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_orgasm.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Lick",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_lick.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Laughing",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_laughing.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Hungry",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_hungry.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "ClosedSmile",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_closedsmile.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Whisper",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_openmouth.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Joy",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_joy.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Estatic",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_estatic.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "WideGrin",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_widegrin.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Creampie",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_creampie.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Tongue",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_tonguealt.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "LongTongue",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_longtongue.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "Orgasm",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_orgasmalt.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            },
+            {
+              "Name": "OpenMouth",
+              "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_openmouth.png",
+              "setXalign": "0.0",
+              "setYalign": "0.0"
+            }
+          ]
+        },
+        {
+            "Name": "Base",
+            "StartOn": "1",
+            "AlwaysOn": "1",
+            "IsScene": "0",
+            "TheBody": "1",
+            "Overlay": "No",
+            "setXalign": "0.0",
+            "setYalign": "0.0",
+            "Images": [
+                {
+                    "Name": "Base",
+                    "File": "../Mods/Zodiacs/CG/Bunny/Sex/sex_base.png",
+                    "setXalign": "0.0",
+                    "setYalign": "0.0"
+                }
+            ]
+        },
+        {
+            "Name": "Cum",
+            "StartOn": "0",
+            "AlwaysOn": "0",
+            "IsScene": "0",
+            "TheBody": "0",
+            "Overlay": "No",
+            "setXalign": "0.0",
+            "setYalign": "0.105",
+            "Images": [
+                {
+                    "Name": "Creampie",
+                    "File": "../Mods/Zodiacs/CG/Bunny/Sex/small_cum.png",
+                    "setXalign": "0.0",
+                    "setYalign": "0.0"
+                },
+                {
+                    "Name": "CreampieLarge",
+                    "File": "../Mods/Zodiacs/CG/Bunny/Sex/large_cum.png",
+                    "setXalign": "0.0",
+                    "setYalign": "0.0"
+                }
+            ]
+        }
+      ]
+    },
+    {
+        "Name": "Lift",
+        "Set": [
+            {
+                "Name": "Expression",
+                "StartOn": "1",
+                "AlwaysOn": "1",
+                "IsScene": "0",
+                "TheBody": "0",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Smug",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_smug.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Tongue",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_tongue.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Hungry",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_hungry.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Pursed",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_pursed.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Lick",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_lick.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Laughing",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_laughing.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Whisper",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_whisper.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "LongTongue",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_longtongue.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            },
+            {
+                "Name": "Base",
+                "StartOn": "1",
+                "AlwaysOn": "1",
+                "IsScene": "0",
+                "TheBody": "1",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Base",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_base.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            },
+            {
+                "Name": "Cum",
+                "StartOn": "0",
+                "AlwaysOn": "0",
+                "IsScene": "0",
+                "TheBody": "0",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Drip",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexlift_drip.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "FullLift",
+        "Set": [
+            {
+                "Name": "Expression",
+                "StartOn": "1",
+                "AlwaysOn": "1",
+                "IsScene": "0",
+                "TheBody": "0",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Smug",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexfulllift_smug.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Tongue",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexliftfull_tongue.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Hungry",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexfulllift_hungry.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Pursed",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexfulllift_pursed.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Lick",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexfulllift_lick.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Laughing",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexfulllift_laughing.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Whisper",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexfulllift_whisper.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            },
+            {
+                "Name": "Base",
+                "StartOn": "1",
+                "AlwaysOn": "1",
+                "IsScene": "0",
+                "TheBody": "1",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Base",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexfulllift_base.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            },
+            {
+                "Name": "Cum",
+                "StartOn": "0",
+                "AlwaysOn": "0",
+                "IsScene": "0",
+                "TheBody": "0",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Drip",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Sex/Lifting/sexfulllift_drip.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Blowjob",
+        "Set": [
+            {
+                "Name": "Expression",
+                "StartOn": "1",
+                "AlwaysOn": "1",
+                "IsScene": "0",
+                "TheBody": "0",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "ClosedEyes",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_closedeyes.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Cum",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_cum.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Explode",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_explode.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Finished",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_finished.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Gulp",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_gulp.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Stare",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_stare.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Tipsuck",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_tipsuck.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            },
+            {
+                "Name": "Base",
+                "StartOn": "1",
+                "AlwaysOn": "1",
+                "IsScene": "0",
+                "TheBody": "1",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Base",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_base.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            },
+            {
+                "Name": "Cum",
+                "StartOn": "0",
+                "AlwaysOn": "0",
+                "IsScene": "0",
+                "TheBody": "0",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "CumLayer",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Blowjob/blowjob_cumLayer.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Titfuck",
+        "Set": [
+            {
+                "Name": "Expression",
+                "StartOn": "1",
+                "AlwaysOn": "1",
+                "IsScene": "0",
+                "TheBody": "0",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Smile",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_smile.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "ClosedSmile",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_closedsmile.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Whisper",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_whisper.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Smug",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_smug.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Drool",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_drool.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Slurp",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_slurp.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Catch",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_catch.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Tongue",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_tongue.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "Gulp",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_gulp.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            },
+            {
+                "Name": "Base",
+                "StartOn": "1",
+                "AlwaysOn": "1",
+                "IsScene": "0",
+                "TheBody": "1",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "Base",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/titfuck_base.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            },
+            {
+                "Name": "Cum",
+                "StartOn": "0",
+                "AlwaysOn": "0",
+                "IsScene": "0",
+                "TheBody": "0",
+                "Overlay": "No",
+                "setXalign": "0.0",
+                "setYalign": "0.0",
+                "Images": [
+                    {
+                        "Name": "CumLayer",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/cum_layer.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    },
+                    {
+                        "Name": "OrgasmCock",
+                        "File": "../Mods/Zodiacs/CG/Bunny/Titfuck/orgasm_cock.png",
+                        "setXalign": "0.0",
+                        "setYalign": "0.0"
+                    }
+                ]
+            }
+        ]
+    }
+  ]
 }

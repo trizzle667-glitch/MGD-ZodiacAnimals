@@ -1,14 +1,14 @@
 {
     "name": "Minor Bunny Momentum",
-    "description": "She's beginning to build up a momentum",
+    "description": "She's beginning to build up a momentum, gaining +20 damage and +5 damage reduction",
 
     "LevelReq": "0",
     "PerkReq": [ ""],
     "StatReq": [ ""],
     "StatReqAmount": [ "0"],
 
-    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction", "StanceBoost"],
-    "EffectPower": [ "StatusIcons/Kiss1.png", "20", "5", "20"],
+    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction"],
+    "EffectPower": [ "StatusIcons/Kiss1.png", "20", "5"],
 
     "PlayerCanPurchase": "No"
 }

@@ -1,0 +1,166 @@
+{
+    "name": "Bunny Sex Charge Events",
+    "CardType": "",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "Vanesa",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "SexChargeSuccess",
+            "theScene": [
+                "SetPostName", " - Bunny in Heat",
+                "Having finished her preparations while riding you, Vanesa's movements become more intense and you sense a growing power building within her.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, you're going to love what I have planned for my meal~ This is going to feel so amazing~♥",
+                    "Hehe, I'm about to make my pinned prey feel incredible~ Just wait for what's coming~♥",
+                    "Oh, my little meal is going to experience such pleasure~ I can't wait to see your reaction~♥",
+                    "Let me show my captured food what true ecstasy feels like~ You're going to love every second~♥",
+                "EndLoop",
+                "JumpToScene", "GettingFucked"
+            ]
+        },
+        {
+            "NameOfScene": "SexChargeCounter",
+            "theScene": [
+                "SetPostName", " - Bunny's Triggered Trap",
+                "As you attempt to act, Vanesa intercepts your movement with a distracting burst of pleasure from her hands and movement of her hips, her smirking smile revealing that she was expecting your attempt all along.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Hehe~ Did you really think you could escape my trap, my little meal?~♥",
+                    "Oh, you fell right into my plan~ I knew you'd try that~♥",
+                    "Mmm, predictable as always~ My prey never learns~♥",
+                    "Aww, did you think you had a chance?~ You're exactly where I want you~♥",
+                "EndLoop",
+                "JumpToScene", "GettingFucked"
+            ]
+        },
+        {
+            "NameOfScene": "GettingFucked",
+            "theScene": [
+                "CallSceneThenReturn","RandomFuckedScene",
+                "CallNextSceneJumpThenReturn","IfHasPerk","Greater Bunny Zodiac Mark","MarkEnducedContinue",
+                "As the intense experience leaves you winded and gasping, you notice Vanesa gaining momentum from her domination, her movements becoming more seductive and irresistible.",
+                "JumpToEventThenScene", "Bunny Charge Events", "IncreaseMomentum"
+            ]
+        },
+        {
+            "NameOfScene": "MarkEnducedContinue",
+            "theScene": [
+                "The Zodiac bunny mark surges with overwhelming pleasure, numbing your mind and making your body completely submissive to Vanesa's control. Your willpower dissolves as the magical energy floods through your system, leaving you completely helpless and craving for her to continue dominating you from above.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, the mark is working perfectly~ You're so much more relaxed while I ride you~♥",
+                    "Hehe~ The mark makes you so wonderfully pliable beneath me~ Ready for more?~♥",
+                    "Oh yes~ The mark's magic is making you so much more... receptive to my movements~♥",
+                "EndLoop",
+                "JumpToScene", "RandomFuckedScene"
+            ]
+        },
+        {
+            "NameOfScene": "RandomFuckedScene",
+            "theScene": [
+                "JumpToRandomScene",
+                    "MuscleControl",
+                    "BreastShow",
+                    "HipDance",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "RandomOrgasmScene",
+            "theScene": [
+                "JumpToRandomScene",
+                    "DrawnOutOrgasm",
+                    "ChestSmother",
+                    "GulpingPussy",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "DrawnOutOrgasm",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "Vanesa uses precise, controlled movements of her hips to draw out your orgasm, each thrust perfectly timed to maximize the pleasure and extend the sensation as you begin to cum.",
+
+                "The prolonged ecstasy overwhelms your mind completely, your body trembling as wave after wave of pleasure courses through you, leaving you gasping and moaning helplessly. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "SemenHeal", "50",
+                "Vanesa's muscles unclench as she drinks in your semen, her arousal decreasing by [FinalDamage].",
+                "Speaks",
+                "Mmm, that's it~ Let me make this last as long as possible for my meal~♥"
+            ]
+        },
+        {
+            "NameOfScene": "ChestSmother",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "Vanesa leans forward and pulls you into a tight hug, smothering your moans in her soft, fluffy chest as you unload into her pussy, her warmth enveloping you completely.",
+
+                "The muffled sounds and the intimate embrace intensify the experience, your body shaking as you cum harder than ever before, lost in the overwhelming sensation of her soft fur against your face. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "SemenHeal", "50",
+                "Vanesa's breathing slows as she absorbs your essence, her arousal dropping by [FinalDamage].",
+                "Speaks",
+                "Hehe~ Shh, my little meal~ Let me keep you quiet while you cum~♥"
+            ]
+        },
+        {
+            "NameOfScene": "GulpingPussy",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "Vanesa's pussy seems to almost pull the orgasm out of you with a gulping, sucking sensation, her muscles working in perfect rhythm to milk every drop from your cock.",
+
+                "The strange but incredibly pleasurable sensation catches you completely off guard, your mind going blank as the intense orgasm is literally sucked from your body, leaving you gasping in shock and pleasure. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "SemenHeal", "50",
+                "Vanesa's body visibly calms as she consumes your seed, her arousal healing by [FinalDamage].",
+                "Speaks",
+                "Oh yes~ Feel how my pussy drinks you up~ Every drop belongs to me~♥"
+            ]
+        },
+        {
+            "NameOfScene": "MuscleControl",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Rapid Slamming",
+                "Vanesa holds completely still, her body motionless as she focuses entirely on the muscles inside her pussy, making them ripple and contract around your cock.",
+                "HitPlayerWith", "Bunny's Rapid Slamming",
+                "The sensation is overwhelming as her internal muscles work you with incredible precision, each contraction sending waves of pleasure through your body that make you gasp and moan.",
+                "IfPlayerOrgasm","RandomOrgasmScene",
+                "Speaks",
+                "Mmm, feel how tight I can make myself~ My muscles are going to milk every drop from you~♥"
+            ]
+        },
+        {
+            "NameOfScene": "BreastShow",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Rapid Slamming",
+                "Vanesa leans back slightly, her massive white fluffy breasts bouncing and jiggling with each movement as she rides your cock, giving you the perfect view of her soft, bouncy form.",
+                "HitPlayerWith", "Bunny's Rapid Slamming",
+                "The combination of the visual stimulation and the tight warmth of her pussy overwhelms your senses, your hands instinctively reaching up to touch her soft fur as you lose yourself in the pleasure.",
+                "IfPlayerOrgasm","RandomOrgasmScene",
+                "Speaks",
+                "Hehe~ Like the view?~ My fluffy tits are so much better when they're bouncing for you~♥"
+            ]
+        },
+        {
+            "NameOfScene": "HipDance",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Rapid Slamming",
+                "Vanesa begins a complex hip dance on your cock, her movements ranging from slow, grinding circles to rapid, bouncing thrusts that assault your senses.",
+                "HitPlayerWith", "Bunny's Rapid Slamming",
+                "You're completely overwhelmed by the constant change in rhythm and intensity, your body trembling as she takes complete control of your pleasure, leaving you helpless to do anything but focus on how your cock feels.",
+                "IfPlayerOrgasm","RandomOrgasmScene",
+                "Speaks",
+                "Oh yes~ Just lie back and enjoy the show my little morsel~♥"
+            ]
+        }
+    ]
+}

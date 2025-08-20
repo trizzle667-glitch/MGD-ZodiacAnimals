@@ -1,14 +1,14 @@
 {
     "name": "Bunny Momentum",
-    "description": "Her momentum is growing stronger",
+    "description": "Her momentum is growing stronger, gaining +35 damage and +10 damage reduction. You might want to stop her from getting any stronger!",
 
     "LevelReq": "0",
     "PerkReq": [ ""],
     "StatReq": [ ""],
     "StatReqAmount": [ "0"],
 
-    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction", "StanceBoost"],
-    "EffectPower": [ "StatusIcons/Kiss2.png", "35", "10", "35"],
+    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction"],
+    "EffectPower": [ "StatusIcons/Kiss2.png", "35", "10"],
 
     "PlayerCanPurchase": "No"
 }

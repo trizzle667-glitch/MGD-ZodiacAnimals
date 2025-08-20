@@ -1,0 +1,377 @@
+{
+    "name": "Bunny Marked Titfuck Events",
+    "CardType": "",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "Vanesa",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "Marked Titfuck Intro",
+            "theScene": [
+                "SetPostName", " - Bunny Marked Titfuck",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, [ThePlayerName]~ How about I give you a special treat with my breasts?♥ My mark will make it even more magical~",
+                    "Hehe, your mark is pulsing so beautifully~ Let me show you what my tits can do with that energy♥~",
+                    "Oh yes~ I can feel your mark's energy~ How about I wrap these around your cock and drain you dry?♥~",
+                    "Your mark makes you so delicious~ Let me use my breasts to milk every drop of energy from you♥~",
+                "EndLoop",
+                "Menu",
+                    "Let her slide down♥",
+                    "Turn down her offer",
+                "EndLoop",
+                "CallNextSceneJumpThenReturn",
+                "IfFetishLevelEqualOrGreater", "Breasts", "50", "FetishText",
+                "JumpToScene", "ResistTitfuckCheck"
+            ]
+        },
+        {
+            "NameOfScene": "Turn down her offer",
+            "theScene": [
+                "CallNextSceneJumpThenReturn",
+                "IfFetishLevelEqualOrGreater", "Breasts", "50", "FetishText",
+                "JumpToScene", "ResistTitfuckCheck"
+            ]
+        },
+        {
+            "NameOfScene": "FetishText",
+            "theScene": [
+                "SwapLineIf", "Random",
+                    "Your love of breasts makes her offer extremely tempting, and you can feel your cock twitching at the thought of her soft mounds wrapped around it.",
+                    "The mention of her breasts sends waves of desire through you, your cock hardening as you imagine her cleavage engulfing your shaft.",
+                    "Your breast fetish overwhelms your senses, making it nearly impossible to resist the thought of her perfect tits milking your cock.",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "ResistTitfuckCheck",
+            "theScene": [
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "50", "1",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "75", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "100", "2",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "Temptation", "15", "ResistTitfuckStart",
+                "Fail", "TitfuckStart"
+            ]
+        },
+        {
+            "NameOfScene": "ResistTitfuckStart",
+            "theScene": [
+                "You successfully turn down Vanesa's offer. She looks disappointed that you didn't want to experience her fluffy breasts wrapped around your cock.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Oh? You don't want to feel my breasts around your cock?♥ How disappointing~",
+                    "Hehe, turning down my tits? How cute~ You don't know what you're missing~",
+                    "Mmm, resisting my offer? Your loss~ They would have felt amazing~",
+                    "Oh? You think you can resist my cleavage?♥ How boring~",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Let her slide down♥",
+            "theScene": [
+                "ClearStanceFromMonsterAndPlayer","All",
+                "You make no attempt to resist as Vanesa slowly slides down your body, her soft breasts trailing along your chest as she moves from smothering your face to positioning herself between your legs.",
+                "ApplyStance", "Titfuck",
+                "She gives you a seductive smile as she wraps her warm, pillowy mounds around your cock, the mark on your body pulsing with anticipation as she prepares to melt your mind.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, that's it~ Just relax and let my breasts work their magic on you♥~",
+                    "Hehe, feel how soft they are~ My tits are going to milk every drop from you♥~",
+                    "Oh yes~ Your cock fits perfectly between my breasts♥~",
+                    "See? Your cock is happy to be between my breasts♥~",
+                "EndLoop",
+                "JumpToScene", "RandomTitfuck"
+            ]
+        },
+        {
+            "NameOfScene": "TitfuckStart",
+            "theScene": [
+                "ClearStanceFromMonsterAndPlayer","All",
+                "Unable to resist the combination of her seductive offer and her overwhelming charm, you find yourself submitting to her breast's touch. Your small attempt at resistance crumbles as she begins to slide down your body.",
+                "ApplyStance", "Titfuck",
+                "Vanesa's eyes gleam with satisfaction as she positions herself between your legs, her soft breasts trailing along your chest before wrapping around your cock. She gives you a seductive smile as she prepares to pleasure you with her cleavage.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Hehe, I saw that little resistance~ But you couldn't say no to my breasts♥~",
+                    "Mmm, that was cute~ Your small attempt to resist only made me want you more♥~",
+                    "Oh yes~ I noticed your hesitation, but my tits are just too irresistible♥~",
+                    "See? Even your small resistance couldn't stop me~ Now let my breasts pleasure you completely♥~",
+                "EndLoop",
+                "JumpToScene", "RandomTitfuck"
+            ]
+        },
+        {
+            "NameOfScene": "RandomTitfuck",
+            "theScene": [
+                "JumpToRandomScene", 
+                    "PushAndSqueezeTitfuck",
+                    "FluffyWrapTitfuck",
+                    "AlternateCirclesTitfuck",
+                    "StrokingTitfuck",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "RandomTitfuckTease",
+            "theScene": [
+                "CallNextSceneJumpThenReturn",
+                "JumpToRandomScene",
+                    "SensationTease",
+                    "MeltingTease",
+                    "RelaxTease",
+                    "ReadyForMoreTease",
+                "EndLoop",
+                "JumpToScene", "TemptationMenu"
+            ]
+        },
+        {
+            "NameOfScene": "TemptationMenu",
+            "theScene": [
+                "Menu",
+                    "Why would you stop this?♥",
+                    "Try to pull your cock out",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Why would you stop this?♥",
+            "theScene": [
+                "SwapLineIf", "Random",
+                    "You realize there's nothing you'd rather do than continue feeling her soft breasts around your cock, the pleasure too intoxicating to resist.",
+                    "The thought of stopping this incredible titfuck seems absurd to you now, her breasts feeling too perfect around your shaft to ever want to pull away.",
+                    "Vanesa giggles softly as she sees your complete lack of resistance, clearly amused by how easily her breasts have you under their spell.",
+                "EndLoop",
+                "JumpToScene", "RandomTitfuck"
+            ]
+        },
+        {
+            "NameOfScene": "Try to pull your cock out",
+            "theScene": [
+                "CallNextSceneJumpThenReturn",
+                "IfFetishLevelEqualOrGreater", "Breasts", "50", "Fetish2Text",
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "50", "1",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "75", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "100", "2",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "Temptation", "15", "PullAway",
+                "Fail", "ContinueTitfuck"
+            ]
+        },
+        {
+            "NameOfScene": "Fetish2Text",
+            "theScene": [
+                "The sensation of her soft mounds around your cock making it nearly impossible to think clearly as your mind becomes consumed by your titfuck fetish."
+            ]
+        },
+        {
+            "NameOfScene": "PullAway",
+            "theScene": [
+                "ClearStanceFromMonsterAndPlayer","All",
+                "With great effort, you manage to resist the intoxicating pleasure and begin to pull your cock free from the warm embrace of her soft breasts, fighting against every instinct telling you to stay.",
+                "ApplyStance", "Breast Smother",
+                "But Vanesa has other plans, quickly standing up and yanking you back into her chest, your face immediately buried in her pillowy embrace as she wraps her arms around you tightly.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Oh no you don't~ I'm not letting my meal escape that easily♥~",
+                    "Hehe, did you really think you could pull away from my breasts? How cute♥~",
+                    "Mmm, trying to escape? My tits have other plans for you♥~",
+                    "Nice try~ But my breasts aren't done with you yet [ThePlayerName]♥~",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "ContinueTitfuck",
+            "theScene": [
+                "Vanesa kneads her breasts with her hands, creating rhythmic waves of pleasure through your cock. She squeezes and releases her soft pillows around your shaft, the alternating pressure overwhelming your senses as her hands work her breasts against you.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, just let me melt away your resistance [ThePlayerName]~ My breasts will make you forget everything else♥~",
+                    "Your willpower is dissolving~ Can you feel it? My tits are breaking you down♥~",
+                    "Oh yes~ Let my breasts break down your defenses [ThePlayerName]~ You can't fight this feeling♥~",
+                    "Resistance is futile~ My breasts are melting your mind away♥~",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "RandomOrgasmTease",
+            "theScene": [
+                "ApplyStatusEffect", "Bunny's Fluffy Titfuck",
+                "SemenHeal", "60",
+                "As your cum is magicaly absorbed into her body, she calms down by [FinalDamage] arousal.",
+                "CallNextSceneJumpThenReturn",
+                "JumpToRandomScene",
+                    "SatisfiedTease",
+                    "BrainsTease",
+                    "ThinkingTease",
+                "EndLoop",
+                "ClearStanceFromMonsterAndPlayer","All",
+                "Vanesa releases your cock from between her breasts and slowly stands up, dragging her soft tits up your chest as she does so. You find yourself unsteady on your feet, your legs trembling from the intense pleasure of the experience.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, you look so weak~ Let me help you stand, [ThePlayerName]♥~",
+                    "Hehe, my breasts really drained you~ You can barely stay upright♥~",
+                    "Oh yes~ You're so unsteady after that~ Let me support you♥~",
+                    "Delicious~ But you're so exhausted~ Come here and let me hold you up♥~",
+                "EndLoop",
+                "ApplyStance", "Breast Smother",
+                "Without warning, she shoves you back into a smothering embrace. She presses your face deep into her soft, pillowy mounds as she holds you tightly against her chest. Her arms wrap around you possessively."
+            ]
+        },
+        {
+            "NameOfScene": "SatisfiedTease",
+            "theScene": [
+                "Speaks",
+                "Delicious~ Your cum is so satisfying [ThePlayerName]♥~ The energy is incredible~"
+            ]
+        },
+        {
+            "NameOfScene": "BrainsTease",
+            "theScene": [
+                "Speaks",
+                "Look at you [ThePlayerName]~ My breasts completely emptied your mind♥~"
+            ]
+        },
+        {
+            "NameOfScene": "ThinkingTease",
+            "theScene": [
+                "Speaks",
+                "My breasts will haunt your thoughts [ThePlayerName]♥~ You won't forget this feeling~"
+            ]
+        },
+        {
+            "NameOfScene": "SensationTease",
+            "theScene": [
+                "Speaks",
+                "Feel how my breasts are squeezing and caressing your cock [ThePlayerName]~ Notice every inch of soft fur against your shaft♥~"
+            ]
+        },
+        {
+            "NameOfScene": "MeltingTease",
+            "theScene": [
+                "Speaks",
+                "Mmm, your cock must feel so good between my soft breasts~ I can feel it throbbing♥~"
+            ]
+        },
+        {
+            "NameOfScene": "RelaxTease",
+            "theScene": [
+                "Speaks",
+                "Just relax and enjoy the feeling [ThePlayerName]~ Let my breasts take care of you♥~"
+            ]
+        },
+        {
+            "NameOfScene": "ReadyForMoreTease",
+            "theScene": [
+                "Speaks",
+                "Are you ready for more, [ThePlayerName]? My breasts aren't done with you yet♥~"
+            ]
+        },
+        {
+            "NameOfScene": "PushAndSqueezeTitfuck",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "Vanesa presses her soft breasts firmly against your waist as she squeezes them tightly around your cock, creating a warm, enveloping pressure that makes you moan involuntarily.",
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "Her eyes lock onto yours with a seductive intensity as she increases the pressure, her breasts molding perfectly around your shaft while her fur tickles your sensitive skin.",
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "You can feel your cock throbbing between her pillowy curves as she maintains the squeeze, her movements slow and deliberate as she watches your reactions with obvious satisfaction.",
+                "IfPlayerOrgasm", "PushAndSqueezeTitfuckOrgasm",
+                "JumpToScene", "RandomTitfuckTease"
+            ]
+        },
+        {
+            "NameOfScene": "FluffyWrapTitfuck",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "Vanesa's soft fur brushes against your cock as she wraps her fluffy breasts around your shaft, the sensation of her warm, velvety skin creating an almost overwhelming pleasure.",
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "She moves her breasts in a gentle, caressing motion, the fur on her chest providing an extra layer of stimulation that makes your cock twitch and leak pre-cum between her soft orbs.",
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "Your breathing becomes heavy as the combination of her soft fur and warm skin creates a unique sensation, her breasts moving rhythmically to maximize the contact with your sensitive shaft.",
+                "IfPlayerOrgasm", "FluffyWrapTitfuckOrgasm",
+                "JumpToScene", "RandomTitfuckTease"
+            ]
+        },
+        {
+            "NameOfScene": "AlternateCirclesTitfuck",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "Vanesa begins moving her breasts in alternating circular motions around your cock, each breast taking turns to massage different parts of your shaft as she maintains a steady rhythm.",
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "Her movements are hypnotic as she circles her left breast clockwise while her right breast moves counterclockwise, creating a swirling sensation that makes your cock pulse with pleasure.",
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "You find yourself completely entranced by her rhythmic circles, your hips involuntarily thrusting slightly as she varies the pressure and speed of her alternating movements.",
+                "IfPlayerOrgasm", "AlternateCirclesTitfuckOrgasm",
+                "JumpToScene", "RandomTitfuckTease"
+            ]
+        },
+        {
+            "NameOfScene": "StrokingTitfuck",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "Vanesa begins stroking your cock with up and down movements using her breasts, her soft globes gliding smoothly along your shaft as she establishes a steady, pleasurable rhythm.",
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "She increases the speed of her strokes, her breasts moving faster and with more pressure as she watches your face contort with pleasure, her own excitement evident in her expression.",
+                "HitPlayerWith", "Bunny's Fluffy Titfuck",
+                "Your cock feels like it's being massaged by pure silk as she continues her stroking motion, the friction and warmth of her breasts creating an almost unbearable level of stimulation.",
+                "IfPlayerOrgasm", "StrokingTitfuckOrgasm",
+                "JumpToScene", "RandomTitfuckTease"
+            ]
+        },
+        {
+            "NameOfScene": "PushAndSqueezeTitfuckOrgasm",
+            "theScene": [
+                "The intense pressure of her squeezing breasts becomes too much to bear, and you feel your climax building rapidly as she maintains her firm grip around your cock.",
+                "PlayerOrgasm", "1",
+                "You erupt with a powerful orgasm, your cum shooting between her tightly squeezed breasts and coating her chest as she continues to squeeze, milking every last drop from your throbbing shaft. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "Her satisfied moan echoes as your essence flows into her, the mark's energy pulsing with each squeeze. Vanesa's eyes gleam with predatory satisfaction as your cum disappears into her soft fur, her grip never wavering as she drains you dry.",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "FluffyWrapTitfuckOrgasm",
+            "theScene": [
+                "The combination of her soft fur and warm skin proves too much for your sensitive cock, and you feel your orgasm approaching as she continues her gentle caressing motions.",
+                "PlayerOrgasm", "1",
+                "You climax with a deep, shuddering release, your cum spraying across her fluffy chest and getting caught in her soft fur as she maintains her gentle, rhythmic movements around your cock. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "The warmth of her fur soaks up your cum as each gentle caress draws more life force into her body. The mark's glow creates soft, ethereal light that illuminates her satisfied smile as she continues her tender ministrations, draining your essence through her fluffy embrace.",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "AlternateCirclesTitfuckOrgasm",
+            "theScene": [
+                "Her hypnotic alternating circles have built up the pressure to an unbearable level, and you can feel your climax approaching as she continues her mesmerizing rhythm.",
+                "PlayerOrgasm", "1",
+                "You explode with a powerful orgasm, your cum shooting between her circling breasts and splattering across her chest as she maintains her alternating circular motions, milking your cock completely. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "Each circle pulls more energy from your body, the mark's pulsing light creating a mesmerizing pattern that matches her movements. Vanesa's concentration never breaks as she maintains her perfect circles, her eyes locked on yours as she channels your life force through her hypnotic dance.",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "StrokingTitfuckOrgasm",
+            "theScene": [
+                "The smooth, rhythmic stroking of her breasts becomes too much to resist, and you feel your orgasm building with each up and down movement of her soft flesh.",
+                "PlayerOrgasm", "1",
+                "You erupt with an intense climax, your cum shooting between her stroking breasts and coating her chest as she continues her smooth, pleasurable rhythm, ensuring every drop is milked from your cock. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "The smooth friction of her breasts creates waves of energy that flow into her body, the mark's glow brightening with each stroke. Vanesa's movements become more deliberate as she feels your essence strengthening her, her soft flesh gliding effortlessly as she absorbs your life force through her rhythmic caresses.",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        }
+    ]
+}

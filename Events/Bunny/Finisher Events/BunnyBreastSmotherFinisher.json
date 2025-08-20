@@ -1,0 +1,367 @@
+{
+    "name": "Bunny Breast Smother Finisher",
+    "CardType": "",
+    "CardLimit": "1",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "Vanesa",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "Smothering Embrace Intro",
+            "theScene": [
+                "SkipPlayerAttack",
+                "SetPostName", " - Bunny's Smothering Embrace",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, you're so warm and helpless in my embrace~",
+                    "Hehe, trapped in my soft prison~",
+                    "Oh yes, completely at my mercy now~",
+                "EndLoop",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "As you feel her massive breasts completely enveloping your face, you can't help but moan in muffled pleasure.",
+                "IfHasPerk", "Greater Bunny Zodiac Mark", "AutoFailSmothering",
+                "Menu",
+                    "Try to escape her smothering embrace!",
+                    "Relax and enjoy her soft prison.",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Smothering Embrace Escape",
+            "theScene": [
+                "You muster what little strength remains and begin to pull your face away from her smothering embrace, your willpower straining against the overwhelming softness that had been holding you captive. The sensation of her warm, fluffy breasts releasing their pressure on your face sends a confusing mix of relief and loss.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Oh? Trying to escape already? How disappointing~",
+                    "Mmm, leaving so soon? I was just getting comfortable~",
+                    "Hehe, you think you can pull away that easily?~",
+                "EndLoop",
+
+                "CallEventAndSceneThenReturn", "Bunny Charge Events", "ExpendMomentum",
+                "ClearStanceFromMonsterAndPlayer", "Breast Smother",
+                "You finally manage to pull your face free from her smothering embrace and she is left panting slightly, her momentum spent."
+            ]
+        },
+        {
+            "NameOfScene": "AutoFailSmothering",
+            "theScene": [
+                "The empowered Zodiac mark pulses with overwhelming pleasure, completely sapping your will to resist as the magical energy floods through your body. Your muscles go limp and your mind becomes clouded with desire, making any attempt to escape feel pointless and unnecessary.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, the mark is working perfectly~ You're so much more... accepting of my embrace~♥",
+                    "Hehe~ The mark makes you so wonderfully... comfortable being smothered~♥",
+                    "Oh yes~ The mark's magic is making you so much more... content in my soft prison~♥",
+                "EndLoop",
+                "JumpToScene", "RandomSmotheringScene"
+            ]
+        },
+        {
+            "NameOfScene": "Try to escape her smothering embrace!",
+            "theScene": [
+                "You fight against the overwhelming temptation to just give in and let her continue smothering you, your willpower tested as you try to focus on escaping rather than surrendering to the pleasure.",
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "50", "1",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "75", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "100", "2",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "5",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Minor Bunny Zodiac Mark", "2",
+                "Temptation", "15", "Smothering Embrace Escape",
+                "Fail", "Smothering Embrace Escape Fail"
+            ]
+        },
+        {
+            "NameOfScene": "Smothering Embrace Escape Fail",
+            "theScene": [
+                "Your attempt to escape proves futile as her soft, fluffy breasts easily overpower your weakened resistance. The overwhelming pleasure and comfort of her embrace makes any further struggle feel pointless, your body relaxing back into her smothering hold as you realize you're completely at her mercy.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, struggling only makes it more fun~",
+                    "Oh no, you're not going anywhere~",
+                    "Hehe, just give in to the pleasure~",
+                "EndLoop",
+                "JumpToScene", "RandomSmotheringScene"
+            ]
+        },
+        {
+            "NameOfScene": "Relax and enjoy her soft prison.",
+            "theScene": [
+                "You relax and enjoy the overwhelming softness of her massive breasts as they smother you completely. Your body melts into her embrace, surrendering to the pleasure as you let her take full control of your experience.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, that's it~ Just relax and let me take care of you~♥",
+                    "Hehe, so much better when you stop fighting~♥",
+                    "Oh yes, give in to the pleasure~ You're mine now~♥",
+                "EndLoop",
+                "JumpToScene", "RandomSmotheringScene"
+            ]
+        },
+        {
+            "NameOfScene": "RandomSmotheringScene",
+            "theScene": [
+                "JumpToRandomScene",
+                    "Gentle Smothering",
+                    "Intense Smothering",
+                    "Rhythmic Smothering",
+                    "Pleasure Smothering",
+                "EndLoop",
+                "JumpToScene", "Let her continue smothering you"
+            ]
+        },
+        {
+            "NameOfScene": "RandomSmotheringTease",
+            "theScene": [
+                "JumpToRandomScene",
+                    "GiveInTease",
+                    "FocusTease",
+                    "HungryTease",
+                    "PromiseTease",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "RandomOrgasmTease",
+            "theScene": [
+                "JumpToRandomScene",
+                    "WasteOrgasmTease",
+                    "NotStoppingOrgasmTease",
+                    "CumPumpOrgasmTease",
+                    "HowMuchOrgasmTease",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "WasteOrgasmTease",
+            "theScene": [
+                "Speaks",
+                "Mmm, it's a bit of a waste that you're not inside of me~ But I'll still enjoy every drop~♥",
+                "JumpToScene", "TemptationSmotheringChoice"
+            ]
+        },
+        {
+            "NameOfScene": "NotStoppingOrgasmTease",
+            "theScene": [
+                "Speaks",
+                "Hehe, I'm not stopping~ You're going to cum again and again for me~♥",
+                "JumpToScene", "TemptationSmotheringChoice"
+            ]
+        },
+        {
+            "NameOfScene": "CumPumpOrgasmTease",
+            "theScene": [
+                "Speaks",
+                "Mmm, be my little plaything~ Let me pump every drop of cum from you~♥",
+                "JumpToScene", "TemptationSmotheringChoice"
+            ]
+        },
+        {
+            "NameOfScene": "HowMuchOrgasmTease",
+            "theScene": [
+                "Speaks",
+                "Oh? I wonder how much cum you have left in you~ Let me find out~♥",
+                "JumpToScene", "TemptationSmotheringChoice"
+            ]
+        },
+        {
+            "NameOfScene": "Gentle Smothering",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "Vanesa begins to slowly and gently rub your head with her soft, fluffy breasts, the warm fur creating a soothing sensation as she moves them in gentle circles across your face.",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "The rhythmic motion of her massive breasts against your head sends waves of comfort through your body, the soft pressure and warmth making you feel completely safe and cared for in her embrace.",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "You find yourself completely relaxed as she continues her gentle pampering, the overwhelming softness and her tender movements lulling you into a state of pure bliss and contentment.",
+                "IfPlayerOrgasm", "GentleSmotheringOrgasm",
+                "JumpToScene", "RandomSmotheringTease"
+            ]
+        },
+        {
+            "NameOfScene": "Intense Smothering",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "Vanesa presses her massive breasts more firmly against your face, the soft flesh almost completely cutting off your air supply as she holds you in a tight, suffocating embrace.",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "The only thing you can breathe in is her intoxicating scent, the warm, musky aroma filling your lungs and clouding your mind as you struggle to get enough oxygen through the soft prison of her breasts.",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "Your head begins to spin from the lack of air and the overwhelming sensation of being completely enveloped, the combination of suffocation and her scent creating an intense, almost euphoric feeling of helplessness.",
+                "IfPlayerOrgasm", "IntenseSmotheringOrgasm",
+                "JumpToScene", "RandomSmotheringTease"
+            ]
+        },
+        {
+            "NameOfScene": "Rhythmic Smothering",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "Vanesa begins to knead her massive breasts in slow, deliberate circles against your face, each movement pulsing with subtle seduction magic that seeps into your skin with every gentle press.",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "The rhythmic kneading creates a hypnotic pattern that matches her heartbeat, the magical energy flowing through her soft flesh and into your body, making you feel increasingly entranced and pliable to her desires.",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "You can feel the seduction magic building with each circular motion, the warm energy coursing through your veins and clouding your mind, making you completely receptive to her every movement and touch.",
+                "IfPlayerOrgasm", "RhythmicSmotheringOrgasm",
+                "JumpToScene", "RandomSmotheringTease"
+            ]
+        },
+        {
+            "NameOfScene": "Pleasure Smothering",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "Vanesa begins to rub her massive breasts around your head in slow, sensual circles, the soft fur and warm flesh creating an overwhelming pleasure that makes your entire body tingle with desire.",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "The intense stimulation from her breast massage causes your cock to twitch and throb uncontrollably, your hips beginning to thrust unconsciously as the pleasure builds to an almost unbearable level.",
+                "HitPlayerWith", "Bunny's Smothering Embrace",
+                "You find yourself completely lost in the sensation, your body moving on its own as you thrust with increasing desperation, the combination of her soft breasts and the mounting pleasure making you feel like you're about to explode.",
+                "IfPlayerOrgasm", "PleasureSmotheringOrgasm",
+                "JumpToScene", "RandomSmotheringTease"
+            ]
+        },
+        {
+            "NameOfScene": "RhythmicSmotheringOrgasm",
+            "theScene": [
+                "The gentle, soothing sensations from her breast massage become overwhelming as the magical energy builds to an unbearable peak, your cock throbbing desperately as the pleasure finally pushes you over the edge into a powerful orgasm.",
+                "PlayerOrgasm", "1",
+                "Your entire body convulses with pleasure as you cum, the magical energy coursing through your veins making the orgasm feel more intense than ever before, your cock pulsing and twitching as you release everything into her soft embrace. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+        
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "IntenseSmotheringOrgasm",
+            "theScene": [
+                "The combination of her suffocating embrace, the lack of oxygen, and her intoxicating scent becomes too much to bear, your cock twitching and throbbing desperately as the overwhelming sensations push you toward an inevitable climax.",
+                "PlayerOrgasm", "1",
+                "Your vision blurs and your body spasms as you finally cum, the euphoric feeling of being completely at her mercy while drowning in her scent making the orgasm explode with incredible intensity, your cock pulsing wildly as you lose yourself in the pleasure. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "GentleSmotheringOrgasm",
+            "theScene": [
+                "The gentle, soothing movements of her breasts against your face gradually build the pleasure to an unbearable level, your cock slowly hardening and throbbing as the comforting sensations wash over you in waves.",
+                "PlayerOrgasm", "1",
+                "The gradual build-up finally reaches its peak as you cum, the gentle pleasure transforming into a warm, satisfying orgasm that spreads through your entire body, your cock pulsing gently as you release in her soft embrace. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "PleasureSmotheringOrgasm",
+            "theScene": [
+                "As the pleasure becomes unbearable, Vanesa reaches down with one hand to grasp your throbbing cock, her soft fingers wrapping around your shaft as she begins to stroke in perfect rhythm with her breast movements.",
+                "PlayerOrgasm", "1",
+                "The combination of her hand on your cock and her breasts smothering your face sends you over the edge, your body convulsing with intense pleasure as you cum hard, your cock pulsing and twitching in her grip as you release everything. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "GiveInTease",
+            "theScene": [
+                "Speaks",
+                "Mmm, [ThePlayerName]~ Why don't you just give in to the pleasure?~",
+                "JumpToScene", "TemptationSmotheringChoice"
+            ]
+        },
+        {
+            "NameOfScene": "FocusTease",
+            "theScene": [
+                "Speaks",
+                "Hehe~ Just focus on how good my breasts feel against your face~",
+                "JumpToScene", "TemptationSmotheringChoice"
+            ]
+        },
+        {
+            "NameOfScene": "HungryTease",
+            "theScene": [
+                "Speaks",
+                "Mmm~ Are you ready to be my meal, [ThePlayerName]?~",
+                "JumpToScene", "TemptationSmotheringChoice"
+            ]
+        },
+        {
+            "NameOfScene": "PromiseTease",
+            "theScene": [
+                "Speaks",
+                "Oh [ThePlayerName]~ I promise you'll feel even more pleasure if you just let me continue~",
+                "JumpToScene", "TemptationSmotheringChoice"
+            ]
+        },
+        {
+            "NameOfScene": "TemptationSmotheringChoice",
+            "theScene": [
+                "IfPlayerSpiritGone", "CrumpleFromSmothered",
+                "IfPlayerHasStatusEffect", "Surrender", "RandomSmotheringScene",
+                "Menu",
+                    "Feels too good to pull away...",
+                    "Try to pull away!",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Feels too good to pull away...",
+            "theScene": [
+                "The intoxicating sensation of being completely enveloped in her soft embrace overwhelms your senses, making any thought of resistance seem foolish as you willingly surrender to her continued pampering.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, that's it~ Just relax and let me take care of you~♥",
+                    "Hehe, perfect~ Now you're being a good little snack~♥",
+                    "Oh yes~ Much better when you stop fighting~♥",
+                    "Mmm, wonderful~ Just let yourself enjoy this~♥",
+                "EndLoop",
+                "JumpToScene", "RandomSmotheringScene"
+            ]
+        },
+        {
+            "NameOfScene": "Try to pull away!",
+            "theScene": [
+                "You muster what little willpower remains and attempt to pull your face away from her smothering embrace, fighting against the overwhelming pleasure that makes every movement feel like a struggle.",
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "50", "1",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "75", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "100", "2",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "5",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Minor Bunny Zodiac Mark", "2",
+                "Temptation", "15", "Smothering Embrace Escape",
+                "Fail", "Smothering Embrace Escape Fail"
+            ]
+        },
+        {
+            "NameOfScene": "CrumpleFromSmothered",
+            "theScene": [
+                "Menu",
+                    "It feels sooo good...",
+                    "I can't go on... (Lose)",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "It feels sooo good...",
+            "theScene": [
+                "JumpToScene", "Feels too good to pull away..."
+            ]
+        },
+        {
+            "NameOfScene": "I can't go on... (Lose)",
+            "theScene": [
+                "SetPostName", "",
+                "JumpToScene", "Smothering Loss"
+            ]
+        },
+        {
+            "NameOfScene": "Smothering Loss",
+            "theScene": [
+                "The overwhelming pleasure and comfort of Vanesa's smothering embrace completely overwhelms your senses, leaving you in a state of pure bliss and pleasure drunkenness as you lose all ability to resist or even think clearly.",
+                "CallEventAndSceneThenReturn", "Bunny Loss Events", "SmotheringBunnyLoss",
+                "GameOver"
+            ]
+        }
+    ]
+}

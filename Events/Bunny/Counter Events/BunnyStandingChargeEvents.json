@@ -6,23 +6,153 @@
     "requires": [""],
     "Speakers": [
         {
-            "name": "VanesaBunny",
+            "name": "Vanesa",
             "postName": "",
             "SpeakerType": "Monster"
         }
     ],
     "EventText": [
         {
-            "NameOfScene": "StandingChargeSuccess",
+            "NameOfScene": "DanceEntrapment",
             "theScene": [
-                "Specifically, a standing charge attack",
+                "CallSceneThenReturn","RandomDance",
+                "CallNextSceneJumpThenReturn","IfHasPerk","Greater Bunny Zodiac Mark","MarkEnducedContinue",
+                "As her seductive dance comes to a slow end, Vanesa keeps a little bit of momentum going and her movements become noticeably more seductive and irresistible.",
                 "JumpToEventThenScene", "Bunny Charge Events", "IncreaseMomentum"
+            ]
+        },
+        {
+            "NameOfScene": "MarkEnducedContinue",
+            "theScene": [
+                "The Zodiac bunny mark radiates with hypnotic pleasure, dulling your senses and making your body completely entranced by Vanesa's dance. Your awareness narrows to focus solely on her movements as the magical energy washes over you, leaving you completely mesmerized and unable to look away from her seductive performance.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, the mark is working perfectly~ You're so much more focused on my dance now~♥",
+                    "Hehe~ The mark makes you so wonderfully entranced~ Can't look away, can you?~♥",
+                    "Oh yes~ The mark's magic is making you so much more... captivated by my movements~♥",
+                "EndLoop",
+                "JumpToScene", "RandomDance"
+            ]
+        },
+        {
+            "NameOfScene": "RandomDance",
+            "theScene": [
+                "JumpToRandomScene",
+                    "ChestEmphasis",
+                    "HipSway",
+                    "AssShow",
+                "EndLoop"
             ]
         },
         {
             "NameOfScene": "StandingChargeCounter",
             "theScene": [
-                "Specifically, a standing charge counter attack"
+                "SetPostName", " - Bunny's Teasing Dance",
+                "As you attempt to act against Vanesa, she playfully dances away from you with surprising grace, her lips curling into a mischievous smirk.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Oh, trying to catch me? How cute~ Let me show you what you're missing~♥",
+                    "Mmm, I love it when you chase me~ It makes this so much more fun~♥",
+                    "Hehe, you're so predictable~ I know exactly how to tease you~♥",
+                    "Aww, don't fight it~ Just let me dance for you~♥",
+                "EndLoop",
+                "Instead of letting you catch her, she continues her seductive dance, her movements becoming more and more alluring until all you can do is stare.",
+                "JumpToScene", "DanceEntrapment"
+            ]
+        },
+        {
+            "NameOfScene": "StandingChargeSuccess",
+            "theScene": [
+                "SetPostName", " - Bunny's Seductive Pulse",
+                "Having finished her preparations, Vanesa sends out a powerful sexual pulse of energy that forces you to focus entirely on her teasing seductive dance.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, you can't look away from my thick curves, can you?~ My magic makes sure you see every seductive movement~♥",
+                    "Hehe, I know you're staring at how my red bunny suit hugs my body~ The magic makes it impossible to resist~♥",
+                    "Oh, you're my diner and I'm the show~ My pulse makes sure my meal can't look away~♥",
+                    "Let my magical energy keep your eyes locked on my seductive dance~ You're powerless to look anywhere else~♥",
+                "EndLoop",
+                "The magical energy pulses through your body, making you completely unable to look away from her mesmerizing dance.",
+                "JumpToScene", "DanceEntrapment"
+            ]
+        },
+        {
+            "NameOfScene": "ChestEmphasis",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Seductive Glance",
+                "Vanesa emphasizes her massive white fluffy breasts as she dances, making sure every movement draws your attention to their soft, bouncy form.",
+                "HitPlayerWith", "Bunny's Seductive Glance",
+                "Her breasts jiggle and sway with each seductive motion, the soft fur catching the light in a way that's impossible to ignore. You can't help but wonder how it must feel to be smothered in that deep, soft cleavage.",
+                "IfPlayerOrgasm","DanceEntrapmentOrgasm",
+                "Speaks",
+                "Mmm, that's it~ Keep your eyes on my fluffy tits~ They're so soft and warm~♥"
+            ]
+        },
+        {
+            "NameOfScene": "HipSway",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Seductive Glance",
+                "Vanesa sways her wide hips in a hypnotic rhythm, each movement more seductive than the last as she dances around you.",
+                "HitPlayerWith", "Bunny's Seductive Glance",
+                "Her hips move with practiced grace, the soft fur of her thighs catching your attention as she continues her mesmerizing dance.",
+                "IfPlayerOrgasm","DanceEntrapmentOrgasm",
+                "Speaks",
+                "Hehe~ Watch how my hips move~ I know you can't look away~♥"
+            ]
+        },
+        {
+            "NameOfScene": "AssShow",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Seductive Glance",
+                "Vanesa turns around to show off how tight her red latex bunny suit hugs her curves, the material stretching seductively across her form.",
+                "HitPlayerWith", "Bunny's Seductive Glance",
+                "She runs her hands along the straining material, teasing what's underneath as she continues her dance, fogging up your mind with her hypnotic movements.",
+                "IfPlayerOrgasm","DanceEntrapmentOrgasm",
+                "Speaks",
+                "Like what you see? I'm sure you'll like it even more if you come closer~♥"
+            ]
+        },
+        {
+            "NameOfScene": "DanceEntrapmentOrgasm",
+            "theScene": [
+                "JumpToRandomScene",
+                    "DanceCum",
+                    "SeductiveFinish",
+                    "MagicPulse",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "DanceCum",
+            "theScene": [
+                "Noticing you're close to release, Vanesa moves in close and seductively whispers into your ear, her warm breath sending shivers down your spine.",
+                "Speaks",
+                "Cum for me~ Let me see you lose control~♥",
+                "PlayerOrgasm", "1",
+                "Her whispered words push you over the edge, your body trembling as you cum from the intimate sensation of her voice in your ear. [PlayerOrgasmLine]",
+                "EmptySpiritCounter"
+            ]
+        },
+        {
+            "NameOfScene": "SeductiveFinish",
+            "theScene": [
+                "Sensing you're close, Vanesa finishes her dance with an especially seductive move, watching as you uncontrollably bring your hands to your cock to masturbate.",
+                "PlayerOrgasm", "1",
+                "The combination of her movements and her teasing pushes you over the edge, your hands moving frantically as you finish yourself off to her dance. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "Speaks",
+                "Hehe~ That's it~ Let me watch you finish yourself off to my dance~♥"
+            ]
+        },
+        {
+            "NameOfScene": "MagicPulse",
+            "theScene": [
+                "Vanesa's body pulses with seductive energy, amplifying your pleasure as her magical aura intensifies the sensations of her dance.",
+                "PlayerOrgasm", "1",
+                "The enhanced pleasure overwhelms you completely, your orgasm hitting with incredible intensity as you blow your load all over the floor. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "Speaks",
+                "I guess you couldn't help yourself, could you?~ Not that I'm complaining~♥"
             ]
         }
     ]

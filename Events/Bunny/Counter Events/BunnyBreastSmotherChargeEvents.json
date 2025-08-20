@@ -1,0 +1,161 @@
+{
+    "name": "Bunny Breast Smother Charge Events",
+    "CardType": "",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "Vanesa",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "BreastEntrapment",
+            "theScene": [
+                "CallSceneThenReturn","RandomScene",
+                "CallNextSceneJumpThenReturn","IfHasPerk","Greater Bunny Zodiac Mark","MarkEnducedContinue",
+                "Having successfully dominated you with her breast smothering, Vanesa has built up a powerful sexual rhythm that makes her movements more seductive and irresistible.",
+                "JumpToEventThenScene", "Bunny Charge Events", "IncreaseMomentum"
+            ]
+        },
+        {
+            "NameOfScene": "MarkEnducedContinue",
+            "theScene": [
+                "The empowered bunny mark on your body pulses with intense pleasure, clouding your mind and making you completely pliable to Vanesa's desires. Your resistance melts away as the magical energy courses through your body, leaving you helplessly eager for another embrace in her soft, fluffy breasts.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, the mark is working perfectly~ You're so much more receptive now~♥",
+                    "Hehe~ The mark makes you so wonderfully pliable~ Ready for more?~♥",
+                    "Oh yes~ The mark's magic is making you so much more... cooperative~♥",
+                "EndLoop",
+                "JumpToScene", "RandomScene"
+            ]
+        },
+        {
+            "NameOfScene": "RandomScene",
+            "theScene": [
+                "JumpToRandomScene",
+                    "TextureFocus",
+                    "TemptationGiveIn",
+                    "ScentIntoxication",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "BreastEntrapmentOrgasm",
+            "theScene": [
+                "JumpToRandomScene",
+                    "ThighCum",
+                    "BreastMoan",
+                    "SeductivePulse",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "ThighCum",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "The overwhelming pleasure of her soft, fluffy breasts proves too much as you cum onto her thighs, your body trembling from the intense sensation. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "Vanesa giggles softly as she feels your release, her breasts still gently smothering your head as she enjoys your helpless state.",
+                "Speaks",
+                "Mmm, that's it~ Cum for me~ My fluffy tits made you feel so good, didn't they?~♥"
+            ]
+        },
+        {
+            "NameOfScene": "BreastMoan",
+            "theScene": [
+                "Sensing you're close, Vanesa reaches down and begins stroking your cock while you moan helplessly into her soft breasts.",
+                "PlayerOrgasm", "1",
+                "The combination of her hand and her fluffy pillows pushes you over the edge, your muffled moans vibrating against her warm flesh as you cum hard. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "Speaks",
+                "Hehe~ There we go~ I knew my fluffy tits would make you cum~♥"
+            ]
+        },
+        {
+            "NameOfScene": "SeductivePulse",
+            "theScene": [
+                "Vanesa's body pulses with seductive energy, amplifying your pleasure as her magical aura intensifies the sensations of her breast smothering.",
+                "PlayerOrgasm", "1",
+                "The enhanced pleasure overwhelms you completely, your orgasm hitting with incredible intensity as her magic courses through your body. [PlayerOrgasmLine]",
+                "EmptySpiritCounter",
+                "Speaks",
+                "Oh yes~ Let my magic make you cum so hard~ Feel the power of my seductive energy~♥"
+            ]
+        },
+        {
+            "NameOfScene": "BreastSmotherChargeCounter",
+            "theScene": [
+                "SetPostName", " - Bunny's Disruptive Caress",
+                "As you attempt to act against Vanesa, she swiftly catches your hands with surprising grace, her lips curling into a mischievous smirk.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Oh, these hands could be doing so much better things~ Let me show you~♥",
+                    "Mmm, I know exactly where these hands should be~♥",
+                    "Hehe, let me put these hands to better use~♥",
+                    "Aww, you're not using these hands properly~ Let me help~♥",
+                "EndLoop",
+                "Instead of letting you resist, she guides your hands to her massive white fluffy breasts, using your own movements to help her press and knead them more firmly around your head.",
+
+                "JumpToScene", "BreastEntrapment"
+            ]
+        },
+        {
+            "NameOfScene": "TextureFocus",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Scent Kneading",
+                "You find yourself focusing on the incredibly soft texture of her white fur and the plush warmth of her massive breasts as she continues to guide your hands.",
+                "HitPlayerWith", "Bunny's Scent Kneading",
+                "The sensation is so overwhelming that you can't help but let your hands explore the velvety softness, losing yourself in the tactile pleasure.",
+                "IfPlayerOrgasm","BreastEntrapmentOrgasm",
+                "Speaks",
+                "Mmm, that's it~ Feel how soft and warm they are~ Let your hands explore~♥"
+            ]
+        },
+        {
+            "NameOfScene": "TemptationGiveIn",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Scent Kneading",
+                "The overwhelming pleasure and intimacy of the moment causes you to give in to temptation, your hands now moving willingly across her soft fur.",
+                "HitPlayerWith", "Bunny's Scent Kneading",
+                "You no longer resist as she releases her grip, your hands continuing to knead and caress her breasts of their own accord while she uses her free hand to rub your cock through your clothes.",
+                "IfPlayerOrgasm","BreastEntrapmentOrgasm",
+                "Speaks",
+                "Hehe~ That's much better~ Now you're cooperating properly~♥"
+            ]
+        },
+        {
+            "NameOfScene": "ScentIntoxication",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Scent Kneading",
+                "The sweet, intoxicating scent of her fur begins to overwhelm your senses, making you feel lightheaded and more susceptible to her touch.",
+                "HitPlayerWith", "Bunny's Scent Kneading",
+                "Your mind becomes foggy with desire as her natural aroma fills your nostrils, your resistance melting away with each breath.",
+                "IfPlayerOrgasm","BreastEntrapmentOrgasm",
+                "Speaks",
+                "Mmm, you can smell it, can't you? My scent is making you so much more... receptive~♥"
+                        ]
+        },
+        {
+            "NameOfScene": "BreastSmotherChargeSuccess",
+            "theScene": [
+                "SetPostName", " - Bunny's Prepared Embrace",
+                "Having finished her preparations, Vanesa pulls your head free from her breasts just enough to see her sultry expresstion as she whisper seductively into your ear.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, let me show you how to really enjoy my fluffy tits~ I'll make this so pleasurable for you~♥",
+                    "Hehe, I'm going to help you relax and feel amazing in my soft breasts~ Just let me take care of everything~♥",
+                    "Oh, you're going to love what I have planned for my fluffy pillows~ I'll make sure you have the best time~♥",
+                    "Let me help you experience true pleasure with my soft, warm breasts~ I know exactly how to make you feel wonderful~♥",
+                "EndLoop",
+                "Taking your unresisting hands in her own, Vanesa guides them to her massive breasts and helps you squeeze and knead the soft, fluffy flesh around your head.",
+                
+                "JumpToScene", "BreastEntrapment"
+            ]
+        }
+    ]
+}

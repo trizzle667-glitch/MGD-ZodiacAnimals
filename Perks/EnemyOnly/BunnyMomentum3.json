@@ -1,14 +1,14 @@
 {
     "name": "Major Bunny Momentum",
-    "description": "Her momentum has reached its peak",
+    "description": "Her momentum has reached its peak, gaining +50 damage and +30 damage reduction. She appears ready to give you a devistating finisher!",
 
     "LevelReq": "0",
     "PerkReq": [ ""],
     "StatReq": [ ""],
     "StatReqAmount": [ "0"],
 
-    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction", "StanceBoost"],
-    "EffectPower": [ "StatusIcons/Kiss3.png", "50", "15", "50"],
+    "PerkType": [ "StatusIcon", "DamageBoost", "DamageReduction"],
+    "EffectPower": [ "StatusIcons/Kiss3.png", "50", "30"],
 
     "PlayerCanPurchase": "No"
 }

@@ -1,0 +1,305 @@
+{
+    "name": "Bunny Standing Finisher",
+    "CardType": "",
+    "CardLimit": "1",
+    "Description": "",
+    "requires": [""],
+    "Speakers": [
+        {
+            "name": "Vanesa",
+            "postName": "",
+            "SpeakerType": "Monster"
+        }
+    ],
+    "EventText": [
+        {
+            "NameOfScene": "Milking Hands Intro",
+            "theScene": [
+                "SkipPlayerAttack",
+                "SetPostName", " - Bunny's Milking Hands",
+                "Speaks",
+                "Mmm, let me milk you dry, my little snack~ You seem pent up with all that energy~♥",
+                
+                "IfHasPerk", "Greater Bunny Zodiac Mark", "AutoFailMilking",
+                "Menu",
+                    "Relax and enjoy her touch.",
+                    "Try and escape her grasp!",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "AutoFailMilking",
+            "theScene": [
+                "Your Bunny Zodiac Mark pulses with overwhelming power, leaving you completely helpless to resist her milking hands as your body betrays your will.",
+                "JumpToScene", "Relax and enjoy her touch."
+            ]
+        },
+        {
+            "NameOfScene": "Milking Hands Escape",
+            "theScene": [
+                "With a desperate surge of strength, you manage to push Vanesa's hands away from your cock, breaking free from her milking grasp as you stumble back from her touch.",
+                "CallEventAndSceneThenReturn", "Bunny Charge Events", "ExpendMomentum",
+                "The shove sends Vanesa off balance, her momentum spent."
+            ]
+        },
+        {
+            "NameOfScene": "Try and escape her grasp!",
+            "theScene": [
+                "You fight against the pleasure coursing through your member, desperately trying to muster enough willpower to resist her skilled hands as they work their magic on your cock.",
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "5",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Minor Bunny Zodiac Mark", "2",
+                "Temptation", "15", "Milking Hands Escape",
+                "Fail", "Milking Hands Escape Fail"
+            ]
+        },
+        {
+            "NameOfScene": "Milking Hands Escape Fail",
+            "theScene": [
+                "The overwhelming pleasure proves too much to resist, your willpower crumbling as you find yourself unable to fight the urge to submit to her skilled hands.",
+                "Speaks",
+                "Mmm, that's it, my little snack~ Just let go and enjoy the feeling of my hands milking you dry~♥",
+                "JumpToScene", "RandomMilkingScene"
+            ]
+        },
+        {
+            "NameOfScene": "Relax and enjoy her touch.",
+            "theScene": [
+                "You surrender to the pleasure, relaxing your body as you allow Vanesa's skilled hands to work their magic on your cock, the soft fur of her palms creating an intoxicating sensation.",
+                "Speaks",
+                "Mmm, that's a good little snack~ Just relax and let me take care of everything~ I'll make sure you feel absolutely wonderful~♥",
+                "JumpToScene", "RandomMilkingScene"
+            ]
+        },
+        {
+            "NameOfScene": "RandomMilkingScene",
+            "theScene": [
+                "JumpToRandomScene",
+                    "Delicate Milking",
+                    "Lovebutton Milking",
+                    "Kiss Milking",
+                    "Lick Milking",
+                "EndLoop",
+                "JumpToScene", "Let her continue milking you"
+            ]
+        },
+        {
+            "NameOfScene": "RandomMilkingTease",
+            "theScene": [
+                "JumpToRandomScene",
+                    "GiveInTease",
+                    "FocusTease",
+                    "HungryTease",
+                    "PromiseTease",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "RandomOrgasmTease",
+            "theScene": [
+                "JumpToRandomScene",
+                    "WasteOrgasmTease",
+                    "NotStoppingOrgasmTease",
+                    "CumPumpOrgasmTease",
+                    "HowMuchOrgasmTease",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "WasteOrgasmTease",
+            "theScene": [
+                "Waste Orgasm Tease Text",
+                "JumpToScene", "TemptationMilkingChoice"
+            ]
+        },
+        {
+            "NameOfScene": "NotStoppingOrgasmTease",
+            "theScene": [
+                "Not Stopping Orgasm Tease Text",
+                "JumpToScene", "TemptationMilkingChoice"
+            ]
+        },
+        {
+            "NameOfScene": "CumPumpOrgasmTease",
+            "theScene": [
+                "Cum Pump Orgasm Tease Text",
+                "JumpToScene", "TemptationMilkingChoice"
+            ]
+        },
+        {
+            "NameOfScene": "HowMuchOrgasmTease",
+            "theScene": [
+                "How Much Orgasm Tease Text",
+                "JumpToScene", "TemptationMilkingChoice"
+            ]
+        },
+        {
+            "NameOfScene": "Delicate Milking",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Milking Hands",
+                "Vanesa's soft, furry hands gently stroke your cock with delicate precision, her touch feather-light as she explores every inch of your shaft with loving care, the soft fur of her palms creating an intoxicating friction that makes your cock twitch and throb with anticipation.",
+                "HitPlayerWith", "Bunny's Milking Hands",
+                "The pleasure builds steadily within you as you feel the warmth and softness of her furry hands enveloping your shaft, each gentle stroke making you grow harder and more sensitive to her tender ministrations.",
+                "IfPlayerOrgasm", "DelicateMilkingOrgasm",
+                "JumpToScene", "RandomMilkingTease"
+            ]
+        },
+        {
+            "NameOfScene": "Lovebutton Milking",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Milking Hands",
+                "Vanesa's hands work in perfect harmony, one softly stroking your cock while the other expertly finds and teases your prostate, the dual stimulation creating an intense wave of pleasure that makes your cock pulse and swell with desire.",
+                "HitPlayerWith", "Bunny's Milking Hands",
+                "Waves of intense pleasure surge through your body with each touch, the combination of her gentle strokes and prostate massage making you gasp and moan as your cock grows harder and more sensitive to her skilled ministrations.",
+                "IfPlayerOrgasm", "LovebuttonMilkingOrgasm",
+                "JumpToScene", "RandomMilkingTease"
+            ]
+        },
+        {
+            "NameOfScene": "Kiss Milking",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Milking Hands",
+                "Vanesa pulls you into a passionate, sloppy kiss, her tongue exploring your mouth with hungry intensity as her soft, furry hands work your cock with expert precision, the combination of her passionate embrace and skilled touch making your cock throb and twitch with overwhelming desire.",
+                "HitPlayerWith", "Bunny's Milking Hands",
+                "Each touch makes you moan into her mouth as the wet, messy kiss and soft fur of her hands create an intoxicating combination, your cock growing harder with each stroke while her tongue dances with yours in perfect rhythm.",
+                "IfPlayerOrgasm", "KissMilkingOrgasm",
+                "JumpToScene", "RandomMilkingTease"
+            ]
+        },
+        {
+            "NameOfScene": "Lick Milking",
+            "theScene": [
+                "HitPlayerWith", "Bunny's Milking Hands",
+                "Vanesa kneels down before you, her soft, furry hands working your cock with expert precision as she occasionally leans in to give it a teasing lick, her warm tongue flicking across the sensitive head before returning to her handjob, the alternating sensations making your cock twitch and throb with anticipation.",
+                "HitPlayerWith", "Bunny's Milking Hands",
+                "At each unexpected lick, you gasp with pleasure as the combination of her soft hands and warm, wet tongue creates an intoxicating rhythm, your cock growing harder with each stroke while her tongue occasionally darts out to taste you.",
+                "IfPlayerOrgasm", "LickMilkingOrgasm",
+                "JumpToScene", "RandomMilkingTease"
+            ]
+        },
+        {
+            "NameOfScene": "DelicateMilkingOrgasm",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "The gentle, tender ministrations finally push you over the edge, your cock erupting with a soft, steady stream as Vanesa's delicate touch coaxes every last drop from you with loving care.",
+                
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "LovebuttonMilkingOrgasm",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "The dual stimulation proves too much to resist, your cock exploding with intense force as the prostate massage and handjob work in perfect harmony, sending waves of overwhelming pleasure through your entire body.",
+
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "KissMilkingOrgasm",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "The passionate kiss and skilled handjob drive you to climax, your cock erupting as you moan into Vanesa's mouth, the combination of her passionate embrace and expert touch making your orgasm incredibly intense.",
+                
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "LickMilkingOrgasm",
+            "theScene": [
+                "PlayerOrgasm", "1",
+                "The alternating sensations of her hands and tongue finally push you over the edge, your cock erupting with a powerful burst as her warm tongue flicks across the sensitive head, the mixed stimulation making your climax incredibly intense.",
+                "JumpToScene", "RandomOrgasmTease"
+            ]
+        },
+        {
+            "NameOfScene": "GiveInTease",
+            "theScene": [
+                "Speaks",
+                "Mmm, you're fighting so hard~ But I can see how much you want to give in to the pleasure~ Just let go and enjoy yourself, my little snack~♥",
+                "JumpToScene", "TemptationMilkingChoice"
+            ]
+        },
+        {
+            "NameOfScene": "FocusTease",
+            "theScene": [
+                "Speaks",
+                "Focus on how good my hands feel on your cock, little one~ Don't think about anything else, just let the pleasure consume you completely~♥",
+                "JumpToScene", "TemptationMilkingChoice"
+            ]
+        },
+        {
+            "NameOfScene": "HungryTease",
+            "theScene": [
+                "Speaks",
+                "I'm so hungry for your cum, my little snack~ I can't wait to taste every drop you have to offer~ Let me milk you completely dry~♥",
+                "JumpToScene", "TemptationMilkingChoice"
+            ]
+        },
+        {
+            "NameOfScene": "PromiseTease",
+            "theScene": [
+                "Speaks",
+                "I promise you'll feel absolutely amazing when you finally let go~ Just give in to the pleasure and I'll make sure you have the most incredible orgasm~♥",
+                "JumpToScene", "TemptationMilkingChoice"
+            ]
+        },
+        {
+            "NameOfScene": "TemptationMilkingChoice",
+            "theScene": [
+                "IfPlayerSpiritGone", "CrumpleFromMilked",
+                "IfPlayerHasStatusEffect", "Surrender", "RandomMilkingScene",
+                "Menu",
+                    "Feels too good to pull away...",
+                    "Try to pull away!",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Feels too good to pull away...",
+            "theScene": [
+                "You surrender completely to the overwhelming pleasure, your resistance crumbling as you allow Vanesa to continue her skilled ministrations, the sensation too intoxicating to resist any longer.",
+                "Speaks",
+                "Mmm, that's it, my little snack~ Just let yourself enjoy every moment of the pleasure I'm giving you~ You're doing so well~♥",
+                "JumpToScene", "RandomMilkingScene"
+            ]
+        },
+        {
+            "NameOfScene": "Try to pull away!",
+            "theScene": [
+                "You desperately try to muster enough willpower to resist her skilled hands as they work their magic on your cock, the sensations growing even more intense with each stroke.",
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "5",
+                "ChangeStatCheckDifficulty", "IfHasPerk", "Minor Bunny Zodiac Mark", "2",
+                "Temptation", "15", "Milking Hands Escape",
+                "Fail", "Milking Hands Escape Fail"
+            ]
+        },
+        {
+            "NameOfScene": "CrumpleFromMilked",
+            "theScene": [
+                "Menu",
+                    "It feels sooo good...",
+                    "I can't go on... (Lose)",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "It feels sooo good...",
+            "theScene": [
+                "JumpToScene", "Feels too good to pull away..."
+            ]
+        },
+        {
+            "NameOfScene": "I can't go on... (Lose)",
+            "theScene": [
+                "Your willpower completely shatters as the overwhelming pleasure consumes you, your body going limp as you surrender entirely to Vanesa's skilled hands, unable to resist any longer.",
+                "SetPostName", "",
+                "CallEventAndSceneThenReturn", "Bunny Loss Events", "MilkingBunnyLoss",
+                "GameOver"
+            ]
+        }
+    ]
+}

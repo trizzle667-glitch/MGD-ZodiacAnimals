@@ -6,7 +6,7 @@
     "requires": [""],
     "Speakers": [
         {
-            "name": "VanesaBunny",
+            "name": "Vanesa",
             "postName": "",
             "SpeakerType": "Monster"
         }
@@ -16,6 +16,7 @@
             "NameOfScene": "Hug Invitation",
             "theScene": [
                 "HitPlayerWith", "BunnyTemptationDamage",
+                "SetPostName", " - Bunny Hug Invitation",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "You look a little tired my little snack. Why don't you come here and let me give you a nice, warm hug to help you relax?♥",
@@ -31,11 +32,19 @@
         {
             "NameOfScene": "Walk into her embrace",
             "theScene": [
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Breast Smother",
+                "ChangeImageLayer", "Expression", "Laughing",
                 "ApplyStance", "Breast Smother",
                 "You rush forward and eagerly bury your face in her fluffy cleavage with a smile plastered on your face. She giggles while softly petting your head.",
                 "Speaks",
-                "Well arn't you just the cutest little snack?♥",
-                "HitPlayerWith", "BunnyTemptationDamage",
+                "SwapLineIf", "Random",
+                    "Well arn't you just the cutest little snack?♥",
+                    "Mmm, you're so eager to be smothered by my breasts, aren't you?♥",
+                    "Such a good boy, diving right into my cleavage like that♥",
+                    "Aww, look how happy you are to be in my embrace♥",
+                "EndLoop",
+                "HitPlayerWith", "Bunny's Fluffy Smother",
+                "ChangeImageLayer", "Expression", "Lick",
                 "As you inhale the scent of her plush white body you feel her reach down and start to caress your cock, reminding you that she will not be satisfied with just a hug."
             ]
         },
@@ -50,7 +59,7 @@
         {
             "NameOfScene": "BreastHugResist",
             "theScene": [
-                "Your love of breasts makes it difficult to resist her invitation...",
+                "Your eyes are drawn to Vanesa's massive, voluptuous breasts, the way they strain against her tight red latex suit making your mouth water. The thought of being smothered by those soft, fluffy mounds sends waves of desire through your body, making it incredibly difficult to resist her invitation...",
                 "JumpToScene", "HugTemptationCheck"
             ]
         },
@@ -68,26 +77,263 @@
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "75", "2",
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "100", "2",
                 "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
-                "Temptation", "15",
-                "ResistHug",
-                "HugTemptationFail"
+                "Temptation", "15", "ResistHug",
+                "Fail", "HugTemptationFail"
             ]
         },
         {
             "NameOfScene": "ResistHug",
             "theScene": [
-                "Vanesa's eyes narrow with a hint of disappointment as you resist her invitation, but she quickly recovers with a playful grin."
+                "ChangeImageLayer", "Expression", "Stern",
+                "Vanesa's crimson eyes narrow with a hint of disappointment as you resist her invitation, her soft pink aura dimming slightly.",
+                "ChangeImageLayer", "Expression", "ClosedSmile",
+                "However, she quickly recovers with a playful grin, her predatory instincts clearly enjoying the challenge of breaking your will."
             ]
         },
         {
             "NameOfScene": "HugTemptationFail",
             "theScene": [
                 "ApplyStance", "Breast Smother",
-                "Unable to control yourself, you walk into her embrace endulging in the feeling of her soft fur and skin-tight latex. She gently wraps her arms around you and pulls your head into her bountiful cleavage. Her soft fur and skin-tight latex rub against your face, making you moan softly as you feel her warm breath against your ear.",
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Breast Smother",
+                "ChangeImageLayer", "Expression", "Smug",
+                "Unable to control yourself, you walk into her embrace, indulging in the feeling of her soft fur and skin-tight latex. She gently wraps her arms around you and pulls your head into her bountiful cleavage, making you moan softly as you feel her warm breath against your ear.",
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "Mmm, that's it. Just relax and let me take care of everything.♥",
                 "HitPlayerWith", "BunnyTemptationDamage",
-                "As you inhale the scent of her plush white body you feel her reach down and start to caress your cock, reminding you that she will not be satisfied with just a hug."
+                "ChangeImageLayer", "Expression", "Lick",
+                "Her touch sends shivers down your spine as she begins to caress your cock, her dominance over you growing stronger as you realize you've fallen deeper under her spell."
+            ]
+        },
+        {
+            "NameOfScene": "Sex Invitation",
+            "theScene": [
+                "HitPlayerWith", "BunnyTemptationDamage",
+                "SetPostName", " - Bunny Sex Invitation",
+                "ChangeImageLayer", "Expression", "HotHug",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, I can see how much you want me~ Why don't you come over here and give me what I need?♥",
+                    "Your cock looks so hard and ready for me~ Come here and let me ride you until you can't think straight♥",
+                    "I'm feeling so hot and bothered right now~ Won't you come fuck this bunny?♥",
+                    "Look at how wet I'm getting just thinking about you~ Come here and let me drain every last drop from you♥",
+                "EndLoop",
+                "Menu",
+                    "Stay where you are",
+                    "Fuck the bunny!",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Stay where you are",
+            "theScene": [
+                "IfFetishLevelEqualOrGreater", "Sex", "50", "SexInvitationResistSex",
+                "IfPlayerHasStatusEffect", "Charm", "SexInvitationResistCharm",
+                "JumpToScene", "ResistSexInvitation"
+            ]
+        },
+        {
+            "NameOfScene": "SexInvitationResistSex",
+            "theScene": [
+                "The thought of being taken by Vanesa's pussy sends waves of arousal through your body, your cock hardening at the mere idea. Her seductive words echo in your mind, making it incredibly difficult to resist the primal urge to submit to her desires...",
+                "JumpToScene", "SexInvitationCheck"
+            ]
+        },
+        {
+            "NameOfScene": "SexInvitationResistCharm",
+            "theScene": [
+                "Charmed as you are, you begin to slowly walk toward her...",
+                "JumpToScene", "SexInvitationCheck"
+            ]
+        },
+        {
+            "NameOfScene": "SexInvitationCheck",
+            "theScene": [
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "75", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "2",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "Temptation", "15", "ResistSexInvitation",
+                "Fail", "SexInvitationFail"
+            ]
+        },
+        {
+            "NameOfScene": "ResistSexInvitation",
+            "theScene": [
+                "ChangeImageLayer", "Expression", "Hungry",
+                "Vanesa's eyes flash with a mix of frustration and hunger as you resist her sexual invitation, her body tensing with pent-up desire. She licks her lips slowly, her predatory smile growing wider as she clearly relishes the opportunity to make you beg for what she's offering."
+            ]
+        },
+        {
+            "NameOfScene": "SexInvitationFail",
+            "theScene": [
+                "Despite your best efforts to resist, your body betrays you as you stumble forward. Your cock throbs painfully with desire, and every step feels like a battle against your own will. Vanesa's seductive presence proves too overwhelming to resist.",
+                
+                "ChangeImageLayer", "Expression", "Slurp",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, that's it [ThePlayerName]~ I knew you couldn't resist me forever♥",
+                    "There we go, my little snack~ Your body knows what it wants♥",
+                    "Mmm, excellent [ThePlayerName]~ Now let me show you what this bunny can do♥",
+                    "That's my good boy~ I can sense your desire for me♥",
+                "EndLoop",
+
+                "ApplyStance", "Sex",
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Sex",
+                "ChangeImageLayer", "Expression", "Smug",
+                "HitPlayerWith", "Bunny Smothered Insertion",
+                "In a smooth, predatory motion, Vanesa pushes you down to the ground. She lowers herself onto your cock, her [SexAdjective][SexWord] surrounding you entirely as she begins to ride you with passionate intensity."
+            ]
+        },
+        {
+            "NameOfScene": "Fuck the bunny!",
+            "theScene": [
+                "ChangeImageLayer", "Expression", "Hungry",
+                "You eagerly rush forward, your cock throbbing with anticipation as you move to claim Vanesa's body. However, before you can take control, she meets your advance with a predatory grin and smoothly pushes you down to the ground.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, so eager [ThePlayerName]~ But I think I'll be the one in charge this time♥",
+                    "Aww, you want to take control? How cute~ But I prefer to be on top♥",
+                    "Nice try [ThePlayerName]~ But I'm the one who decides how this goes♥",
+                    "Mmm, I love your enthusiasm~ But I think I'll ride you instead♥",
+                "EndLoop",
+                "ApplyStance", "Sex",
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Sex",
+                "ChangeImageLayer", "Expression", "Smug",
+                "HitPlayerWith", "Bunny Smothered Insertion",
+                "With practiced ease, she takes control of the situation, her body sliding down onto your shaft as she establishes a steady rhythm. Her voluptuous figure moves with seductive grace, the contrast between her fluffy white fur and glossy red latex creating a mesmerizing display."
+            ]
+        },
+        {
+            "NameOfScene": "Smothered Insertion Temptation",
+            "theScene": [
+                "SetPostName", " - Bunny Smothered Insertion",
+                "ChangeImageLayer", "Expression", "Tongue",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, you're so helpless in my embrace~ Let me take care of everything~",
+                    "You're mine now, little snack. Time to claim what's mine~",
+                    "So warm and vulnerable... I can't resist taking you completely~",
+                "EndLoop",
+                "Menu",
+                    "Try to resist her advances",
+                    "Give in to her dominance",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "Try to resist her advances",
+            "theScene": [
+                "IfFetishLevelEqualOrGreater", "Sex", "50", "SmotheredInsertionResistSex",
+                "IfPlayerHasStatusEffect", "Charm", "SmotheredInsertionResistCharm",
+                "JumpToScene", "ResistSmotheredInsertion"
+            ]
+        },
+        {
+            "NameOfScene": "SmotheredInsertionResistSex",
+            "theScene": [
+                "Vanesa's massive breasts press against you, their soft warmth and the tight red latex creating an overwhelming sensory experience. Your cock throbs with desire as you imagine her lowering herself down on you, the combination of her seductive dominance and the intimate embrace making resistance feel impossible...",
+                "JumpToScene", "SmotheredInsertionCheck"
+            ]
+        },
+        {
+            "NameOfScene": "SmotheredInsertionResistCharm",
+            "theScene": [
+                "Charmed as you are, you find it hard to resist her dominance...",
+                "JumpToScene", "SmotheredInsertionCheck"
+            ]
+        },
+        {
+            "NameOfScene": "SmotheredInsertionCheck",
+            "theScene": [
+                "StatCheck",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "75", "2",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "2",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
+                "Temptation", "18", "ResistSmotheredInsertion",
+                "Fail", "SmotheredInsertionFail"
+            ]
+        },
+        {
+            "NameOfScene": "ResistSmotheredInsertion",
+            "theScene": [
+                "ClearStanceFromMonsterAndPlayer", "All",
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Normal",
+                "ChangeImageLayer", "Expression", "Smug",
+                "With great effort, you manage to push against her weight and prevent her from lowering herself onto your cock. Using this moment of distraction, you quickly roll out from under her and scramble to your feet, your heart pounding with adrenaline from the narrow escape.",
+                
+                
+                "SetPostName", "",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Oh? You're stronger than I expected~ But you're not getting away that easily~",
+                    "Mmm, a fighter~ I love it when they put up a struggle♥",
+                    "Hehe, trying to escape? How adorable~ But I'm not done with you yet♥",
+                    "Ooh, you actually resisted~ That just makes me want you even more♥",
+                "EndLoop",
+                
+                
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Breast Smother",
+                "ChangeImageLayer", "Expression", "Laughing",
+                "ApplyStance", "Breast Smother",
+                "Before you can react, Vanesa lunges forward with predatory grace and wraps her arms around your head, pulling you back into her massive cleavage with a playful giggle, her soft fur and warm body enveloping you once again."
+            ]
+        },
+        {
+            "NameOfScene": "SmotheredInsertionFail",
+            "theScene": [
+                "Unable to resist her overwhelming presence, your body betrays you as you submit to her dominance. Your cock throbs painfully with desire, and you can't help but moan softly as she begins to lower herself onto you, her massive breasts still smothering your head in their soft embrace.",
+
+                "ChangeImageLayer", "Expression", "Whisper",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "That's it, just let me take full control~",
+                    "Mmm, perfect [ThePlayerName]~ Now you're exactly where I want you♥",
+                    "Good boy~ I can feel how much you want this♥",
+                    "Mmm, so helpless and eager~ I love it when you submit to me♥",
+                "EndLoop",
+
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Sex",
+                "ChangeImageLayer", "Expression", "Smug",
+                "ApplyStance", "Sex",
+                "HitPlayerWith", "Bunny Smothered Insertion",
+                "She slowly sinks down onto your shaft, her tight [SexAdjective][SexWord] surrounding you entirely as she begins to ride you with passionate intensity. Your head remains trapped between her massive breasts, the soft white fur and tight red latex creating an intoxicating blend of sensations as she establishes her dominance over the encounter."
+            ]
+        },
+        {
+            "NameOfScene": "Give in to her dominance",
+            "theScene": [
+                "You decide to submit to her dominance, your cock throbbing with anticipation as you willingly help guide her onto your shaft. Your hands rest on her hips, assisting her as she begins to lower herself onto you, her massive breasts still smothering your head in their soft embrace.",
+
+                "ChangeImageLayer","Expression","Slurp",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Good boy~ Now let me show you what a real bunny can do~",
+                    "Mmm, wonderful [ThePlayerName]~ I love it when you help me♥",
+                    "That's it, help me take what I want~ You're such a good little snack♥",
+                    "Mmm, so eager to please~ I can sense your desire for me♥",
+                "EndLoop",
+
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Sex",
+                "ChangeImageLayer", "Expression", "Smug",
+                "ApplyStance", "Sex",
+                "HitPlayerWith", "Bunny Smothered Insertion",
+                "With your help, she slowly sinks down onto your shaft, her tight [SexWord] surrounding you entirely as she begins to ride you with passionate intensity. Your head remains trapped between her massive breasts, the soft white fur and tight red latex creating an intoxicating blend of sensations as she establishes her dominance over the encounter."
+            ]
+        },
+        {
+            "NameOfScene": "Distracting Kiss Escape",
+            "theScene": [
+                "ClearStanceFromMonsterAndPlayer", "Making Out",
+                "Just as the passionate makeout session reaches its peak, Vanesa suddenly pulls away with a teasing smile, her lips still glistening from the intense kiss. She uses the moment of distraction to break free from your embrace, leaving you breathless and wanting more.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Mmm, that was fun~ But I think I'll leave you wanting more~",
+                    "Hehe, you look so disappointed~ Maybe next time I'll give you more♥",
+                    "Aww, did you want more? Too bad~ I love keeping you on edge♥",
+                    "Mmm, such a good kisser~ But I think that's enough teasing for now♥",
+                "EndLoop",
+                "She giggles playfully as she steps back, her crimson eyes twinkling with mischief and her massive breasts swaying slightly as she maintains her seductive distance."
             ]
         }
     ]

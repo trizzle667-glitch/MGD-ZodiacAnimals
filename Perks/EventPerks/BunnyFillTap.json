@@ -1,0 +1,14 @@
+{
+    "name": "Vanesa's Meal",
+    "description": "Vanesa empowered your bunny zodiac mark to increase your spirit by 5, but in doing so it transformed your body into a better semen dispenser. You've gained 20 Virility, temptation checks are 5 points harder, and you lose spirit twice as fast. But maybe you'll enjoy being her personal food source?~♥",
+
+    "LevelReq": "0",
+    "PerkReq": [ ""],
+    "StatReq": [ ""],
+    "StatReqAmount": [ "0"],
+
+    "PerkType": [  "StatusIcon", "GainSpirit", "TemptationCheckBonus",  "MultiplySpiritLoss", "VirilityBoost",    "NonPersistentEffect"],
+    "EffectPower": [ "../Mods/Zodiacs/StatusIcons/food.png",      "5",            "-5",            "2",                 "20",                 "0"     ],
+
+    "PlayerCanPurchase": "HiddenCompletelyFromPlayer"
+}

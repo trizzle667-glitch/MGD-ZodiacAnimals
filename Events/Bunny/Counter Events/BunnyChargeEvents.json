@@ -6,24 +6,26 @@
     "requires": [""],
     "Speakers": [
         {
-            "name": "VanesaBunny",
+            "name": "Vanesa",
             "postName": "",
             "SpeakerType": "Monster"
         }
     ],
     "EventText": [
         {
-            "NameOfScene": "Standing Charge Call",
+            "NameOfScene": "Charge Call",
             "theScene": [
-                "SetChoice", "3", "Standing Charge",
-                "SetChoice", "1", "ChargeCheckEndTurn"
+                "SetChoice", "1", "ChargeCheckEndTurn",
+                "JumpToRandomScene",
+                "Nothing",
+                "Nothing",
+                "Fake Charge Call",
+                "EndLoop"
             ]
         },
         {
-            "NameOfScene": "Fake Standing Charge Call",
+            "NameOfScene": "Fake Charge Call",
             "theScene": [
-                "SetChoice", "3", "Standing Charge",
-                "SetChoice", "1", "ChargeCheckEndTurn",
                 "SetChoice", "4", "FakeCharge"
             ]
         },
@@ -39,8 +41,17 @@
             ]
         },
         {
+            "NameOfScene": "StartOfRoundEvent",
+            "theScene": [
+                "SetPostName", ""
+            ]
+        },
+        {
             "NameOfScene": "EndOfRoundChargeCheck",
             "theScene": [
+                "CallEventAndSceneThenReturn", "Bunny Fill Tap Suggestion", "Intro Suggestion",
+                "SetPostName", "",
+                "IfMonsterHasStance", "Anal", "DoAttack",
                 "IfMonsterHasStatusEffect", "Sleep", "Remove Charge Checks",
                 "IfMonsterHasStatusEffect", "Stun", "Remove Charge Checks",
                 "IfMonsterHasStatusEffect", "Restrain", "Remove Charge Checks",
@@ -54,12 +65,24 @@
             "NameOfScene": "ChargeSetCheck",
             "theScene": [
                 "SetChoice", "1", "",
-                "IfMonsterHasStance", "Any", "DoAttack",
                 "SetChoice", "2", "charge set",
+                "CallSceneThenReturn", "Adapt Charge To Stance",
+                "CallNextSceneJumpThenReturn", "IfHasPerk", "Greater Bunny Zodiac Mark", "MysteryChargeComment",
                 "SkipMonsterAttack",
-                "CallNextSceneJumpThenReturn",
-                "IfChoice", "4", "FakeCharge", "FakeChargePrep",
-                "IfChoice", "3", "Standing Charge", "StandingChargeInitText"
+                "IfChoice", "4", "FakeCharge", "FakeChargePrep"
+            ]
+        },
+        {
+            "NameOfScene": "MysteryChargeComment",
+            "theScene": [
+                "The mark on your body glows with intense pleasure as she prepares her move, the overwhelming sensation clouding your mind and making it impossible to tell if her charge attack is genuine or a trap.",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Hehe~ Can you feel the mark responding to my magic? It's making you so deliciously confused~♥",
+                    "Mmm, the mark is clouding your judgment perfectly~ You can't tell what's real anymore~♥",
+                    "Oh, the pleasure from the mark is making you so wonderfully disoriented~♥",
+                    "The mark's magic is working beautifully~ You're completely at my mercy now~♥",
+                "EndLoop"
             ]
         },
         {
@@ -68,8 +91,9 @@
                 "SetChoice", "2", "",
                 "ResumeMonsterAttack",
                 "IfChoice", "4", "FakeCharge", "EndFakeCharge",
-                "She pulls off the charged attack!",
-                "IfChoice", "3", "Standing Charge", "StandingChargeSuccess"
+                "IfChoice", "3", "Standing Charge", "StandingChargeSuccess",
+                "IfChoice", "3", "Breast Smother Charge", "BreastSmotherChargeSuccess",
+                "IfChoice", "3", "Sex Charge", "SexChargeSuccess"
             ]
         },
         {
@@ -93,22 +117,67 @@
             "theScene": [
                 "RemovePerkFromMonster", "Suspicious Behavior",
                 "SkipPlayerAttack",
-                "You got bunny countered!",
+                "EndCounterChecks",
                 "SetChoice", "2", "Countered!",
                 "SetChoice", "4", "",
-                "IfChoice", "3", "Standing Charge", "StandingChargeCounter"
+                "IfChoice", "3", "Standing Charge", "StandingChargeCounter",
+                "IfChoice", "3", "Breast Smother Charge", "BreastSmotherChargeCounter",
+                "IfChoice", "3", "Sex Charge", "SexChargeCounter"
+            ]
+        },
+        {
+            "NameOfScene": "Adapt Charge To Stance",
+            "theScene": [
+                "IfMonsterHasStance", "Sex", "Sex Charge Adapt",
+                "IfMonsterHasStance", "Breast Smother", "Breast Smother Charge Adapt",
+                "JumpToScene", "Standing Charge Adapt"
+            ]
+        },
+        {
+            "NameOfScene": "Standing Charge Adapt",
+            "theScene": [
+                "CallSceneThenReturn", "StandingChargeInitText",
+                "SetChoice", "3", "Standing Charge"
+            ]
+        },
+        {
+            "NameOfScene": "Breast Smother Charge Adapt",
+            "theScene": [
+                "CallSceneThenReturn", "BreastSmotherChargeInitText",
+                "SetChoice", "3", "Breast Smother Charge"
+            ]
+        },
+        {
+            "NameOfScene": "Sex Charge Adapt",
+            "theScene": [
+                "CallSceneThenReturn", "SexChargeInitText",
+                "SetChoice", "3", "Sex Charge"
             ]
         },
         {
             "NameOfScene": "DoAttack",
             "theScene": [
-                "CallMonsterAttack"
+                "JumpToScene", "Momentum Interupted"
             ]
         }, 
         {
             "NameOfScene": "StandingChargeInitText",
             "theScene": [
-                "She is charging a powerful standing attack"
+                "Vanesa takes up a seductive stance, a predatory lick playing across her lips as she begins gathering magical energy around her voluptuous form. The air around her shimmers with building power as she prepares a devastating seductive attack."
+            ]
+                
+        },
+        {
+            "NameOfScene": "BreastSmotherChargeInitText",
+            "theScene": [
+                "As you're smothered between Vanesa's soft, fluffy breasts, you feel a growing warmth and energy building within her voluptuous form. The magical power pulses through her soft flesh, making your head spin with increasing pleasure as she prepares her devastating attack."
+            ]
+                
+        },
+        {
+            "NameOfScene": "SexChargeInitText",
+            "theScene": [
+                "Vanesa stops her riding and swaying, her body still wrapped tightly around yours as she begins to build up seductive energy. The sudden stillness is almost as overwhelming as her movements, your cock still buried deep within her as you feel the magical power beginning to pulse through her inner walls."
             ]
                 
         },
@@ -120,6 +189,20 @@
             ]
         },
         {
+            "NameOfScene": "BreastSmotherChargeSuccess",
+            "theScene": [
+                "SetChoice", "3", "",
+                "JumpToEventThenScene", "Bunny Breast Smother Charge Events", "BreastSmotherChargeSuccess"
+            ]
+        },
+        {
+            "NameOfScene": "SexChargeSuccess",
+            "theScene": [
+                "SetChoice", "3", "",
+                "JumpToEventThenScene", "Bunny Sex Charge Events", "SexChargeSuccess"
+            ]
+        },
+        {
             "NameOfScene": "StandingChargeCounter",
             "theScene": [
                 "SetChoice", "3", "",
@@ -127,8 +210,23 @@
             ]
         },
         {
+            "NameOfScene": "BreastSmotherChargeCounter",
+            "theScene": [
+                "SetChoice", "3", "",
+                "JumpToEventThenScene", "Bunny Breast Smother Charge Events", "BreastSmotherChargeCounter"
+            ]
+        },
+        {
+            "NameOfScene": "SexChargeCounter",
+            "theScene": [
+                "SetChoice", "3", "",
+                "JumpToEventThenScene", "Bunny Sex Charge Events", "SexChargeCounter"
+            ]
+        },
+        {
             "NameOfScene": "FakeChargePrep",
             "theScene": [
+                "IfHasPerk", "Greater Bunny Zodiac Mark", "Nothing",
                 "GivePerkToMonster", "Suspicious Behavior"
             ]
         },
@@ -146,12 +244,27 @@
         {
             "NameOfScene": "Momentum Interupted",
             "theScene": [
-                "Momentum Interupted!",
+                "CallSceneThenReturn", "Momentum Interupted Check",
                 "SetChoice", "2", "",
                 "RemovePerkFromMonster", "Bunny Momentum",
                 "RemovePerkFromMonster", "Minor Bunny Momentum",
                 "RemovePerkFromMonster", "Major Bunny Momentum",
                 "ResumeMonsterAttack"
+            ]
+        },
+        {
+            "NameOfScene": "Momentum Interupted Check",
+            "theScene": [
+                "IfMonsterHasPerk", "Major Bunny Momentum", "Momentum Interupted Text",
+                "IfMonsterHasPerk", "Bunny Momentum", "Momentum Interupted Text",
+                "IfMonsterHasPerk", "Minor Bunny Momentum", "Momentum Interupted Text",
+                "Your attack prevents her from building up any momentum"
+            ]
+        },
+        {
+            "NameOfScene": "Momentum Interupted Text",
+            "theScene": [
+                "In her flustered state, she loses all semblance of her momentum she was building up"
             ]
         },
         {
@@ -161,6 +274,14 @@
                 "IfMonsterHasPerk", "Bunny Momentum", "IncreaseToMajorMomentum",
                 "IfMonsterHasPerk", "Minor Bunny Momentum", "IncreaseToNormalMomentum",
                 "JumpToScene", "IncreaseToMinorMomentum"
+            ]
+        },
+        {
+            "NameOfScene": "ExpendMomentum",
+            "theScene": [
+                "RemovePerkFromMonster", "Major Bunny Momentum",
+                "RemovePerkFromMonster", "Bunny Momentum",
+                "RemovePerkFromMonster", "Minor Bunny Momentum"
             ]
         },
         {
@@ -186,6 +307,49 @@
             "theScene": [
                 "RemovePerkFromMonster", "Bunny Momentum",
                 "GivePerkToMonster", "Major Bunny Momentum"
+            ]
+        },
+        {
+            "NameOfScene": "TrappedInStanceCheck",
+            "theScene": [
+                "IfMonsterHasStance", "Breast Smother", "TrappedInBreasts",
+                "IfMonsterHasStance", "Sex", "TrappedInSex",
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Normal",
+                "ChangeImageLayer", "Expression", "Slurp",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Oh my~ You got away this time~ But I'll catch you again~♥",
+                    "Why fight it [ThePlayerName]? You already know you're my tasty prey~♥",
+                    "Just think of how nice it would be to be eaten by me~♥",
+                    "You look delicious when you struggle~♥",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "TrappedInBreasts",
+            "theScene": [
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Breast Smother",
+                "ChangeImageLayer", "Expression", "Smug",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Hehe~ You haven't gotten away yet~♥",
+                    "Mmm~ My soft breasts won't let you leave so easily~♥",
+                    "We'll get back to that shortly~♥",
+                    "I'll have you back in my arms in no time~♥",
+                "EndLoop"
+            ]
+        },
+        {
+            "NameOfScene": "TrappedInSex",
+            "theScene": [
+                "ChangeImageLayer", "Expression", "Pursed",
+                "Speaks",
+                "SwapLineIf", "Random",
+                    "Now you'll have nothing to distract you from my [SexAdjective][SexWord]~♥",
+                    "Now you'll have a clear view of my breasts as I ride you~♥",
+                    "My [SexAdjective][SexWord] will be harder to get out of [PlayerName]~♥",
+                    "Now you can focus completely on how your cock feels inside me~♥",
+                "EndLoop"
             ]
         }
     ]
