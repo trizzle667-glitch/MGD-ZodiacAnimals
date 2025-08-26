@@ -11,7 +11,7 @@ While I'm pretty exhausted from this start, If I continue this foray at a later 
 - Different Zodiacs will have different fetish focuses.
 
 **Content Warnings**
-This tag is here to warn you that some characters will be semi-furry (furry chart), but no higher. This is not much different than existing characters in MGD, but the warning is here on the off chance this turns someone off.
+This tag is here to warn you that some characters will be semi-furry ([furry chart](https://i.kym-cdn.com/photos/images/original/000/106/292/Furrychart.jpg)), but no higher. This is not much different than existing characters in MGD, but the warning is here on the off chance this turns someone off.
 
 AI art was used. Like... all of the art was AI. Some of it better than others (Standing art was the worst imo) but I tried my best to keep the art consistent with the other art. Let me know how well it worked out.
 
