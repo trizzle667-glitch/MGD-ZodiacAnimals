@@ -11,7 +11,7 @@
         "AI Art",
         "AI assisted writing"
     ],
-    "credits": "Art by AI thus the only thing I can take credit for is the effort required to try and get reasonably consistent images, the idea and programming of the mechanics used, and the framework of the kinks that the mod showcases. Writing a mix of AI, me yelling at AI, and me yanking the wheel away from AI telling it to stop being a dumbass.",
+    "credits": "{b}Art{/b}\nArt by AI\n{b}Writing{/b}\nWriting a mix of AI, me yelling at AI, and me yanking the wheel away from AI telling it to stop being a dumbass.\n{b}Mechanics{/b}\nMechanics and programming mostly me with small amounts of help from AI to help autofill repetitive things that I already did several times.",
     "authors": [
         "TRizzle",
         "Training data that claude.ai used to train on",
