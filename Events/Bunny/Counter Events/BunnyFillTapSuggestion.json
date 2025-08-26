@@ -16,7 +16,7 @@
             "NameOfScene": "Intro Suggestion",
             "theScene": [
                 "IfProgressEqualsOrGreater", "0", "DecreaseCD",
-                "StatEqualsOrMore", "CurrentSpirit", "200", "Nothing",
+                "StatEqualsOrMore", "CurrentSpirit", "15", "Nothing",
                 "IfHasPerk", "Vanesa's Meal", "Nothing",
                 "IfChoice", "9", "Offered", "Nothing",
 
