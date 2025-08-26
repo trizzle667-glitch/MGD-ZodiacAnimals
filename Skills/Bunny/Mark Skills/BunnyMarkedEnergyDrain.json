@@ -11,7 +11,7 @@
     "fetishTags": ["Sex"],
     "startsStance": "",
     "requiresStance": "Sex",
-    "unusableIfStance": ["Blowjob", "Anal", "Titfuck", "Breast Smother"],
+    "unusableIfStance": ["Blowjob", "Anal", "Titfuck"],
     "requiresTargetStance": ["Any"],
     "unusableIfTarget": [""],
     "removesStance": "None",

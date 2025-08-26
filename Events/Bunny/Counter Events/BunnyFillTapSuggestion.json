@@ -15,11 +15,8 @@
         {
             "NameOfScene": "Intro Suggestion",
             "theScene": [
-                "IfChoice", "10", "4", "SetCDToThree",
-                "IfChoice", "10", "3", "SetCDToTwo",
-                "IfChoice", "10", "2", "SetCDtoOne",
-                "IfChoice", "10", "1", "RemoveCD",
-                "StatEqualsOrMore", "CurrentSpirit", "10", "Nothing",
+                "IfProgressEqualsOrGreater", "0", "DecreaseCD",
+                "StatEqualsOrMore", "CurrentSpirit", "200", "Nothing",
                 "IfHasPerk", "Vanesa's Meal", "Nothing",
                 "IfChoice", "9", "Offered", "Nothing",
 
@@ -28,14 +25,24 @@
             ]
         },
         {
+            "NameOfScene": "DecreaseCD",
+            "theScene": [
+                "ChangeProgress", "-1"
+            ]
+        },
+        {
             "NameOfScene": "Tap Check Success",
             "theScene": [
                 "SetPostName", " - Replenish Suggestion",
+                "ChangeImageLayer", "Expression", "Seductive",
                 "SwapLineIf", "Random",
-                    "Vanesa's crimson eyes soften with apparent concern as she notices your meager spirit, her expression seemingly worried for your wellbeing.",
-                    "She studies your tired expression with apparent sympathy, her massive breasts jiggling slightly as she shifts closer to you.",
-                    "Vanesa's small fluffy tail twitches slightly as she takes in your exhausted appearance, her white fur seeming to bristle with maternal concern for your condition.",
+                    "Vanesa's crimson eyes soften with apparent concern as she notices your meager spirit, her massive breasts swaying gently as she leans in closer.",
+                    "She studies your tired expression with apparent sympathy, her cute pink nose twitching as she takes in your exhausted state.",
+                    "Vanesa's small fluffy tail twitches slightly as she takes in your exhausted appearance, her long bunny ears standing alert as she assesses your drained state.",
+                    "The bunny zodiac's expression shifts to apparent worry as she notices your depleted spirit, her massive breasts pressing against her red latex suit as she moves closer.",
+                    "Vanesa's fluffy white ears perk up with apparent concern as she observes your weakened state, her small tail tuft twitching nervously.",
                 "EndLoop",
+                "ChangeImageLayer", "Expression", "Hug",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "You're looking a bit empty~ want me to help replenish you a bit?~♥",
@@ -44,12 +51,14 @@
                     "I can see you're running low~ want me to give you a boost?~♥",
                     "You seem tired~ how about I help increase your stamina?~♥",
                 "EndLoop",
+                "ChangeImageLayer", "Expression", "HotHug",
+                "PlayVisualEffect", "StartHaze", "pinkHaze.png",
                 "SwapLineIf", "Random",
-                    "Something about her offer seems too good to be true... you suspect this isn't entirely for your benefit.",
-                    "You can't shake the feeling that her 'help' is really just serving her own hunger.",
-                    "There's something predatory in her eyes as she offers to 'help' you.",
-                    "You sense that her suggestion is more about making you a better meal than actually helping you.",
-                    "Her offer feels suspiciously self-serving, like she's trying to improve her food source.",
+                    "Something about her offer seems too good to be true... you suspect this isn't entirely for your benefit. The way her crimson eyes gleam with barely concealed hunger as she speaks makes you wonder if her 'help' is really just a way to fatten up her prey.",
+                    "You can't shake the feeling that her 'help' is really just serving her own hunger. The predatory way her fluffy tail twitches with excitement and how her massive breasts seem to swell with anticipation suggests she's more interested in improving her meal than genuinely helping you.",
+                    "There's something predatory in her eyes as she offers to 'help' you. The way her cute pink nose twitches with barely contained excitement and how her soft white fur seems to bristle with anticipation makes it clear she's thinking about how much more delicious you'll be after her 'assistance'.",
+                    "You sense that her suggestion is more about making you a better meal than actually helping you. The hungry way her crimson eyes roam over your body and how her pillowy breasts press against her red latex suit with barely contained eagerness suggests she's already imagining how much more satisfying you'll be to consume.",
+                    "Her offer feels suspiciously self-serving, like she's trying to improve her food source. The way her long bunny ears perk up with excitement and how her small tail tuft twitches with barely concealed hunger makes it obvious she's thinking about enhancing her future feast rather than genuinely aiding your recovery.",
                 "EndLoop",
                 "CallNextSceneJumpThenReturn", "IfHasPerk", "Greater Bunny Zodiac Mark", "ChoiceRemoval",
                 "Menu",
@@ -66,30 +75,6 @@
             ]
         },
         {
-            "NameOfScene": "SetCDToThree",
-            "theScene": [
-                "SetChoice", "10", "3"
-            ]
-        },
-        {
-            "NameOfScene": "SetCDToTwo",
-            "theScene": [
-                "SetChoice", "10", "2"
-            ]
-        },
-        {
-            "NameOfScene": "SetCDtoOne",
-            "theScene": [
-                "SetChoice", "10", "1"
-            ]
-        },
-        {
-            "NameOfScene": "RemoveCD",
-            "theScene": [
-                "SetChoice", "10", ""
-            ]
-        },
-        {
             "NameOfScene": "...Maybe later",
             "theScene": [
                 "IfHasPerk", "Minor Bunny Zodiac Mark", "Maybe later success",
@@ -97,64 +82,99 @@
                 "StatCheck",
                 "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
                 "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "5",
-                "Temptation", "10", "Maybe later success",
+                "Temptation", "20", "Maybe later success",
                 "Fail", "ResistTemptationFail"
             ]
         },
         {
             "NameOfScene": "Maybe later success",
             "theScene": [
-                "SetChoice", "10", "4",
+                "SetProgress", "3",
+                "ChangeImageLayer", "Expression", "Smug",
                 "Vanesa's expression shifts to a smug smirk, her crimson eyes gleaming with confidence as she clearly believes you'll give in to her offer eventually.",
+                "ChangeImageLayer", "Expression", "ClosedSmile",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Alright~ I'll wait for you to change your mind~♥",
                     "Mmm, I can be patient~ I know you'll come around eventually~♥",
                     "I'll keep the offer open for when you're ready~♥",
-                "EndLoop"
+                "EndLoop",
+                "EndVisualEffect"
             ]
         },
         {
             "NameOfScene": "Yes, please♥",
             "theScene": [
-                "DenyPlayerOrgasm",
                 "SetPostName", " - Filling the Tap",
                 "GivePerkQuietly", "Vanesa's Meal",
                 "ChangeSpiritQuietly", "-5",
                 
+                "ChangeImageLayer", "Expression", "Hungry",
                 "Vanesa's expression lights up with predatory delight as you accept her offer, her fluffy tail twitching with excitement.",
                 "Speaks",
                 "Excellent~ I'm so glad you're willing to let me help you. I promise you'll be so much better for it~♥",
+
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
                 "ChangeSpiritQuietly", "1",
                 "HitPlayerWith", "BunnyPleasureMagicDamage",
+                "ChangeImageLayer", "Expression", "Magic",
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "Vanesa places her hand over your bunny mark, her crimson eyes glowing as she begins to push energy into it.",
                 "Speaks",
                 "There we go~ Let me start feeding some energy into your mark. You'll feel so much better soon~♥",
+
                 "ChangeSpiritQuietly", "1",
                 "HitPlayerWith", "BunnyPleasureMagicDamage",
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect", "GrowingHaze", "pinkHaze.png",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "The mark pulses with warmth as she continues to channel her magic, your spirit slowly refilling with each wave of energy.",
+
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "Mmm, that's it~ The mark is responding beautifully. Can you feel the energy flowing through you?~♥",
+
+                "ChangeImageLayer", "Expression", "Magic",
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
                 "ChangeSpiritQuietly", "1",
                 "HitPlayerWith", "BunnyPleasureMagicDamage",
                 "Her touch grows more intimate as she deepens the connection, the mark responding eagerly to her pleasurable empowerment.",
+
+                "ChangeImageLayer","Expression","Slurp",
                 "Speaks",
-                "Almost there~ I'm making the connection deeper. This will make you so much more... satisfying~♥",
+                "I'm making the connection deeper. This will add some... depth to your flavor~♥",
+                
                 "ChangeSpiritQuietly", "1",
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
                 "HitPlayerWith", "BunnyPleasureMagicDamage",
+                "ChangeImageLayer", "Expression", "Magic",
+                "PlayVisualEffect", "IncreasingHaze", "pinkHaze.png",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "The mark pulses with final intensity as the transfer nears completion, the overwhelming pleasure making your body tremble as the energy seeps into your chest.",
+                
+                "ChangeImageLayer", "Expression", "ClosedSmile",
                 "Speaks",
                 "Almost there~ Just one more push and the transfer will be complete~♥",
+                
                 "ChangeSpiritQuietly", "1",
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
                 "HitPlayerWith", "BunnyPleasureMagicDamage",
+                "ChangeImageLayer", "Expression", "Magic",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "Vanesa pushes one final surge of energy through her hand into your mark, the magical connection reaching its peak intensity.",
                 
+                "PlaySoundEffect", "sfx/Magic/confuse2.mp3",
                 "HitPlayerWith", "BunnyPleasureMagicDamage",
                 "HitPlayerWith", "BunnyPleasureMagicDamage",
+                "PlayVisualEffect2", "DoublePulse", "pink.png",
                 "You feel your body begin to change as the magical mark reshapes your body to better suit Vanesa's needs, leaving you gasping for breath and trembling from the pleasure.",
 
+                "EndVisualEffect",
+                "ChangeImageLayer", "Expression", "Smug",
                 "Vanesa steps back with a satisfied smirk, her crimson eyes gleaming as she admires her handiwork.",
-                
+
+                "ChangeImageLayer", "Expression", "Slurp",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Hehe~ Look at you, all disheveled and trembling. The transformation really took it out of you, didn't it?~♥",
@@ -169,21 +189,25 @@
                 "You try to muster the willpower to resist her tempting offer, fighting against the overwhelming desire to just say yes and let her help you.",
                 "StatCheck",
                 "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
-                "Temptation", "20", "No thanks success",
+                "Temptation", "25", "No thanks success",
                 "Fail", "ResistTemptationFail"
             ]
         },
         {
             "NameOfScene": "No thanks success",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Pursed",
                 "Vanesa's expression shifts to a seductive pout, her fluffy tail giving a single twitch as she tries to hide her disappointment at being rejected.",
+
+                "ChangeImageLayer", "Expression", "ClosedSmile",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Oh well~ I guess I'll have to settle for what's left in front of me~♥",
                     "Your loss~ You're going to regret turning down such a pleasurable gift~♥",
                     "What a shame~ I was really looking forward to making you more delicious~♥",
                 "EndLoop",
-                "SetChoice", "9", "Offered"
+                "SetChoice", "9", "Offered",
+                "EndVisualEffect"
             ]
         },
         {

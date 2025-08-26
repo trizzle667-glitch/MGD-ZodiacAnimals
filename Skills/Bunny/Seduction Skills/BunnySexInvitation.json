@@ -32,7 +32,7 @@
     "descrip": "",
     "outcome": "OrgasmCheck",
     "miss": "",
-    "statusOutcome": "Vanesa's combat stance dissolves into pure seduction as she locks eyes with you, her crimson gaze burning with raw desire. She slowly spreads her legs apart, the red latex of her bunny suit straining against her curves.|n|She runs her hands down her body, stopping at the junction between her thighs, and gives you a sultry wink as she sways her hips seductively.|f|CallCombatEventAndScene|/|Bunny Temptation Events|/|Sex Invitation|n|",
+    "statusOutcome": "|f|ChangeImageLayer|/|Expression|/|Hungry|n|Vanesa's combat stance dissolves into pure seduction as she locks eyes with you, her crimson gaze burning with raw desire. She slowly spreads her legs apart, the red latex of her bunny suit straining against her curves.|n|She runs her hands down her body, stopping at the junction between her thighs, and gives you a sultry wink as she sways her hips seductively.|f|CallCombatEventAndScene|/|Bunny Temptation Events|/|Sex Invitation|n|",
     "statusMiss": "",
     "restraintStruggle": "",
     "restraintStruggleCharmed": "",

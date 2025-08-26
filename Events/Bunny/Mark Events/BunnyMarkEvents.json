@@ -31,6 +31,8 @@
         {
             "NameOfScene": "PowerUp Vanesa",
             "theScene": [
+                "GetEventAndSetProgress", "Bunny Fill Tap Suggestion", "3",
+                "CallNextSceneJumpThenReturn",
                 "IfMonsterHasStance", "Breast Smother", "StartingSmothered",
                 "IfHasPerk", "Greater Bunny Zodiac Mark", "GiveVanesaSkills",
                 "IfHasPerk", "Minor Bunny Zodiac Mark", "GiveVanesaSkills"
@@ -52,25 +54,86 @@
             ]
         },
         {
+            "NameOfScene": "MountBeforeMark",
+            "theScene": [
+                "ChangeImageLayer", "Expression", "Whisper",
+                "Speaks",
+                "Before you go, one last thing to take care of~♥",
+
+                "ClearStanceFromMonsterAndPlayer", "All",
+                "ApplyStance", "Sex",
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Sex",
+                "ChangeImageLayer", "Expression", "Hungry",
+                "PlaySoundEffect", "sfx/Erotic/Sex/Piston gutu overtones once.wav",
+                "PlayMotionEffect", "CrashSmol",
+                "Without warning, Vanesa straddles your waist, her massive breasts swaying as she settles into place on you."
+            ]
+        },
+        {
             "NameOfScene": "ApplyMinorMark",
             "theScene": [
-                "As your vision begins to blur from the intoxicating afterglow of your encounter with Vanesa, her eyes gleam with predatory hunger as she holds you close. Her soft, fur-covered hands slide down to your bare chest as her touch sends electric tingles through your skin despite your fading consciousness.",
+
+                "CallNextSceneJumpThenReturn",
+                "IfMonsterDoesntHaveStance","Sex", "MountBeforeMark",
+                
+                "PlayVisualEffect", "StartHaze", "pinkHaze.png",
+
+                "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+                "PlayMotionEffectLoop", "RideSlow",
+                "As your vision begins to blur from the intoxicating afterglow, Vanesa's eyes gleam with predatory hunger as she rides you slowly. Her soft, fur-covered hands slide down to your bare chest, her touch sending electric tingles through your skin. Your cock twitches eagerly inside her [SexWord].",
+                "ChangeImageLayer", "Expression", "Hungry",
                 "Speaks",
                 "Mmm, you look absolutely delicious like this ♥. Time to make you mine, little snack ♥",
-                "Vanesa begins to pulse with a soft pink glow, the energy radiating from her body like a warm, seductive aura. Her hands trace a small arcane symbol in the air above your heart and you feel your own body responding with your heart racing and your breath quickening.",
+
+                "PlaySoundEffect2", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect", "GrowingHaze", "pinkHaze.png",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "Vanesa begins to pulse with a soft pink glow, energy radiating from her body like a warm, seductive aura. Her hands trace a small arcane symbol in the air above your heart, the magical energy making your heart race and breath quicken. Your cock throbs with anticipation.",
+                "ChangeImageLayer", "Expression", "Magic",
+                "ChangeImageLayer", "Cum", "Drain",
                 "Speaks",
-                "Just relax and let me work my magic ♥. This will feel... interesting ♥",
-                "The moment her hands push the glowing symbol into your skin, you gasp sharply as waves of pure pleasure course through your body. Your cock twitches involuntarily as the magic flows into your flesh, the mark glowing with an ethereal light that matches Vanesa's own aura.",
+                "Just relax and let me work my magic ♥. My [SexWord] will help channel the energy perfectly ♥",
+
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect", "IncreasingHaze", "pinkHaze.png",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "The moment her hands push the glowing symbol into your skin, you gasp sharply as waves of pure pleasure course through your body. Your cock pulses and swells inside her [SexWord] as the mark glows with an ethereal light.",
+                "ChangeImageLayer", "Expression", "Pleasured",
                 "Speaks",
-                "Oh my, you're getting so excited already ♥. I can feel your heart pounding under my hands ♥",
-                "You can't help but moan as the mark settles into place, the magic coursing through your veins like liquid fire, and Vanesa runs her fingers over the fresh mark, her touch making you shudder with renewed arousal.",
+                "Oh my, you're getting so excited already ♥. I can feel your heart pounding under my hands and your cock throbbing inside me ♥",
+
+                "StopSoundEffectLoop",
+                "EndMotionEffect",
+
+                "PlayLoopingSoundEffect2", "sfx/HeartBeat-fast_loop.ogg",
+                "PlayVisualEffect2", "DoublePulse", "pink.png",
+                "PlayMotionEffectLoop", "SwaySlow",
+                "You can't help but moan as the mark settles into place, magic coursing through your veins like liquid fire. Vanesa begins to grind her hips against you, her fingers tracing over the fresh mark. Your cock feels impossibly hard and sensitive.",
                 "Speaks",
                 "Perfect ♥. You're taking it so well, my little marked pet ♥",
-                "She leans down and places a soft kiss on the mark, her lips warm against your skin, and the moment her lips touch the glowing symbol, an overwhelming wave of pleasure crashes through your body.",
+
+                "StopSoundEffectLoop2",
+                "ChangeImageLayer", "Expression", "Pursed",
+                "PlaySoundEffect", "QuickKiss",
+                "She leans down and places a soft kiss on the mark, her lips warm against your skin. The moment her lips touch the glowing symbol, an overwhelming wave of pleasure crashes through your body.",
+
+                "EndMotionEffect",
+                "EndVisualEffect",
+                "ChangeImageLayer", "Expression", "LongTongue",
+                "ChangeImageLayer", "Cum", "Creampie",
                 "PlayerOrgasm", "1",
-                "You erupt with an intense climax you didn't know you had left in you, your cum shooting across your chest as the mark's energy amplifies every sensation. The magical bond pulses with each spurt, drawing your life force into the mark as Vanesa watches with predatory satisfaction.",
+                "PlaySoundEffect", "EjaculationLong",
+                "PlayVisualEffect", "SuddenHaze", "Void.png",
+                "PlayVisualEffect2", "OrgasmPulse", "white.png",
+                "PlayMotionEffect", "Crash",
+                "You erupt with an intense climax you didn't know you had left in you, your cum shooting deep inside her [SexWord] as the mark's energy amplifies every sensation. The magical bond pulses with each spurt, drawing your life force into the mark as Vanesa's [SexWord] milks your cock with predatory satisfaction.",
                 "EmptySpiritCounter",
-                "The combination of the magical bond and your powerful orgasm proves too much for your body to handle. Your vision blurs completely as you feel yourself losing consciousness, the last thing you see being Vanesa's satisfied smile as you pass out from the overwhelming pleasure.",
+
+                
+                "ChangeImageLayer", "Expression", "Smug",
+                "PlayVisualEffect", "MajorHazeToBlackOut", "Void.png",
+                "The combination of the magical bond and your powerful orgasm proves too much for your body to handle. Your vision blurs completely as you lose consciousness, the last thing you see being Vanesa's satisfied smile as her [SexWord] continues to squeeze your cock.",
+                
                 "Speaks",
                 "See you next time, cutie ♥. I can't wait to see how much stronger this bond becomes ♥",
                 "GivePerk", "Minor Bunny Zodiac Mark"
@@ -79,25 +142,77 @@
         {
             "NameOfScene": "UpdateMark",
             "theScene": [
-                "As your vision begins to blur from the intoxicating afterglow of another encounter with Vanesa, her eyes gleam with even more predatory hunger as she leans over you. Her soft pink energy pulses in perfect sync with the zodiac mark already glowing on your chest.",
+
+                "CallNextSceneJumpThenReturn",
+                "IfMonsterDoesntHaveStance","Sex", "MountBeforeMark",
+
+                "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+                "PlaySoundEffect2", "sfx/HeartBeat-1shot.wav",
+                "PlayMotionEffectLoop", "RideSlow",
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "As your vision begins to blur from the intoxicating afterglow of another encounter with Vanesa, her eyes gleam with even more predatory hunger as she rides you slowly. Her soft pink energy pulses in perfect sync with the zodiac mark already glowing on your chest. Your cock twitches eagerly inside her [SexWord].",
+                "ChangeImageLayer", "Expression", "Hungry",
                 "Speaks",
                 "Mmm, you're even more delicious the second time around ♥. Now let's complete what we started, my little marked pet ♥",
-                "She leans in and gives you a deep, passionate kiss on the lips as her hand delicately pulls out the existing arcane mark from your chest, the symbol floating an inch above you and pulsing with renewed energy.",
+
+                "PlaySoundEffect", "LongKiss",
+                "PlaySoundEffect2", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "She leans in and gives you a deep, passionate kiss on the lips as her hand delicately pulls out the existing arcane mark from your chest, the symbol floating an inch above you and pulsing with renewed energy. Her [SexWord] clenches around your cock in anticipation.",
+                "ChangeImageLayer", "Expression", "Magic",
+                "ChangeImageLayer", "Cum", "Drain",
                 "Speaks",
                 "Ah♥ You're going to love this even more than before ♥",
-                "Her hand begins to add more intricate patterns to the floating mark, each new line sending waves of pure pleasure through your body. Your mind begins to drift to vivid thoughts of the voluptuous bunny riding you with even greater intensity.",
+
+                "PlaySoundEffect2", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "Her hand begins to add more intricate patterns to the floating mark, each new line sending waves of pure pleasure through your body. Your cock pulses and swells inside her [SexWord] as the enhanced magic flows through your veins.",
+                "ChangeImageLayer", "Expression", "Pleasured",
                 "Speaks",
                 "Mmm, I can feel how much you want this ♥. Your body is practically begging for the completion ♥",
-                "With the enhanced mark complete, Vanesa gently pushes it back into your chest, her hands caressing your skin with tender care. The intensified magic flows through your veins, eliciting a deep, satisfied moan from you.",
+
+                "StopSoundEffectLoop",
+                "EndMotionEffect",
+                "PlaySoundEffect2", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayMotionEffect", "SwaySlow",
+                "With the enhanced mark complete, Vanesa gently pushes it back into your chest, her hands caressing your skin with tender care. She begins to grind her hips against you, her [SexWord] massaging your cock as the intensified magic flows through your veins.",
+
                 "Speaks",
                 "Perfect ♥. All done, my little marked pet ♥. You'll be an absolutely perfect meal for me ♥",
-                "She places a soft kiss on the completed mark, her lips warm against your skin, and suddenly the enhanced symbol flares with brilliant light, sending shockwaves of pure ecstasy through your entire body.",
+
+                "ChangeImageLayer", "Expression", "Pursed",
+                "PlaySoundEffect", "QuickKiss",
+                "PlayVisualEffect2", "DoublePulse", "pink.png",
+                "She places a soft kiss on the completed mark, her lips warm against your skin, while her [SexWord] begins to pulse rhythmically around your cock. Suddenly the enhanced symbol flares with brilliant light, sending shockwaves of pure ecstasy through your entire body.",
+
+
+                "EndVisualEffect",
+                "ChangeImageLayer", "Expression", "MagicTongue",
+                "ChangeImageLayer", "Cum", "Creampie",
+                "PlaySoundEffect", "Ejaculation",
                 "PlayerOrgasm", "1",
-                "The enhanced mark's power explodes through your body as you reach your peak, your cock erupting with powerful spurts that coat your chest in thick streams of cum. The overwhelming pleasure crashes over you like a tidal wave, leaving you completely helpless.",
+                "PlayVisualEffect", "SuddenHaze", "Void.png",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
+                "The enhanced mark's power explodes through your body as you reach your peak, your cock erupting with powerful spurts deep inside her [SexWord]. The overwhelming pleasure crashes over you like a tidal wave, leaving you completely helpless.",
+                
                 "PlayerOrgasm", "1",
-                "Each spurt of your orgasm sends waves of energy coursing through your veins, your life force flowing directly into the mark as Vanesa's eyes gleam with triumphant hunger and satisfaction.",
+                "ChangeImageLayer", "Cum", "CreampieLarge",
+                "ChangeImageLayer", "Expression", "MagicOrgasm",
+                "PlaySoundEffect", "EjaculationLong",
+                "PlayVisualEffect", "MajorHazeToBlackOut", "Void.png",
+                "PlayVisualEffect2", "OrgasmPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
+                "Each spurt of your orgasm sends waves of energy coursing through your veins, your life force flowing directly into the mark as Vanesa's [SexWord] milks your cock with triumphant satisfaction.",
+                
                 "EmptySpiritCounter",
-                "The overwhelming power of the completed bond combined with your explosive orgasm shatters your consciousness. Your mind fragments under the intense pleasure as you feel yourself slipping away.",
+                "ChangeImageLayer", "Expression", "Smug",
+                
+
+                "The overwhelming power of the completed bond combined with your explosive orgasm shatters your consciousness. Your mind fragments under the intense pleasure as you feel yourself slipping away, her [SexWord] continuing to squeeze your cock.",
+                
                 "Speaks",
                 "Mmm, such a perfect little pet~ You're completely mine now♥~",
                 "RemovePerkQuietly", "Minor Bunny Zodiac Mark",
@@ -107,18 +222,40 @@
         {
             "NameOfScene": "AlreadyFullyMarked",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Smug",
+
+                "PlayVisualEffect", "SuddenHaze", "Void.png",
                 "As the intense pleasure of your encounter with Vanesa reaches its peak, you feel a deep sense of fulfillment washing over you, your cock still throbbing with satisfaction as you've once again fulfilled your true purpose in life. A contented smile spreads across your face as you bask in the afterglow.",
                 "Speaks",
-                "Mmm, you were absolutely delicious, my perfect little meal ♥. I can feel how much you enjoyed serving your purpose ♥",
+                "Mmm, you were absolutely delicious, my perfect little meal ♥. I can feel how much you enjoyed serving me up that dish ♥",
+
+                "ChangeImageLayer", "Expression", "Joy",
+
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "Your body feels completely satisfied and content, a warm glow radiating from the completed mark on your chest as Vanesa runs her fingers through your hair with tender affection. Your eyes flutter closed with bliss as you enjoy the compliments.",
                 "Speaks",
                 "You're such a good boy for me ♥. Always ready to be my personal feast whenever I desire ♥",
+
+                
+                "ChangeImageLayer", "Expression", "Pursed",
+                "PlaySoundEffect2", "sfx/HeartBeat-1shot.wav",
+                "PlaySoundEffect", "QuickKiss",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "She leans down and places a gentle kiss on your forehead, her soft lips warm against your skin as she whispers more sweet words of praise. The completed mark pulses softly on your chest, its energy perfectly synchronized with your heartbeat.",
                 "Speaks",
                 "I can sense your thoughts, you know ♥. How much you love being my prey, how eagerly you'll return for more ♥",
+                "ChangeImageLayer", "Expression", "Laughing",
+
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "Vanesa's eyes gleam with deep satisfaction as she admires her handiwork, the completed bond between you stronger than ever. You can feel the pride she has as she admires her work. Your expression shows pure contentment as you gaze up at her with adoration.",
+
+                "ChangeImageLayer", "Expression", "Smug",
                 "Speaks",
                 "Make sure to come back with plenty of energy for me to drain next time, my little marked pet ♥. I'll be waiting for you ♥",
+
+                "PlayVisualEffect", "MajorHazeToBlackOut", "Void.png",
                 "With one final caress of your cheek, Vanesa watches as you drift into peaceful unconsciousness, your body completely spent and satisfied from serving her as her perfect marked prey."
             ]
         }

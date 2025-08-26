@@ -23,211 +23,397 @@
     {
       "NameOfScene": "RandomSexOrgasm",
       "theScene": [
+        "CallNextSceneJumpThenReturn",
         "JumpToRandomScene",
             "RapidBounceSexOrgasm",
             "BreastCupSexOrgasm",
             "TeasingEncouragementSexOrgasm",
             "DrinkCumSexOrgasm",
-         "EndLoop"
+         "EndLoop",
+
+         "JumpToScene", "MomentumFromOrgasm"
+      ]
+    },
+    {
+      "NameOfScene": "MomentumFromOrgasm",
+      "theScene": [
+        "IfMonsterHasPerk", "Greater Bunny Zodiac Mark", "Nothing",
+        "CallEventAndSceneThenReturn", "Bunny Charge Events", "IncreaseMomentum",
+        "While recovering from your orgasm, Vanesa uses this oportunity to build up her momentum"
       ]
     },
     {
       "NameOfScene": "RapidBounceSexOrgasm",
       "theScene": [
-        "Sensing you're close to climax, Vanesa's eyes gleam with predatory hunger as she begins to rapidly bounce on your cock.",
-        "Her tight, wet pussy grips your shaft with each downward stroke, the intense friction and heat making your cock throb with desperate need.",
-        "You can feel her inner walls rippling around your length, each bounce driving you deeper into her warm embrace as she increases her pace.",
-        "Vanesa's soft, warm body presses against you with each bounce, her breasts jiggling enticingly as she works to push you over the edge.",
+        "ChangeImageLayer", "Expression", "Hungry",
+
+        "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (medium speed) 16 times.wav",
+        "PlayMotionEffectLoop", "Ride",
+        "Sensing you're close to climax, Vanesa's crimson eyes gleam with predatory hunger as she suddenly increases her pace. She flashes a predatory smile at you,",
+
+        "ChangeImageLayer", "Expression", "Smug",
         "Speaks",
-        "'Come on~♥ Give me all your cum~♥'",
-        "Her movements become even more frantic, her pussy clenching around your shaft like a velvet vice as she senses your impending orgasm.",
-        "The sensation of her warm, wet pussy rapidly sliding up and down your shaft becomes overwhelming, your mind blanking out with pure pleasure.",
+        "'Mmm~ you're about ready to pop arn't you [ThePlayerName]?♥'",
+
+        "ChangeImageLayer", "Expression", "Tongue",
+
+        "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (high speed) 20 times.wav",
+        "PlayMotionEffectLoop", "RideFast",
+        "Her thick, voluptuous hips begin to rapidly bounce up and down on your cock with desperate intensity, each impact creating wet slaps that echo through the air as she establishes her dominance over your helpless form.",
+
+        "Your body tenses as her warm, wet [SexWord] grips your shaft with each powerful stroke, the intense force of her movements eliminating any chance of you keeping up with her.",
+        "ChangeImageLayer", "Expression", "Seductive",
         "Speaks",
-        "'That's it~♥ Cum for me~♥'",
-        "As your orgasm crashes over you, Vanesa continues her rapid bouncing, milking every drop of cum from your throbbing cock.",
-        "Your cock pulses inside her tight pussy, each spurt of hot seed being greedily accepted by her warm, wet walls.",
-        "Vanesa moans with satisfaction as she feels your cum filling her, her pussy clenching around your shaft to wring out every last drop. [PlayerOrgasmLine]",
+        "'It's only a matter of time before your mind catches up to what your body already knows~♥'",
+        
+        "ChangeImageLayer", "Expression", "Tongue",
+        "She speeds up even further and you barely have time to process the pleasure of each thrust before her hips slams down in the next heartbeat. Her soft breasts jiggling enticingly with each powerful impact as she works to push you over the edge.",
+        "ChangeImageLayer", "Expression", "LongTongue",
+
+        "PlaySoundEffect", "Ejaculation",
+        "ChangeImageLayer", "Cum", "Creampie",
+        "PlayVisualEffect2", "ScreenPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
+        "As your orgasm crashes over you with devastating force, Vanesa continues her rapid bouncing without missing a beat, her thick hips maintaining their frantic rhythm as she milks every drop of cum from your throbbing cock.",
+   
+        "The wet slapping sounds reach a crescendo, each impact accompanied by squelching sounds as your cock is milked within her tight embrace.",
+
+        "ChangeImageLayer", "Expression", "Slurp",
+        "StopSoundEffectLoop",
+        "EndMotionEffect",
+        "You can feel your cock pulsing violently inside her, each spurt of hot seed being greedily accepted as she moans with satisfaction, her inner walls rippling and contracting around your shaft to wring out every last drop.",
+        "ChangeImageLayer", "Expression", "Smug",
         "Speaks",
-        "'Mmm~♥ So much delicious cum~♥'",
-        "She slowly grinds against you, savoring the feeling of your seed inside her as she looks down at you with a satisfied, predatory smile.",
-        "Speaks",
-        "'You're such a good meal~♥'"
+        "'Now, time to prepare the next course ♥'",
+        "ChangeImageLayer", "Cum", ""
       ]
     },
     {
       "NameOfScene": "BreastCupSexOrgasm",
       "theScene": [
-        "Sensing your approaching climax, Vanesa slows her movements and leans back, her hands moving to cup and caress her own breasts.",
-        "Her tight pussy still grips your cock as she grinds slowly against you, the gentle friction maintaining your arousal while she puts on a show.",
-        "You can feel her warm, wet walls pulsing around your shaft as she plays with her breasts, the sight of her self-pleasure driving you wild.",
-        "Vanesa's soft, pillowy breasts fill her hands as she kneads and squeezes them, her nipples hardening under her touch.",
+        "ChangeImageLayer", "Expression", "Seductive",
+
+        "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+        "PlayMotionEffectLoop", "RideSlow",
+
+        "Sensing your approaching climax, Vanesa slows her movements and leans back, her hands moving to cup and caress her own breasts, her FF-cup mounds jiggling enticingly as she begins her seductive display.",
+        "Her tight [SexWord] still grips your cock as she grinds slowly against you, the gentle friction maintaining your arousal while she puts on a show, your eyes completely captivated by the mesmerizing sight of her soft, pillowy breasts.",
+        "ChangeImageLayer", "Expression", "Pursed",
         "Speaks",
         "'Like what you see?~♥'",
-        "She arches her back, pressing her breasts together and giving you a perfect view as she continues to ride your cock slowly.",
-        "The sensation of her warm pussy grinding against your shaft, combined with the arousing display of her breast play, pushes you closer to the edge.",
+
+        "ChangeImageLayer", "Expression", "Pleasured",
+        "She arches her back, pressing her breasts together and giving you a perfect view as she continues to ride your cock slowly, her soft, supple mounds creating a mesmerizing valley that your eyes can't help but be drawn to.",
+
+        "The sensation of her warm [SexWord] grinding against your shaft, combined with the arousing display of her breast play, pushes you closer to the edge. Your mind completely hypnotized by the sight of her white breasts being worshipped by her own hands.",
+
+        "ChangeImageLayer", "Expression", "Pursed",
         "Speaks",
-        "'Watch me while I make you cum~♥'",
-        "She increases her grinding pace slightly, her pussy gripping your cock more tightly as she continues to fondle her breasts.",
-        "Your cock feels like it's being worshipped by her tight, wet pussy as she moves, the pleasure building to an unbearable peak.",
+        "'Arn't you going to reward me for my 'show'?~♥'",
+
+        "ChangeImageLayer", "Expression", "Tongue",
+        "She increases her grinding pace slightly, her [SexWord] gripping your cock more tightly as she continues to fondle her breasts, her soft globes jiggling with each movement as she puts on an even more enticing show.",
+        "ChangeImageLayer", "Expression", "Hungry",
         "Speaks",
-        "'Come for me~♥ Fill me with your cum~♥'",
-        "As you climax, Vanesa's pussy clenches around your cock, milking your seed as she continues to play with her breasts.",
-        "Your hot cum fills her warm, wet pussy as she moans with satisfaction, her body trembling with pleasure from both the orgasm and her breast play. [PlayerOrgasmLine]",
+        "'Give me all that ...praise~♥'",
+
+        "ChangeImageLayer", "Expression", "LongTongue",
+
+        "EndMotionEffect",
+        "StopSoundEffectLoop",
+        "PlaySoundEffect", "Ejaculation",
+        "ChangeImageLayer", "Cum", "Creampie",
+        "PlayVisualEffect2", "ScreenPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
+        "As you climax, Vanesa's [SexWord] clenches around your cock, milking your seed as she continues to play with her breasts, her soft, supple mounds still jiggling enticingly as she works to extract every drop from you.",
+
+        "ChangeImageLayer", "Expression", "Seductive",
+        "Vanesa looks down at you with a satisfied smile, her hands still on her breasts as she enjoys the aftermath of your orgasm, her soft, pillowy mounds still slightly jiggling from the intensity of your climax as she savors her victory.",
+
+        "ChangeImageLayer", "Expression", "Smug",
         "Speaks",
-        "'Mmm~♥ Your cum feels so good inside me~♥'",
-        "Vanesa looks down at you with a satisfied smile, her hands still on her breasts as she enjoys the aftermath of your orgasm.",
-        "Speaks",
-        "'I hope you enjoyed the show~♥'"
+        "'Ready for the encore?~♥'",
+        "ChangeImageLayer", "Cum", ""
       ]
     },
     {
       "NameOfScene": "TeasingEncouragementSexOrgasm",
       "theScene": [
-        "Sensing you're close to climax, Vanesa slows her hip movements to a gentle grind, leaning in close to whisper in your ear.",
-        "Her tight, wet pussy still grips your cock as she moves slowly, the gentle friction maintaining your arousal while she teases you.",
-        "You can feel her warm breath on your ear as she speaks, her soft body pressed against yours as she continues her slow, deliberate movements.",
+        "ChangeImageLayer", "Expression", "Seductive",
+
+        "PlayMotionEffectLoop", "SwaySlow",
+
+        "Sensing you're close to climax, Vanesa slows her movements and leans in close to whisper in your ear, her tight, wet [SexWord] still gripping your cock as she begins her seductive teasing.",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
-        "'Mmm~♥ Your cock feels so good inside me~♥'",
-        "Her inner walls pulse around your shaft as she whispers, the sensation of her tight pussy combined with her words driving you wild.",
-        "Vanesa's soft breasts press against your chest as she leans in closer, her warm, wet pussy grinding against your cock with maddening slowness.",
+        "'Mmm~♥ Your cock feels so good inside me~♥ So hard and desperate for release~♥'",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
-        "'I can feel you getting so hard~♥ You want to cum, don't you?~♥'",
-        "She increases the pressure of her grinding, her pussy gripping your cock more tightly as she continues her whispered encouragement.",
-        "Your cock throbs inside her tight embrace as she speaks, the combination of her words and the physical sensation overwhelming your senses.",
+        "'I can feel every fold of my [SexWord] wrapping around you~♥ Each ridge and curve perfectly stimulating your most sensitive spots~♥'",
+
+        "ChangeImageLayer", "Expression", "Lick",
+        "She increases the pressure of her grinding, your attention focused on how her [SexAdjective][SexWord] squeezes and stimulates different parts of your dick. As she continues her whispered encouragement, her soft voice becoming more of a promise of what's to come.",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
-        "'Come for me~♥ Give me all your cum~♥'",
-        "As you climax, Vanesa's pussy clenches tightly around your cock, milking your seed as she continues to whisper encouragement.",
-        "Your hot cum fills her warm, wet pussy as she moans with satisfaction, her body trembling with pleasure from your orgasm. [PlayerOrgasmLine]",
-        "She slowly grinds against you, savoring the feeling of your seed inside her as she continues to whisper sweet nothings in your ear.",
+        "'Now in a moment, my [SexWord] is going to suck every drop from you~♥ Can you feel the sensation starting to build, and build aaaand♥~ build♥~ aaaaaaannnd~'",
+        "ChangeImageLayer", "Expression", "Slurp",
+        "As soon as she mentions the sucking sensation, your attention locks onto it. With her drawn out words her [SexAdjective][SexWord] is indeed beginning to create a powerful suction around your shaft. Seeming to pull in time with her words.",
+        "ChangeImageLayer", "Expression", "Tongue",
         "Speaks",
-        "'Mmm~♥ So much delicious cum~♥'"
+        "~~~ build♥ ~~~~~ aaaaaaannnd~♥",
+
+        "The suction continues to ramp up, your mind and body desperate for her to stop, or more perferabbly, ♥let you blow your brains out through your dick and into her [SexAdjective][SexWord].♥",
+
+        "ChangeImageLayer", "Expression", "LongTongue",
+        "Speaks",
+        "~~~aaaaannnd.... {b}♥CUM♥{/b}~~~",
+
+        "EndMotionEffect",
+        "PlaySoundEffect", "Ejaculation",
+        "ChangeImageLayer", "Cum", "Creampie",
+
+        "ChangeImageLayer", "Expression", "HappyOrgasm",
+        "PlayVisualEffect2", "ScreenPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
+        "As you climax, Vanesa's [SexWord] clenches tightly around your cock, milking your seed as she continues to whisper encouragement, her soft voice guiding you through the intense orgasm with gentle, loving words, her inner walls expertly massaging every sensitive inch of your shaft. ",
+
+        "ChangeImageLayer", "Expression", "Pleasured",
+        "Your hot cum fills her warm, wet [SexWord] as she moans with satisfaction, her body trembling with pleasure from your orgasm as she continues to whisper sweet nothings in your ear, her voice filled with contentment.",
+        "ChangeImageLayer", "Cum", ""
       ]
     },
     {
       "NameOfScene": "DrinkCumSexOrgasm",
       "theScene": [
-        "Sensing you're close to climax, Vanesa slows her movements and looks down at you with hungry, predatory eyes.",
-        "Her tight, wet pussy still grips your cock as she grinds slowly, the gentle friction maintaining your arousal while she prepares for your cum.",
-        "You can feel her warm, wet walls pulsing around your shaft with anticipation, as if her pussy itself is hungry for your seed.",
+        "ChangeImageLayer", "Expression", "Hungry",
+        "Sensing you're close to climax, Vanesa suddenly stops all movement and looks down at you with hungry, predatory eyes.",
+        "Her tight, wet [SexWord] still grips your cock as she remains completely still, her body poised like a predator about to strike.",
+        "You can feel her warm, wet walls pulsing around your shaft with anticipation, as if her [SexAdjective][SexWord] itself is hungry for your seed.",
+        "ChangeImageLayer", "Expression", "Seductive",
         "Speaks",
-        "'I'm so hungry for your cum~♥ Feed me~♥'",
-        "She increases the pressure of her grinding, her pussy gripping your cock more tightly as she positions herself to receive your seed.",
-        "Vanesa's soft body presses against yours as she moves, her warm pussy creating a perfect seal around your shaft.",
-        "Speaks",
-        "'I want to feel every drop~♥ Give it all to me~♥'",
-        "Her inner walls seem to ripple with hunger around your cock, the sensation of her tight pussy combined with her words driving you wild.",
-        "Your cock throbs inside her warm embrace as she continues her slow, deliberate movements, building you toward climax.",
-        "Speaks",
-        "'I'm ready to drink your cum~♥'",
-        "As you climax, Vanesa's pussy clenches around your cock like a hungry mouth, slowly gulping down each spurt of your hot seed.",
-        "You can feel her warm, wet walls rippling as she savors your cum, each pulse of your orgasm being greedily accepted by her tight pussy. [PlayerOrgasmLine]",
-        "Your cock pulses inside her as she milks every drop, her pussy seeming to drink in your seed with obvious satisfaction.",
+        "'You're about to *really* like this~♥'",
+        "ChangeImageLayer", "Expression", "Lick",
+        "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+        "PlayVisualEffect", "GrowingHaze", "pink.png",
+        "She stays absolutely motionless, but you can feel her [SexAdjective][SexWord] beginning to flex and contract around your shaft, her vaginal muscles working with deliberate precision.",
+
+   
+        "PlayLoopingSoundEffect", "sfx/Heartbeat-slow_loop.ogg",
+        "The overwhelming perception of her vaginal muscles flexing around your cock becomes all-consuming, each contraction more powerful than the last as she focuses all her attention on her internal control.",
+
+
+        "PlayLoopingSoundEffect", "sfx/Heartbeat-fast_loop.ogg",
+        "ChangeImageLayer", "Expression", "Smug",
+        "PlayVisualEffect", "IncreasingHaze", "pink.png",
+        "Suddenly, you're struck by overwhelming suction as her [SexAdjective][SexWord] creates a vice-like grip around your shaft, literally pulling at your cock with incredible force.",
+  
+        "Your cock throbs desperately inside her motionless embrace as her vaginal muscles work to extract your climax, the suction building to unbearable intensity.",
+
+        "StopSoundEffectLoop",
+        "EndVisualEffect",
+        "ChangeImageLayer", "Expression", "LongTongue",
+        "PlaySoundEffect", "EjaculationLong",
+        "ChangeImageLayer", "Cum", "Creampie",
+        "PlayVisualEffect2", "OrgasmPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
+        "As you climax, Vanesa's [SexAdjective][SexWord] clenches around your cock like a hungry mouth, taking big gulps as she drinks in each spurt of your hot seed, all while remaining completely still.",
+
+        "ChangeImageLayer", "Expression", "Slurp",
+        "You can feel her warm, wet walls rippling with satisfaction as she savors your cum, each pulse of your orgasm being greedily gulped down by her [SexAdjective][SexWord].",
+        
+        "ChangeImageLayer", "Expression", "Smug",
+        "Your cock pulses inside her as she continues to milk every drop, her [SexAdjective][SexWord] seeming to drink in your seed with obvious satisfaction, her body still motionless except for her internal muscles.",
+        
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
         "'Mmm~♥ So delicious~♥'",
-        "She slowly grinds against you, her pussy continuing to pulse around your shaft as she savors the feeling of your cum inside her.",
-        "Vanesa looks down at you with a satisfied, predatory smile, her body trembling with pleasure from consuming your seed.",
-        "Speaks",
-        "'Thank you for the meal~♥'"
+        "ChangeImageLayer", "Cum", ""
       ]
     },
     {
       "NameOfScene": "RandomBreastSmotherOrgasm",
       "theScene": [
+        "CallNextSceneJumpThenReturn",
         "JumpToRandomScene",
             "MotherlyCoaxingBreastSmotherOrgasm",
             "TightSqueezeBreastSmotherOrgasm",
             "HypnoticTeaseBreastSmotherOrgasm",
-        "EndLoop"
+        "EndLoop",
+
+        "JumpToScene", "MomentumFromOrgasm"
       ]
     },
     {
       "NameOfScene": "MotherlyCoaxingBreastSmotherOrgasm",
       "theScene": [
+        "ChangeImageLayer", "Expression", "Smug",
         "Sensing you're close to climax, Vanesa's expression softens with a gentle, motherly warmth as she cradles your head against her soft breasts.",
+
+        "PlayMotionEffect", "SwayOnce", 
         "Her pillowy, warm breasts press gently against your face, their softness and warmth creating a comforting embrace as she begins to coax you toward orgasm.",
+
         "You can feel her soft, fluffy fur against your skin as she gently nuzzles your head deeper into her chest, her maternal care mixed with seductive intent.",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
         "'There there, my little one~♥ Just let it all out~♥'",
+
+        "ChangeImageLayer", "Expression", "ClosedSmile",
+        "PlayVisualEffect", "SuddenHaze", "darkHaze.png",
         "Her soft, warm breasts seem to envelop your face completely, their gentle pressure and comforting warmth making you feel safe and cared for.",
+
+        "PlayMotionEffectLoop", "SwaySlow",
         "Vanesa's gentle rocking motion causes her breasts to softly press and release against your face, the rhythmic movement both soothing and arousing.",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
         "'That's it~♥ Let this bunny take care of you~♥'",
+        
+
         "The combination of her motherly care and the soft, warm embrace of her breasts pushes you toward orgasm, her gentle coaxing making you feel completely safe.",
+        "ChangeImageLayer", "Expression", "Slurp",
         "Speaks",
         "'Give me all your love~♥'",
+        
+        "ChangeImageLayer", "Expression", "Tongue",
+        "PlaySoundEffect", "EjaculationLong",
+        "PlayVisualEffect", "SuddenHaze", "Void.png",
+        "PlayVisualEffect2", "OrgasmPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
         "As you climax, Vanesa's soft breasts press more firmly against your face, her gentle rocking continuing as she comforts you through your orgasm.",
-        "Your body trembles with pleasure as she holds you close, her soft, warm embrace providing the perfect comfort for your intense climax. [PlayerOrgasmLine]",
+
+        "ChangeImageLayer", "Expression", "ClosedSmile",
+        "Your body trembles with pleasure as she holds you close, her soft, warm embrace providing the perfect comfort for your intense climax.",
+
         "She continues to gently rock and coo, her motherly care evident as she helps you through the overwhelming sensations.",
+        
         "Speaks",
-        "'There there~♥ I've got you~♥'"
+        "'There there~♥ I've got you~♥'",
+
+        "EndVisualEffect",
+        "EndMotionEffect"
       ]
     },
     {
       "NameOfScene": "TightSqueezeBreastSmotherOrgasm",
       "theScene": [
+        "ChangeImageLayer", "Expression", "Hungry",
         "Sensing you're close to climax, Vanesa's eyes gleam with predatory hunger as she prepares to take complete control of your orgasm.",
+
+        "PlayVisualEffect", "SuddenHaze", "darkHaze.png",
+        "PlaySoundEffect", "sfx/Erotic/Feet/grind2.wav",
         "Her soft, warm breasts press against your face with increasing pressure, their pillowy softness becoming more constricting as she positions herself.",
+
         "You can feel her soft, fluffy fur against your skin as she begins to tighten her embrace, her breasts starting to cut off your air supply.",
+        "ChangeImageLayer", "Expression", "Smug",
         "Speaks",
         "'Oh my~♥ Time to make you mine~♥'",
+
+        "ChangeImageLayer", "Expression", "ClosedSmile",
+        "PlayVisualEffect3", "SuddenHaze", "Void.png",
+        "PlayMotionEffect", "CrashSmol",
         "Just as you're about to climax, Vanesa suddenly pulls your head deeper into her chest, her soft breasts completely enveloping your face.",
+
+        "PlaySoundEffect", "sfx/Erotic/Feet/grind2.wav",
+        "PlayMotionEffect", "SwayOnce",
         "Her pillowy breasts press so tightly against your face that you can barely breathe, the soft, warm pressure becoming overwhelming as you struggle.",
+        "ChangeImageLayer", "Expression", "Slurp",
         "Speaks",
         "'Cum for me~♥ Now~♥'",
+
+        "ChangeImageLayer", "Expression", "Tongue",
+        "PlaySoundEffect", "EjaculationLong",
+        "PlaySoundEffect2", "sfx/Erotic/Feet/grind2.wav",
+        "PlayVisualEffect3", "MajorHazeToBlackOut", "Void.png",
+        "PlayVisualEffect2", "OrgasmPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
         "As you climax, Vanesa's soft breasts squeeze even tighter around your face, completely cutting off your air as you struggle to recover from the intense orgasm.",
-        "Your body convulses with pleasure while trapped in her soft, warm embrace, the lack of oxygen making the experience even more intense. [PlayerOrgasmLine]",
-        "She holds you firmly in place, her soft breasts maintaining their tight grip as you struggle to breathe, her control over you absolute.",
+        
+        "ChangeImageLayer", "Expression", "Smug",
+        "PlaySoundEffect", "Ejaculation",
+        "PlayVisualEffect2", "ScreenPulse", "white.png",
+        "Your body convulses with pleasure while trapped in her soft, warm embrace, the lack of oxygen making the experience even more intense. ",
+
+        "EndVisualEffect3",
+        "Vanesa's soft breasts lift just enough to allow precious air to rush into your lungs, her grip relaxing as she gives you a reprieve from her smothering embrace.",
+        
+        "ChangeImageLayer", "Expression", "ClosedSmile",
         "Speaks",
-        "'Mmm~♥ Such a good little prey~♥'"
+        "'Mmm~♥ Such good little prey~♥'",
+
+        "EndVisualEffect"
       ]
     },
     {
       "NameOfScene": "HypnoticTeaseBreastSmotherOrgasm",
       "theScene": [
-        "Sensing you're close to climax, Vanesa's voice takes on a hypnotic quality as she begins to describe every sensation of her breasts against your face.",
-        "Her soft, warm breasts press gently against your face, their pillowy softness creating the perfect canvas for her seductive descriptions.",
-        "You can feel her soft, fluffy fur against your skin as she begins her hypnotic narration, her voice becoming a soothing, commanding presence.",
+        "ChangeImageLayer", "Expression", "Seductive",
+        "PlayMotionEffectLoop", "BounceSlow",
+        "Sensing you're close to climax, Vanesa's voice takes on a hypnotic quality as she begins to describe every sensation of her breasts against your face. Her soft, warm breasts press gently against your face, their pillowy softness creating the perfect canvas for her seductive descriptions.",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
         "'Feel how soft my breasts are against your face~♥'",
+        
+        "ChangeImageLayer", "Expression", "Smug",
+        "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
         "Her soft, warm breasts seem to pulse with her words, the gentle pressure and warmth becoming more intense as she continues her hypnotic description.",
         "Vanesa's soft hands gently stroke your hair as she speaks, her voice weaving a spell of pleasure and submission around you.",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
         "'Feel how warm they are~♥ How they envelop your face~♥'",
+
+        "ChangeImageLayer", "Expression", "Seductive",
         "The combination of her soft, warm embrace and her hypnotic voice pushes you toward the edge of orgasm, her descriptions making every sensation more intense.",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
         "'Now cum for me~♥'",
+        "ChangeImageLayer", "Expression", "Tongue",
+        "PlaySoundEffect", "Ejaculation",
+        "PlayVisualEffect2", "OrgasmPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
         "As you climax, Vanesa's soft breasts press firmly against your face, her hypnotic voice continuing to guide you through the intense orgasm.",
-        "Your body trembles with pleasure as her soft, warm embrace holds you close, her words still echoing in your mind. [PlayerOrgasmLine]",
-        "She continues to gently rock and speak, her soft breasts providing the perfect comfort as you recover from the overwhelming climax."
+
+        "ChangeImageLayer", "Expression", "ClosedSmile",
+        "Your body trembles with pleasure as her soft, warm embrace holds you close, her words still echoing in your mind.",
+        "She continues to gently rock and speak, her soft breasts providing the perfect comfort as you recover from the overwhelming climax.",
+
+        "EndVisualEffect",
+        "EndMotionEffect"
       ]
     },
     {
       "NameOfScene": "RandomDefaultOrgasm",
       "theScene": [
+        "CallNextSceneJumpThenReturn",
         "JumpToRandomScene",
             "StripTeaseDefaultOrgasm",
             "EarTeaseDefaultOrgasm",
             "WhisperTeaseDefaultOrgasm",
-        "EndLoop"
+        "EndLoop",
+
+        "JumpToScene", "MomentumFromOrgasm"
       ]
     },
     {
       "NameOfScene": "StripTeaseDefaultOrgasm",
       "theScene": [
-        "Sensing you're close to climax, Vanesa steps back with a predatory smile, her eyes gleaming with hunger as she begins a slow, seductive dance.",
-        "Her soft, white fur catches the light as she moves, her voluptuous figure swaying hypnotically as she runs her hands along her curves.",
-        "You can feel your cock throbbing with desperate need as you watch her, your body trembling with anticipation while she puts on her show.",
-        "Vanesa's hands trace along the edges of her tight red latex bunny suit, her fingers teasing at the revealing gaps that expose her soft, fluffy fur.",
-        "She arches her back, pressing her massive breasts against the tight material, the latex straining as if it might burst at any moment.",
+        "ChangeImageLayer", "Expression", "Hungry",
+        "Vanesa's crimson eyes gleam with predatory satisfaction as she notices your cock twitching desperately. With a graceful step backward, she begins a slow, seductive dance, her soft white fur catching the light as she moves. Her voluptuous figure sways hypnotically as she runs her hands along her curves, each movement calculated to drive you over the edge.",
+        "ChangeImageLayer", "Expression", "Seductive",
         "Speaks",
         "'Like what you see, my little prey?~♥'",
-        "Her movements become more explicit, her hands caressing her own body as she watches your reaction, her eyes never leaving your face.",
-        "You can feel your orgasm building as you watch her, the combination of her seductive dance and your own arousal becoming overwhelming.",
-        "Speaks",
-        "'Come for me~♥ Watch me while you cum~♥'",
-        "As you climax, Vanesa continues her seductive dance, her eyes locked on yours as she watches you experience the intense orgasm.",
-        "Your cock pulses with each spurt of cum, the pleasure overwhelming as you watch her soft, warm body move in her hypnotic rhythm. [PlayerOrgasmLine]",
-        "She slows her movements, her hands still caressing her body as she savors the sight of your orgasm, her predatory smile growing wider.",
+        "ChangeImageLayer", "Expression", "Pleasured",
+
+        "PlaySoundEffect", "Ejaculation",
+        "PlayVisualEffect2", "ScreenPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
+        "Your control shatters completely as the orgasm explodes through your body. Vanesa continues her seductive dance, her eyes locked on yours as she watches you experience the intense climax. Your cock pulses with each spurt of cum, the pleasure overwhelming as you watch her soft, warm body move in her hypnotic rhythm.",
+        "ChangeImageLayer", "Expression", "Smug",
         "Speaks",
         "'Mmm~♥ Such a good little meal~♥'"
       ]
@@ -235,20 +421,19 @@
     {
       "NameOfScene": "EarTeaseDefaultOrgasm",
       "theScene": [
-        "Sensing you're close to climax, Vanesa's eyes gleam with predatory hunger as she slowly approaches you, her soft, warm body radiating heat.",
-        "Her soft, white fur brushes against your skin as she gets closer, the gentle touch of her fluffy coat making your cock throb with anticipation.",
-        "You can feel her warm breath on your neck as she leans in close, her soft, pillowy breasts pressing gently against your chest.",
-        "Vanesa's soft hands gently cup your face as she positions herself, her warm, wet tongue flicking out to tease your earlobe.",
+        "ChangeImageLayer", "Expression", "Hungry",
+        "Your desperate moans and twitching cock betray your impending climax, and Vanesa's predatory instincts kick in. She approaches with calculated hunger, her soft white fur brushing against your skin as she leans in close. Her warm breath tickles your neck while her soft breasts press against your chest, and she gently cups your face before flicking her warm, wet tongue against your earlobe.",
+        "ChangeImageLayer", "Expression", "Lick",
         "Speaks",
         "'Mmm~♥ Your ears are so sensitive~♥'",
-        "She slowly inserts her warm, wet tongue into your ear canal, the intimate sensation making your cock pulse with desperate need.",
-        "You can feel her soft, warm body pressed against yours as she continues her ear play, her gentle movements driving you toward the edge of orgasm.",
-        "The combination of her soft fur, warm body, and intimate ear play pushes you closer to climax, your cock aching with the need to cum.",
-        "Speaks",
-        "'Come for me~♥ Let me taste your pleasure~♥'",
-        "As you climax, Vanesa continues her ear play, her soft, warm body pressed against yours as she feels your body tremble with orgasm.",
-        "Your cock pulses with each spurt of cum, the intense pleasure combined with her intimate ear teasing making the orgasm even more overwhelming. [PlayerOrgasmLine]",
-        "She slowly withdraws her tongue from your ear, her soft, warm body still pressed against yours as she savors the feeling of your orgasm.",
+        "ChangeImageLayer", "Expression", "Pleasured",
+
+        "PlaySoundEffect", "Ejaculation",
+        "PlayVisualEffect2", "ScreenPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
+        "The overwhelming stimulation proves too much to resist, and your body convulses with intense pleasure. Vanesa continues her intimate ear play, her soft warm body pressed against yours as she feels your body tremble with orgasm, her tongue still teasing your ear as your cock pulses with each spurt of cum. The intense pleasure makes the climax overwhelming before she slowly withdraws her tongue and savors the feeling of your orgasm.",
+        "ChangeImageLayer", "Expression", "Smug",
         "Speaks",
         "'Mmm~♥ Such a delicious reaction~♥'"
       ]
@@ -256,24 +441,26 @@
     {
       "NameOfScene": "WhisperTeaseDefaultOrgasm",
       "theScene": [
-        "Sensing you're close to climax, Vanesa approaches you with a predatory grace, her soft, warm body radiating heat as she gets closer.",
-        "Her soft, white fur catches the light as she moves, her voluptuous figure swaying seductively as she positions herself right in front of you.",
-        "You can feel her warm breath on your face as she leans in close, her soft, pillowy breasts pressing gently against your chest.",
-        "Vanesa's soft hands gently rest on your shoulders as she leans in, her warm, wet lips brushing against your ear as she begins to whisper.",
+        "ChangeImageLayer", "Expression", "Seductive",
+        "The telltale signs of your approaching climax are impossible to miss and Vanesa's predatory grace takes over. She approaches with deliberate seduction, her soft white fur catching the light as she sways toward you. Her warm breath washes over your face while her soft breasts press against your chest.",
+        "ChangeImageLayer", "Expression", "Whisper",
         "Speaks",
-        "'Mmm~♥ I can smell how much you want me~♥'",
-        "Her soft, warm breath tickles your ear as she whispers, her voice taking on a hypnotic quality that makes your body tremble with arousal.",
+        "'Mmm~♥ I can tell how much you want to release inside me~♥'",
+        "ChangeImageLayer", "Expression", "Pleasured",
+
+        "PlaySoundEffect", "Ejaculation",
+        "PlayVisualEffect2", "ScreenPulse", "white.png",
+        "PlayMotionEffect", "CrashSmol",
+
+        "Unable to hold back any longer, your cum erupts in powerful spurts, each thick rope of hot seed shooting through the air and onto the floor as your cock pulses violently. Vanesa looks at the display with an amused expression",
+        "ChangeImageLayer", "Expression", "Laughing",
         "Speaks",
-        "'I'm going to devour you completely~♥ Every inch of you will be mine~♥'",
-        "Her soft, warm body presses more firmly against yours as she continues her whispered promises, her gentle movements building your arousal.",
-        "The combination of her soft fur, warm body, and whispered promises pushes you closer to climax, your cock aching with the need to be inside her.",
-        "Speaks",
-        "'Come for me~♥ Give me all your cum~♥'", 
-        "As you climax, Vanesa continues her whispered seduction, her soft, warm body pressed against yours as she feels your body convulse with orgasm.",
-        "Your cock pulses with each spurt of cum, the intense pleasure combined with her whispered promises making the orgasm even more overwhelming. [PlayerOrgasmLine]",
-        "She slowly eases her embrace, her soft, warm body still close to yours as she savors the feeling of your orgasm, her whispered words still echoing in your mind.",
-        "Speaks",
-        "'Mmm~♥ Such a good little meal~♥'"
+        "'Mmm~♥ Such a good little meal~♥ But that doesn't count as feeding me~♥'"
+      ]
+    },
+    {
+      "NameOfScene": "Nothing",
+      "theScene": [
       ]
     }
   ]

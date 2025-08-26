@@ -42,6 +42,7 @@
          "ChangeImageLayer", "Expression", "1", "Seductive",
          "She turns to face you with a curious expression, her crimson eyes studying you with interest as she tilts her head slightly.",
          
+         "ChangeImageLayer", "Expression", "1", "Whisper",
          "Speaks",
          "I'm Vanesa, the bunny zodiac guardian of this mystic forest. It's a pleasure to meet you, [ThePlayerName], though I must say you're quite brave to venture into my territory~ ♥",
         "JumpToScene", "TalkMenuBunny"
@@ -97,6 +98,7 @@
          "ChangeImageLayer", "Expression", "1", "Smug",
             "She saunters toward you with that same seductive sway in her hips, her voluptuous curves straining against the tight latex as she moves. There's a playful glint in her eyes, but also a hint of determination.",
                      
+            "ChangeImageLayer", "Expression", "1", "Whisper",
             "Speaks",
          "I must admit, you surprised me last time, [ThePlayerName]~ But I've been looking forward to our rematch~ ♥",
             "JumpToScene", "TalkMenuBunny"
@@ -114,6 +116,7 @@
             "ChangeImageLayer", "Expression", "1", "Smug",
              "She saunters toward you with an unmistakable hunger in her movements, her pillowy breasts straining against her latex suit as she approaches. Her eyes gleam with the memory of your previous encounter, and there's a satisfied smirk playing across her lips.",
             
+             "ChangeImageLayer", "Expression", "1", "Whisper",
              "Speaks",
          "Welcome back my little snack, [ThePlayerName] ♥. How is that mark treating you? I can't wait to see you squirming in pleasure again ♥",
             "JumpToScene", "TalkMenuBunny"
@@ -183,23 +186,41 @@
         "NameOfScene": "TalkMenuBunny",
         "theScene": [
             "Menu",
-            "Ask about her zodiac",
-            "RequiresChoice", "5", "zodiacknowledge", "HideOptionOnRequirementFail",
+            "Ask a question...",
+            "RequiresChoice", "6", "jobknowledge", "HideOptionOnRequirementFail",
             "Fight her!",
-            "RequiresChoice", "5", "zodiacknowledge", "HideOptionOnRequirementFail",
-            "Magical mark?",
-            "RequiresChoice", "1", "magicMarkKnows", "HideOptionOnRequirementFail",
-            "How to remove the mark?",
             "RequiresChoice", "1", "magicMarkKnows", "HideOptionOnRequirementFail",
             "Ask to apply her magic mark on you",
             "RequiresChoice", "2", "magicMarkFreeKnows", "RequiresPerk", "Minor Bunny Zodiac Mark", "HideOptionOnRequirementFail",
             "Ask to remove her mark",
             "RequiresChoice", "2", "magicMarkFreeKnows", "RequiresPerk", "Greater Bunny Zodiac Mark", "HideOptionOnRequirementFail",
             "Ask to remove her mark",
-            "Leave and walk away",
+            "FinalOption", "Leave and walk away",
             "EndLoop"
         ]
 
+    },
+    {
+        "NameOfScene": "Ask a question...",
+        "theScene": [
+            "Menu",
+            "What are you doing here?",
+            "Can you explain your zodiac?",
+            "RequiresChoice", "5", "zodiacknowledge", "HideOptionOnRequirementFail",
+            "Magical mark?",
+            "RequiresChoice", "5", "zodiacknowledge", "HideOptionOnRequirementFail",
+            "So are you a kind of succubus?",
+            "RequiresChoice", "1", "magicMarkKnows", "HideOptionOnRequirementFail",
+            "How to remove the mark?",
+            "FinalOption", "Done asking questions",
+            "EndLoop"
+        ]
+    },
+    {
+        "NameOfScene": "Done asking questions",
+        "theScene": [
+            "JumpToScene", "TalkMenuBunny"
+        ]
     },
     {
         "NameOfScene": "Leave and walk away",
@@ -212,6 +233,9 @@
          {
          "NameOfScene": "MarkTemptation",
          "theScene": [
+            "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
+            "PlayVisualEffect2", "ScreenPulse", "pink.png",
+            "PlaySoundEffect2", "sfx/HeartBeat-1shot.wav",
              "You start to turn away, but the bunny zodiac mark on your body begins to pulse with a soft, hypnotic glow. Waves of desire flood your thoughts, making it increasingly difficult to remember why you wanted to leave.",
              "Menu",
              "Fight the mark's influence (Willpower Check)",
@@ -230,6 +254,8 @@
      {
         "NameOfScene": "SexTemptationText",
         "theScene": [
+            "PlaySoundEffect2", "sfx/HeartBeat-1shot.wav",
+            "PlayVisualEffect2", "ScreenPulse", "pink.png",
             "The zodiac mark enflames your sex fetish, sending you images of her thick white bunny body riding you and her hungry wet pussy sucking at your cock.",
             "JumpToScene", "MarkTemptationCheck"
         ]
@@ -239,11 +265,15 @@
          "theScene": [
              "Wondering why you would even try to leave when you haven't fulfilled your purpose and fed her yet, you give in to the temptation.",
 
+             "ChangeImageLayer", "ImageSetDontCarryOver", "1", "Breast Smother",
+             "PlayMotionEffect", "CrashSmol",
              "You stumble forward, your body moving almost against your will as the mark's influence overwhelms your resistance. Your arms wrap around Vanesa's soft, warm body as you bury your face into her massive, pillowy breasts.",
 
              "ChangeImageLayer", "Expression", "1", "Slurp",
              "Speaks",
              "Mmm~♥ There we go~ The mark's influence is working perfectly~♥ Shall we get started with the fun?♥",
+
+             "EndVisualEffect",
              "JumpToScene", "FightBunnySmother"
          ]
       },
@@ -255,14 +285,14 @@
             "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "75", "2",
             "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "3",
             "Temptation",
-            "10", "ShakeIfOff",
+            "25", "ShakeIfOff",
             "Fail", "Give in to the temptation"
         ]
      },
      {
         "NameOfScene": "ShakeIfOff",
         "theScene": [
-            "Speaks",
+            "EndVisualEffect",
             "Shaking your head, you manage to resist the desire and start to walk away.",
             "JumpToScene", "RunAwayCheck"
         ]
@@ -277,6 +307,7 @@
              "ChangeImageLayer", "Expression", "1", "Hungry",
              "Her crimson eyes gleam with predatory hunger as she steps forward, blocking your path with a graceful but firm movement.",
              
+             "ChangeImageLayer", "Expression", "1", "Whisper",
              "Speaks",
              "You're level [PlayerLevel]. That's well above my threshold~ I can't just let a high-level adventurer like you wander around unsupervised. ",
              
@@ -303,7 +334,7 @@
         "theScene": [
             "StatCheck",
             "Technique",
-            "25", "RunAwaySuccess",
+            "30", "RunAwaySuccess",
             "Fail", "GetCaught"
         ]
     },
@@ -326,6 +357,7 @@
               
               "ChangeImageLayer", "ImageSetDontCarryOver", "1", "Breast Smother",
               "ChangeImageLayer", "Expression", "1", "Lick",
+              "PlayMotionEffect", "CrashSmol",
               "Before you can react, her soft hands grab the back of your head and push you firmly into her massive, pillowy breasts.",
               "JumpToScene", "FightBunnySmother"
           ]
@@ -333,11 +365,12 @@
                    {
           "NameOfScene": "PleasantLeave",
           "theScene": [
-              "ChangeImageLayer", "Expression", "1", "ClosedSmile",
-              "She gives you a warm, understanding smile, her crimson eyes softening as she accepts your decision.",
-              
-              "Speaks",
-              "Feel free to explore the mystic forest~ Just remember that if you get stronger and start causing trouble, I'll be here to... handle it~♥ Take care, little adventurer~ Maybe we'll meet again when you're more... experienced~♥",
+                          "ChangeImageLayer", "Expression", "1", "ClosedSmile",
+            "She gives you a warm, understanding smile, her crimson eyes softening as she accepts your decision.",
+            
+            "ChangeImageLayer", "Expression", "1", "Whisper",
+            "Speaks",
+            "Feel free to explore the mystic forest~ Just remember that if you get stronger and start causing trouble, I'll be here to... handle it~♥ Take care, little adventurer~ Maybe we'll meet again when you're more experienced~♥",
               
               "ChangeImageLayer", "Expression", "1", "Pursed",
               "She waves farewell with a seductive wink, her soft, white fur catching the light as she turns to continue her patrol of the forest.",
@@ -356,30 +389,36 @@
          "Her crimson eyes gleam with excitement as she explains, her hands gesturing animatedly as she speaks about her mark.",
          
          
+         "ChangeImageLayer", "Expression", "1", "Whisper",
          "Speaks",
          "My mark is a magical bond that connects us together~ It's not just a simple tattoo, it's a living connection that will enhance♥ your body in the most intimate ways~",
 
          "ChangeImageLayer", "Expression", "1", "Lick",
          "She runs a finger along her own curves suggestively, her eyes never leaving yours as she continues.",
          
+         "ChangeImageLayer", "Expression", "1", "Whisper",
          "Speaks",
          "When you lose to me in battle, I'll apply the mark to your body~ It starts as a minor mark, but if you lose again, it becomes a greater mark~ Each time I mark you, the connection grows deeper and more...",
 
+         "ChangeImageLayer", "Expression", "1", "Hungry",
           "A predatory smile crosses her lips as she explains the progression, her hips swaying with seductive rhythm as she moves closer.",
 
           "ChangeImageLayer", "Expression", "1", "Slurp",
          "Speaks",
          "... pleasurable~♥",
 
-         "ChangeImageLayer", "Expression", "1", "Seductive",
+         "ChangeImageLayer", "Expression", "1", "Whisper",
          "The mark will also make you more receptive to my advances~ It's like having a direct line to your desires~ The stronger the mark, the more willing you become to be my meal, and the more intense our encounters become~",
          
          "ChangeImageLayer", "Expression", "1", "Lick",
          "It's no fun if you don't have a little penalty for losing to me♥. The mark ensures you'll always be connected to me, my little prey~ Every time we meet, you'll feel that bond pulsing with desire~",
+
+         "Speaks",
+         "The other Zodiac Marks will have their own effects, but all of them are similar in that they will affect your mental state toward the Zodiac mark's owner and their abilities~",
             "SetChoice", "1", "magicMarkKnows",
 
         "ChangeImageLayer", "Expression", "1", "Seductive",
-            "JumpToScene", "TalkMenuBunny"
+            "JumpToScene", "Ask a question..."
         ]
     },
     {
@@ -399,9 +438,11 @@
              "Speaks",
             "The first way is to defeat me in battle~ If you can overcome my seductive charms and actually win, the mark will fade away with me~",
 
+            "Expression change here",
             "ChangeImageLayer", "Expression", "1", "Lick",
             "She licks her lips seductively, her eyes gleaming with confidence as she explains the first option.",
             
+            "ChangeImageLayer", "Expression", "1", "Whisper",
             "Speaks",
             "The second way is much more... pleasurable~ If you ask me really nicely, I might remove it for you~",
             
@@ -415,21 +456,92 @@
             "♥And not with my mouth~♥",
             "ChangeImageLayer", "Expression", "1", "Seductive",
             "SetChoice", "2", "magicMarkFreeKnows",
-            "JumpToScene", "TalkMenuBunny"
+            "JumpToScene", "Ask a question..."
         ]
     },
     {
-        "NameOfScene": "Ask about her zodiac",
+        "NameOfScene": "So are you a kind of succubus?",
         "theScene": [
-            "ChangeImageLayer", "Expression", "1", "ClosedSmile",
+            "ChangeImageLayer", "Expression", "1", "Laughing",
             "Speaks",
-            "I'm Vanesa, the bunny zodiac of the mystic forest~ ♥",
+            "Technically, no. I'm not a succubus. But with the power the Zodiac gives me, I might as well be~",
+            
+            "ChangeImageLayer", "Expression", "1", "Whisper",
+            "Speaks",
+            "The mark grants me similar powers to a succubus~ I can drain life force through intimate contact, create magical bonds, and enhance my natural allure~",
+            
+            "ChangeImageLayer", "Expression", "1", "Lick",
+            "She licks her lips seductively, her voice taking on a sultry tone as she continues.",
+            
+            "Speaks",
+            "But unlike succubi, I'm unable to feed on your soul. Not that succubi are running around doing that much anyway~",
+            
+            "ChangeImageLayer", "Expression", "1", "Hungry",
+            "Her eyes gleam with predatory hunger as she explains this, her massive breasts rising and falling with each breath.",
+            
+            "ChangeImageLayer", "Expression", "1", "Whisper",
+            "Speaks",
+            "The bunny zodiac represents fertility and abundance~ So when I do feed, I can also enhance how much your body is able to produce.",
+            
+            "ChangeImageLayer", "Expression", "1", "Smug",
+            "A playful smirk crosses her lips as she finishes her explanation, her tail twitching with amusement.",
+            
+            "Speaks",
+            "So while I'm not technically a succubus, the end result is pretty much the same for my prey~",
+            
+            "ChangeImageLayer", "Expression", "1", "Tehe",
+            "Speaks",
+            "The other zodiac marks will have their own unique abilities~ Each one represents different aspects of power and desire~",
             
             "ChangeImageLayer", "Expression", "1", "Seductive",
-            "She gestures gracefully around the forest, her crimson eyes gleaming with pride as she speaks about her role.",
+            "JumpToScene", "Ask a question..."
+        ]
+    },
+    {
+        "NameOfScene": "Can you explain your zodiac?",
+        "theScene": [
+            "ChangeImageLayer", "Expression", "1", "Magic",
+            "Vanesa's eyes begin to glow with a soft pink light as she raises her hands, magical energy swirling around her fingertips. The zodiac mark on her chest pulses with an ethereal glow, casting dancing shadows across her voluptuous form.",
             
             "Speaks",
-            "I chose to take on this zodiac mark as part of my job here~ I make sure high-level adventurers don't get too rowdy with the lower-level monster girls~",
+            "As you could probably tell, I'm carrying the Bunny Zodiac mark ♥",
+            
+            "ChangeImageLayer", "Expression", "1", "ClosedSmile",
+            "Speaks",
+            "It empowers me with some magical abilities despite normally being absolutely useless at the stuff. Because of the mark, I can both push magic into adventurers and pull magic out of them.",
+
+            "ChangeImageLayer", "Expression", "1", "Lick",
+            "She runs a hand along her curves suggestively, her eyes never leaving yours as she explains the mark's effects. The magical energy around her hands pulses with each word.",
+            
+            "Speaks",
+            "In battle I can drain their life force through intimate contact, and even create magical bonds that make them more... receptive to my advances~",
+
+            "ChangeImageLayer", "Expression", "1", "Whisper",
+            "Speaks",
+            "It also enhances my natural bunny abilities~ My senses are sharper, my movements more graceful, and my... appetite... much more insatiable~",
+
+            "ChangeImageLayer", "Expression", "1", "Hungry",
+            "Her eyes gleam with predatory hunger as she explains this last part, her voice taking on a sultry tone that sends shivers down your spine.",
+            
+            "ChangeImageLayer", "Expression", "1", "Whisper",
+            "Speaks",
+            "If I choose to, I can also apply a version of the mark to adventurers as well~",
+            "ChangeImageLayer", "Expression", "1", "Tehe",
+            "Speaks",
+            "More for my benefit, of course~♥",
+
+            "SetChoice", "5", "zodiacknowledge",
+            "JumpToScene", "Ask a question..."
+        ]
+    },
+    {
+        "NameOfScene": "What are you doing here?",
+        "theScene": [
+            "ChangeImageLayer", "Expression", "1", "Seductive",
+            "She gestures gracefully around the forest, her crimson eyes gleaming with pride as she speaks about her role. The magical energy continues to swirl around her, creating an aura of power and mystery.",
+            
+            "Speaks",
+            "I make sure high-level adventurers don't get too rowdy with the lower-level monster girls~",
             
             "ChangeImageLayer", "Expression", "1", "ClosedSmile",
             "Speaks","SwapLineIf", "Level",
@@ -438,18 +550,26 @@
             "EndLoop",
             
             "ChangeImageLayer", "Expression", "1", "Smug",
-            "A playful smirk crosses her lips as she explains her role, her massive breasts shifting slightly as she moves.",
+            "A playful smirk crosses her lips as she explains her role, her massive breasts shifting slightly as she moves. The zodiac mark's glow intensifies slightly as she speaks.",
+            
             "Speaks",
-            "But as a side effect of the zodiac mark, I get much more... hungry~ The bunny represents fertility and abundance, which means I need to feed more often~",
-            "She runs a hand along her curves suggestively, her eyes never leaving yours as she explains the mark's effects.",
+            "The mark helps me connect to the very essence of the mystic forest~ I can feel every living thing within my territory, sense when powerful adventurers enter and what they're up to~",
+
+            "ChangeImageLayer", "Expression", "1", "Slurp",
             "Speaks",
-            "If I choose to, I can also apply a version of the mark to adventurers as well~",
-            "ChangeImageLayer", "Expression", "1", "Tehe",
+            "And of course, go and ♥punish♥ them if I think they're here for trouble~",
+
+            "ChangeImageLayer", "Expression", "1", "Whisper",
             "Speaks",
-            "More for my benefit, of course~♥",
-            "SetChoice", "5", "zodiacknowledge",
+            "While I won't pursue lower-level adventurers, anyone is free to challenge me~",
+
+            "ChangeImageLayer", "Expression", "1", "Lick",
+            "Speaks",
+            "I won't pass up a free meal♥",
+            
+            "SetChoice", "6", "jobknowledge",
             "ChangeImageLayer", "Expression", "1", "Seductive",
-            "JumpToScene", "TalkMenuBunny"
+            "JumpToScene", "Ask a question..."
         ]
     },
     {
@@ -531,22 +651,32 @@
             "Her crimson eyes widen with genuine surprise, her mouth falling slightly open as she processes your unexpected request. A delighted smile slowly spreads across her lips as she realizes what you're asking for.",
             "ChangeImageLayer", "Expression", "1", "Smug",
          
+            "ChangeImageLayer", "Expression", "1", "Whisper",
             "Speaks",
             "How deliciously unexpected~ Most prey try to resist. ♥At least at first♥. But you're actually asking to be claimed~",
             
             "She saunters closer, her massive breasts swaying seductively as she approaches, her eyes gleaming with hunger and excitement.",
             
+            "ChangeImageLayer", "Expression", "1", "ClosedSmile",
+            "PlayVisualEffect", "StartHaze", "pinkHaze.png",
+            "PlayVisualEffect2", "ScreenPulse", "pink.png",
             "Speaks",
-         "Very well, my little volunteer [ThePlayerName]~ I'll be happy to mark you as mine~",
+            "Very well, my little volunteer [ThePlayerName]~ I'll be happy to mark you as mine~",
             "She reaches out with both hands, her fingers glowing with magical energy as she prepares to apply the mark.",
                      
-            "ChangeImageLayer", "Expression", "1", "ClosedSmile",
+            "ChangeImageLayer", "Expression", "1", "Magic",
             "Speaks",        
          "This will only take a moment~ Just relax and let the magic flow through you~",
          
+         "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+         "PlayVisualEffect", "GrowingHaze", "pinkHaze.png",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
          "ChangeArousalByPercent", "5",
          "Her touch is surprisingly gentle as she places her hands on your chest, the magical energy beginning to pulse and glow. As the energy flows into your body, you feel a warm, tingling sensation spreading through your chest and down to your groin.",
          
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect", "IncreasingHaze", "pinkHaze.png",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
          "ChangeArousalByPercent", "5",
          "Your cock begins to stir and harden as the magical energy courses through your body, the pleasure building with each pulse of the mark's power. You can't help but let out a soft moan as the sensation intensifies.",
 
@@ -556,17 +686,24 @@
          "Speaks",
          "Mmm~ I can see how much you're enjoying this~ The mark's magic is quite... stimulating, isn't it? ♥",
          
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
          "ChangeArousalByPercent", "5",
          "She continues to channel the magical energy, her hands moving slightly as she adjusts the flow, causing another wave of pleasure to surge through your body. Your cock is now fully erect and throbbing with need.",
          
          "CallSceneThenReturn", "increase bunny mark level",
          
          "ChangeImageLayer", "Expression", "1", "ClosedSmile",
+         "EndVisualEffect",
          "Speaks",
          "There! The mark is applied~",
          
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
          "The magical energy fades, leaving behind a faint glowing symbol on your skin that pulses with a soft, warm light. Your cock remains hard and aching, the lingering effects of her magic still coursing through your body.",
-            "JumpToScene", "TalkMenuBunny"
+         
+         "EmptySpiritCounter",
+         "JumpToScene", "TalkMenuBunny"
         ]
     },
     {
@@ -582,6 +719,7 @@
             "ChangeImageLayer", "Expression", "1", "Lick",
             "She saunters closer with an unmistakable hunger in her movements, her massive breasts swaying seductively as she approaches.",
 
+            "ChangeImageLayer", "Expression", "1", "Whisper",
             "Speaks",
             "You must really enjoy being my little prey~ Wanting the mark to be even more powerful so you can feel our bond more intensely~",
 
@@ -593,14 +731,19 @@
 
         "She reaches out with both hands, her fingers glowing with even more intense magical energy than before.",
 
-        "ChangeImageLayer", "Expression", "1", "ClosedSmile",
+        "ChangeImageLayer", "Expression", "1", "Magic",
         "Speaks",
          "This will be much more intense than the first time~ Are you ready to feel the full power of my mark? ♥",
 
         "ChangeImageLayer", "Expression", "1", "Seductive",
          "ChangeArousalByPercent", "5",
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
          "Her touch is electric as she places her hands on your chest, her fingers glowing with intense magical energy. She begins to trace the existing mark with her fingertips, the magical energy pulsing and responding to her touch.",
 
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
          "ChangeArousalByPercent", "5",
          "You feel the mark beneath your skin begin to stir and glow more brightly as she works her magic. The sensation is incredibly intense, sending waves of pleasure coursing through your body and causing your cock to twitch and harden almost instantly.",
 
@@ -613,21 +756,31 @@
 
          "ChangeImageLayer", "Expression", "1", "Smug",
          "ChangeArousalByPercent", "5",
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
          "She continues to trace the mark with her fingers, the magical energy growing stronger with each pass. You can feel the mark beginning to lift slightly from your skin, creating an incredibly intense tingling sensation that makes your entire body shudder with pleasure.",
 
          "Your cock is now fully erect and throbbing with need, the magical energy coursing through your body amplifying every sensation. You can't help but let out a soft moan as the pleasure builds to almost unbearable levels.",
 
          "ChangeArousalByPercent", "10",
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
          "Vanesa's hands move with practiced precision as she begins to draw additional magical lines around the existing mark, her fingers leaving trails of glowing energy on your skin. Each new line she draws sends fresh waves of ecstasy through your body.",
 
          "ChangeImageLayer", "Expression", "1", "Pursed",
          "Speaks",
          "Almost there~ I need to push the enhanced mark back into your skin now~ This will be the most intense part~ ♥",
 
-         "ChangeArousalByPercent", "15",
+         "ChangeArousalByPercent", "25",
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect2", "DoublePulse", "pink.png",
+         "PlayMotionEffect", "CrashSmol",
          "With a final, deliberate motion, she presses her hands firmly against your chest, pushing the enhanced mark back into your skin. The sensation is overwhelming, causing your cock to pulse and twitch violently as you experience a wave of pure ecstasy.",
 
          "ChangeImageLayer", "Expression", "1", "Smug",
+         "EndVisualEffect",
+         "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+         "PlayVisualEffect2", "ScreenPulse", "pink.png",
                   "The enhanced mark settles into place with a final pulse of magical energy, leaving you gasping for breath and your cock aching with unfulfilled desire. Vanesa's eyes gleam with triumphant satisfaction as she watches you recover from the intense experience.",
 
          "CallSceneThenReturn", "increase bunny mark level",
@@ -643,6 +796,7 @@
              "Speaks",
              "Her crimson eyes crinkle with amusement, a soft giggle escaping her lips as she tilts her head playfully. A knowing smirk dances across her face as she realizes just how completely infatuated you are with being her meal.",
              
+             
              "The mark on your chest begins to glow softly, its warmth spreading through your body like morning sunlight. You can't help but crave more of her magic, the sensation as familiar as your own heartbeat.",
              
              "ChangeImageLayer", "Expression", "1", "Smug",
@@ -650,18 +804,22 @@
             "How absolutely adorable~ You're so desperate to be marked even more that you don't even realize you're already at my full power, my little prey [ThePlayerName]~",
 
             "ChangeArousalByPercent", "15",
+            "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+            "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
              "She saunters closer with a seductive sway, her massive breasts swaying hypnotically as she approaches, her eyes gleaming with satisfaction and ownership. She deliberately slows her pace, letting you take in every curve of her voluptuous figure.",
 
              "ChangeImageLayer", "Expression", "1", "Slurp",
              "ChangeArousalByPercent", "15",
+             "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
              "Her presence fills the air around you, each step she takes sending ripples of anticipation through your body. Your muscles tense and relax in rhythm with her movements, as if your body knows her better than your mind does.",
              
              "ChangeImageLayer", "Expression", "1", "ClosedSmile",
              "Speaks",
-             "The mark on your body is already at its maximum strength~ You're completely bound to me, your mind and body utterly devoted to being my perfect...♥",
+             "You're completely bound to me, your mind and body utterly devoted to being my perfect...",
              
              "ChangeArousalByPercent", "15",
              "ChangeImageLayer", "Expression", "1", "Lick",
+             "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
              "She starts by caressing her hips with both hands, her fingers tracing the curves suggestively before slowly sliding up to cup her massive breasts. Her eyes never leave yours as she explains with obvious pleasure at your complete submission.",
              
              "Speaks",
@@ -669,11 +827,14 @@
             
              "ChangeArousalByPercent", "15",
             "ChangeImageLayer", "Expression", "1", "Slurp",
+            "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
              "Her hands continue upward, finally coming to rest near her face as she slowly parts her lips, her tongue flicking out to moisten them.",
              
              "Speaks",
              "snack!♥", 
              "ChangeImageLayer", "Expression", "1", "Seductive",
+
+             "EndVisualEffect",
              "JumpToScene", "TalkMenuBunny"
          ]
      },
@@ -709,20 +870,22 @@
         "NameOfScene": "RemoveMark",
         "theScene": [
       
-            "ChangeImageLayer", "Expression", "1", "Smug",
+            "ChangeImageLayer", "Expression", "1", "Hungry",
             "Her crimson eyes light up with predatory hunger, a delighted smile spreading across her lips as she realizes she's about to get another meal.",
             
-            "ChangeImageLayer", "Expression", "1", "ClosedSmile",
+            "ChangeImageLayer", "Expression", "1", "Magic",
             "Speaks",
             "I'll be happy to remove it for you~ But first, I need to dissolve the mark's energy into your essence~",
             
             "ChangeImageLayer", "Expression", "1", "Smug",
             "She saunters closer with unmistakable hunger in her movements, her massive breasts swaying seductively as she approaches.",
+            "ChangeImageLayer", "Expression", "1", "Slurp",
             "Speaks",
             "This will require a very... intimate procedure~ I need to extract the mark's magic through your cock~",
             
             "ChangeImageLayer", "ImageSetDontCarryOver", "1", "FullLift",
             "ChangeImageLayer", "Expression", "1", "Lick",
+            "PlayMotionEffect", "Crash",
             "Without warning, she pushes you onto your back knocking your breath out. Her eyes gleam with excitement as she purposefully straddles your hips.",
              
             
@@ -734,6 +897,8 @@
 
             "ChangeImageLayer", "ImageSetDontCarryOver", "1", "Sex",
             "ChangeImageLayer", "Expression", "1", "Tongue",
+            "PlaySoundEffect", "sfx/Erotic/Sex/Piston gutu overtones once.wav",
+            "PlayMotionEffect", "CrashSmol",
             "She slowly lowers herself onto your cock, taking you inch by inch until you're buried to the hilt inside her. Her honeypot is incredibly tight and warm, the sensation overwhelming as she envelops you completely.",
             "Your cock throbs violently as she settles onto you, her inner walls clenching around your shaft like a velvet vice. The heat and pressure are incredible, making you gasp with pleasure.",
             
@@ -742,12 +907,21 @@
             "Mmm~ That's better~♥ Now let me work my magic~",
 
             "ChangeImageLayer", "Expression", "1", "Smug",
+            "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
+            "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+            "PlayMotionEffectLoop", "RideSlow",
             "She begins to move, slowly rising and falling on your cock as she rides you with deliberate, sensual movements. Each stroke sends waves of pleasure through your body, her tight pussy massaging your shaft perfectly.",
+
+            "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
             "As she rides you, you can feel magical energy flowing from her warm pussy into your cock. The mark's power slowly is drawn out towards your groin, but stopping there. The sensation is both pleasurable and strange, like warm honey flowing through your veins.",
 
             "ChangeImageLayer", "Expression", "1", "Whisper",
             "Speaks",
             "The mark's energy is flowing into your balls~ I can feel it dissolving as I ride you~",
+
+            "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (medium speed) 16 times.wav",
+            "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+            "PlayMotionEffectLoop", "Ride",
             "Her movements become more rhythmic, her hips rolling in perfect circles as she works the magic out of you. Your cock pulses inside her, responding to both the physical pleasure and the magical energy coursing through it.",
 
             "ChangeImageLayer", "Expression", "1", "Seductive",
@@ -756,35 +930,61 @@
             "ChangeImageLayer", "Expression", "1", "Whisper",
             "Speaks",
             "Almost there~ I can feel the mark's power weakening~ Just a little more~",
+            "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (high speed) 20 times.wav",
+            "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+            "PlayMotionEffectLoop", "RideFast",
             "She increases her pace, her receptive pussy clenching tighter around your cock as she nears completion. The magical energy flowing through you intensifies, making your entire body tingle with power.",
+
+            "PlayLoopingSoundEffect2", "sfx/HeartBeat-fast_loop.ogg",
             "Your cock feels like it's on fire, the combination of her tight pussy and the magical energy creating an overwhelming sensation. You can feel the mark's power gathering in your balls, ready to be extracted.",
             
+            "StopSoundEffectLoop",
+            "EndMotionEffect",
+
+            "ChangeImageLayer", "ImageSetDontCarryOver", "1", "Lift",
             "ChangeImageLayer", "Expression", "1", "Pursed",
             "Speaks",
             "Perfect~ Now I'll pull it all out~",
             
+            "StopSoundEffectLoop2",
+            "PlaySoundEffect", "sfx/Erotic/Sex/Piston gutu overtones once.wav",
+            "PlaySoundEffect2", "Ejaculation",
             "PlayerOrgasm", "1",
+            "ChangeImageLayer", "ImageSetDontCarryOver", "1", "Sex",
             "ChangeImageLayer", "Expression", "1", "LongTongue",
             "ChangeImageLayer", "Cum", "1", "Creampie",
+            "PlayVisualEffect2", "ScreenPulse", "white.png",
+            "PlayMotionEffect", "CrashSmol",
             "With a final, powerful movement, she slams her hips down onto you, forcing your cock as deep as possible inside her. The impact triggers an explosive orgasm, your cock erupting with multiple powerful spurts.",
             
             "PlayerOrgasm", "1",
-            "ChangeImageLayer", "Expression", "1", "HappyOrgasm",
+            "ChangeImageLayer", "Expression", "1", "MagicTongue",
             "ChangeImageLayer", "Cum", "1", "CreampieLarge",
+            "PlaySoundEffect2", "Ejaculation",
+            "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+            "PlayVisualEffect2", "DoublePulse", "white.png",
+            "PlayMotionEffectLoop", "RideSlow",
+            "PlayMotionEffect", "CrashSmol",
             "The magical energy explodes out of your balls along with your cum, the mark's power being sucked out through your cock as you climax. Vanesa moans with satisfaction as she feels the energy flowing into her, her warm pussy milking every last drop from you.",
             
             "PlayerOrgasm", "1",
+            "PlaySoundEffect2", "EjaculationLong",
+            "PlayVisualEffect2", "OrgasmPulse", "white.png",
+            "PlayMotionEffect", "CrashSmol",
             "Your orgasm seems to last forever, wave after wave of pleasure crashing through your body as she continues to ride you through your climax. The mark's energy flows out of you completely, leaving you feeling drained and empty.",
             
             "ChangeImageLayer", "Cum", "1", "Creampie",
             "ChangeImageLayer", "Expression", "1", "Slurp",
+            "StopSoundEffectLoop",
+            "EndMotionEffect",
             "Speaks",
             "Mmm~ Delicious~ Your cum was well seasoned with the mark's energy~",
             
+            "EndVisualEffect",
             "ChangeImageLayer", "ImageSetDontCarryOver",  "1", "FullLift",
             "ChangeImageLayer", "Cum", "1", "Drip",
             "ChangeImageLayer", "Expression", "1", "Lick",
-
+            "PlayMotionEffect", "CrashSmol",
             "She slowly lifts herself off your cock, your shaft sliding out of her with a wet sound. Your cock is completely spent, still twitching from the intense orgasm as she stands up.",
             
             
@@ -809,6 +1009,8 @@
          {
          "NameOfScene": "Oops",
          "theScene": [
+
+            "PlayVisualEffect", "SuddenHaze", "Void.png",
             "ChangeImageLayer", "Expression", "1", "Shocked",
              "Speaks",
              "Oh my~ You're not moving at all~ ♥",
@@ -823,9 +1025,10 @@
              "She giggles softly, her voice carrying a note of satisfaction as she realizes just how thoroughly she drained you. Your entire body feels like a hollow shell, every muscle weak and trembling from the intense magical extraction.",
              
              "ChangeImageLayer", "Expression", "1", "Pursed",
-            "Speaks",
+             "PlaySoundEffect", "QuickKiss",
              "She kneels down and places a soft kiss on your forehead, her lips warm against your skin as she bids you farewell. Your cock twitches weakly in response to her touch, but even that small movement feels like an impossible effort.",
             
+             "PlayVisualEffect", "MajorHazeToBlackOut", "Void.png",
             "ChangeImageLayer", "Expression", "1", "ClosedSmile",
              "Speaks",
             "Sweet dreams, my little snack ♥",

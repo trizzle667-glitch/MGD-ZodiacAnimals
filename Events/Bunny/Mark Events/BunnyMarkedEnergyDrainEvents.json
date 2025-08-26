@@ -16,12 +16,18 @@
             "NameOfScene": "Marked Energy Drain",
             "theScene": [
                 "SetPostName", " - Bunny Marked Energy Drain",
+
+                "ChangeImageLayer", "Expression", "Magic",
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Your mark is pulsing so beautifully♥~ Let me drain your energy~",
                     "I can feel the magic in your mark~ It's feeding me your essence♥~",
                     "Your mark makes you so delicious~ I need more of your energy♥~",
                 "EndLoop",
+
                 "Menu",
                     "Resist her energy drain",
                     "Submit to her drain",
@@ -39,6 +45,7 @@
             "NameOfScene": "MarkedDrainResistSex",
             "theScene": [
                 "Your love of sex makes her proposal extremely tempting...",
+
                 "JumpToScene", "MarkedDrainCheck"
             ]
         },
@@ -51,14 +58,18 @@
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "75", "2",
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "2",
                 "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
-                "Temptation", "15", "ResistMarkedDrain",
+                "Temptation", "25", "ResistMarkedDrain",
                 "Fail", "MarkedDrainFail"
             ]
         },
         {
             "NameOfScene": "ResistMarkedDrain",
             "theScene": [
+                "EndVisualEffect",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "You manage to resist Vanesa's energy drain despite the mark's influence, though you can feel it pulsing with disappointment.",
+
+                "ChangeImageLayer", "Expression", "Smug",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Oh? You're stronger than I expected~ But your mark will make you mine eventually♥~",
@@ -72,6 +83,8 @@
             "NameOfScene": "MarkedDrainFail",
             "theScene": [
                 "Unable to resist the combination of her energy drain and the mark's influence, you find yourself submitting to her magical drain.",
+
+                "ChangeImageLayer", "Expression", "Hungry",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "That's a good boy♥~ Let me feed on your energy~",
@@ -79,7 +92,12 @@
                     "Hehe, the mark worked perfectly~ Now let me drain you♥~",
                     "Oh yes~ Give me all your energy♥~ I'm so hungry~",
                 "EndLoop",
+
+                "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayMotionEffect", "Ride",
                 "As she rides you, the mark on your body begins to pulse with a warm, magical glow, beginning to convert your energy into the building pressure of your next load.",
+
                 "JumpToScene", "RandomDrainScene"
             ]
         },
@@ -87,6 +105,8 @@
             "NameOfScene": "Submit to her drain",
             "theScene": [
                 "You willingly submit to her energy drain, the mark's influence making the sensation seem almost pleasurable as you give yourself over to her magical touch.",
+
+                "ChangeImageLayer", "Expression", "Pleasured",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Such a good boy♥~ You know exactly what I need~",
@@ -94,7 +114,12 @@
                     "Hehe, you're learning~ Your mark makes you so obedient♥~",
                     "Oh yes~ You understand your place♥~ Let me take what's mine~",
                 "EndLoop",
+
+                "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayMotionEffect", "Ride",
                 "As she rides you, the mark on your body begins to pulse with a warm, magical glow, eagerly converting your willingly offered energy into the building pressure of your next load.",
+
                 "JumpToScene", "RandomDrainScene"
             ]
         },
@@ -112,6 +137,10 @@
         {
             "NameOfScene": "RandomDrainTease",
             "theScene": [
+                "EndMotionEffect",
+                "StopSoundEffectLoop",
+                "StopSoundEffectLoop2",
+
                 "CallNextSceneJumpThenReturn",
                 "JumpToRandomScene",
                     "CanYouFeelItTease",
@@ -135,13 +164,14 @@
             "NameOfScene": "Stop the transfer!",
             "theScene": [
                 "You try to fight back against the magical energy transfer filling your balls, struggling to resist the mark's influence and Vanesa's seductive power.",
+
                 "StatCheck",
                 "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "2",
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "50", "1",
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "75", "2",
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "2",
                 "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
-                "Temptation", "15", "TransferStop",
+                "Temptation", "25", "TransferStop",
                 "Fail", "TransferContinue"
             ]
         },
@@ -149,6 +179,12 @@
             "NameOfScene": "TransferStop",
             "theScene": [
                 "Through sheer willpower, you manage to resist the mark's influence and stop the energy transfer to your balls. The mark's glow dims as it ceases its conversion process.",
+
+                "EndMotionEffect",
+                "StopSoundEffectLoop",
+                "StopSoundEffectLoop2",
+
+                "ChangeImageLayer", "Expression", "Shocked",
                 "Speaks",
                 "Oh? You actually managed to resist my mark?♥ How interesting~ "
             ]
@@ -157,25 +193,33 @@
             "NameOfScene": "TransferContinue",
             "theScene": [
                 "You give in to the mark's influence and allow the energy transfer to continue, the mark's glow continuing to pulse with pleasant energy as it continues to convert your energy for Vanesa to consume.",
+
+                "ChangeImageLayer", "Expression", "Smug",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Hehe, you tried to resist♥~ The mark is too strong for you~",
                     "Oh? You thought you could stop it?♥ How cute~ The energy keeps flowing~",
                     "Mmm, resistance is futile♥~ Your energy will soon be mine~",
-                "EndLoop"
+                "EndLoop",
+
+                "JumpToScene", "RandomDrainScene"
             ]
         },
         {
             "NameOfScene": "Let the energy flow♥",
             "theScene": [
                 "You surrender to the pleasurable sensation as your balls begin to fill with the converted energy, the mark's warm glow making the experience feel almost euphoric.",
+
+                "ChangeImageLayer", "Expression", "Lick",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, that's it~ You're enjoying this, aren't you?♥ Your face shows how much you love feeling your energy being converted~",
                     "Hehe, look at you~ You can't help but moan as your balls fill up♥~",
                     "Oh yes~ You're loving every moment of this, [ThePlayerName]♥~ The mark is making you feel so good~",
                     "See? Resistance is pointless when it feels this amazing♥~ Your energy is flowing so beautifully~",
-                "EndLoop"
+                "EndLoop",
+
+                "JumpToScene", "RandomDrainScene"
             ]
         },
         {
@@ -183,8 +227,19 @@
             "theScene": [
                 "EnergyDrain", "75",
                 "SemenHeal", "75",
+
+                "EndMotionEffect",
+                "StopSoundEffectLoop",
+                "StopSoundEffectLoop2",
+
+                "PlayVisualEffect2", "DoublePulse", "pink.png",
                 "You feel [FinalDamage] gathered energy surge from your body with your cum, the mark's glow intensifying as it channels your life force directly into Vanesa's hungry pussy. [PlayerOrgasmLine]",
+
+                "ChangeImageLayer", "Cum", "",
                 "EmptySpiritCounter",
+
+                "EndVisualEffect",
+
                 "JumpToRandomScene",
                     "YummyTease",
                     "YouLookExhaustedTease",
@@ -196,12 +251,25 @@
             "NameOfScene": "CaressDrain",
             "theScene": [
                 "HitPlayerWith", "Bunny's Circular Grinding",
+
+                "ChangeImageLayer", "Expression", "Pursed",
+                "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayMotionEffectLoop", "Ride",
                 "Vanesa's hands roam across your chest as she rides you, her fingers tracing patterns that seem to resonate with the mark's pulsing rhythm. Each caress sends waves of tingling pleasure through your body, making your cock twitch and throb inside her.",
+
                 "Speaks",
                 "Your chest is so sensitive~ The mark is amplifying everything♥~",
+
                 "HitPlayerWith", "Bunny's Circular Grinding",
+
+                "ChangeImageLayer", "Expression", "Pleasured",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "Her hands slide down to your abs, her nails lightly scratching as she grinds against you. The mark on your body glows brighter with each touch, and you can feel your energy being drawn out through multiple points of contact.",
+
+                
                 "IfPlayerOrgasm", "CaressDrainOrgasm",
+
                 "JumpToScene", "RandomDrainTease"
             ]
         },
@@ -209,12 +277,25 @@
             "NameOfScene": "PussyMagicDrain",
             "theScene": [
                 "HitPlayerWith", "Bunny's Circular Grinding",
+
+                "ChangeImageLayer", "Expression", "Magic",
+                "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayMotionEffectLoop", "Ride",
                 "Vanesa clutches her breasts tightly as she rides you, her pussy clenching rhythmically around your cock. You can feel magical energy flowing from her core, pulsing through her inner walls and directly into your shaft.",
+
                 "Speaks",
                 "Feel my magic~ It's flowing right into you♥~",
+
                 "HitPlayerWith", "Bunny's Circular Grinding",
+
+                "ChangeImageLayer", "Expression", "MagicTongue",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "Her pussy tightens around you like a vice, and you can see magical sparks dancing across her skin. The mark pulses in time with her movements, and you realize she's using her own magical energy to help the transfer.",
+
+                
                 "IfPlayerOrgasm", "PussyMagicDrainOrgasm",
+
                 "JumpToScene", "RandomDrainTease"
             ]
         },
@@ -222,12 +303,26 @@
             "NameOfScene": "TeasingFocusDrain",
             "theScene": [
                 "HitPlayerWith", "Bunny's Circular Grinding",
+
+                "StopSoundEffectLoop",
+
+                "ChangeImageLayer", "Expression", "Seductive",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayMotionEffectLoop", "SwaySlow",
                 "Vanesa slows her movements, focusing on the sensations rather than speed. She grinds against you slowly, making sure every inch of your cock feels her warmth.",
+
                 "Speaks",
                 "Mmm, feel every sensation~ Your balls are filling up♥~",
+
                 "HitPlayerWith", "Bunny's Circular Grinding",
+
+                "ChangeImageLayer", "Expression", "Whisper",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "She leans back slightly, giving you a perfect view of her body as she rides you. Her pussy grips your cock like a velvet glove, and you can feel every ridge and contour.",
+
+                
                 "IfPlayerOrgasm", "TeasingFocusDrainOrgasm",
+
                 "JumpToScene", "RandomDrainTease"
             ]
         },
@@ -235,12 +330,25 @@
             "NameOfScene": "LipLockDrain",
             "theScene": [
                 "HitPlayerWith", "Bunny's Circular Grinding",
+
+                "ChangeImageLayer", "Expression", "Slurp",
+                "PlayLoopingSoundEffect", "sfx/Erotic/Sex/Piston gutu overtones (low speed) 5 times.wav",
+                "PlayLoopingSoundEffect2", "MakeOut",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayMotionEffectLoop", "Ride",
                 "Vanesa leans down, pressing her body against yours as she captures your lips in a deep, passionate kiss. Her tongue explores your mouth as she continues to ride you, and you can feel magical energy flowing from her lips directly into your body.",
+
                 "Speaks",
                 "Mmm, taste my magic~ It's flowing into you♥~",
+
                 "HitPlayerWith", "Bunny's Circular Grinding",
+
+                "ChangeImageLayer", "Expression", "Tongue",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "She breaks the kiss only to immediately capture your lips again, her magical energy flowing more intensely with each passing moment. Your balls feel like they're being massaged by pure energy.",
+
                 "IfPlayerOrgasm", "LipLockDrainOrgasm",
+
                 "JumpToScene", "RandomDrainTease"
             ]
         },
@@ -248,19 +356,48 @@
             "NameOfScene": "CaressDrainOrgasm",
             "theScene": [
                 "As her hands continue to caress your chest and abs, you feel the pressure building to an unbearable peak. Your cock throbs violently inside her as the mark pulses with intense energy, and you can't hold back any longer.",
+
+                "EndMotionEffect",
+
+                "ChangeImageLayer", "Expression", "HappyOrgasm",
+                "ChangeImageLayer", "Cum", "Creampie",
                 "PlayerOrgasm", "1",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "You arch your back and cry out as you explode inside her, your cum mixing with the magical energy being drained from your body. The mark glows with blinding intensity as it channels your orgasm into pure energy for her to consume.",
+
+                "ChangeImageLayer", "Expression", "Pleasured",
+                "ChangeImageLayer", "Cum", "Drain",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayVisualEffect2", "OrgasmPulse", "white.png",
                 "Your body convulses with each powerful pulse, the mark's energy conversion creating waves of euphoria that wash over you. Vanesa's hands never stop their caressing, drawing out every last drop of your essence as she feeds on your pleasure.",
+
                 "JumpToScene", "RandomOrgasmTease"
             ]
         },
         {
             "NameOfScene": "PussyMagicDrainOrgasm",
             "theScene": [
+                "EndMotionEffect",
+
                 "Her magical pussy tightens around your cock like a vice, the energy flowing from her core creating an irresistible pressure. The mark pulses in perfect sync with her magical rhythm, and you feel your climax building with each magical pulse.",
+
+                "PlaySoundEffect", "Ejaculation",
+                "ChangeImageLayer", "Expression", "MagicOrgasm",
+                "ChangeImageLayer", "Cum", "Creampie",
                 "PlayerOrgasm", "1",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "You erupt with a powerful orgasm as her pussy magic reaches its peak, your cum shooting deep inside her magical core. The mark channels your entire orgasm into pure magical energy, creating a feedback loop that makes your entire body convulse.",
+
+                "ChangeImageLayer", "Expression", "MagicTongue",
+                "ChangeImageLayer", "Cum", "Drain",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayVisualEffect2", "OrgasmPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "The magical feedback intensifies with each convulsion, her pussy's energy core pulsing in perfect harmony with your mark. You can feel her absorbing not just your cum, but the very essence of your magical energy as she grows stronger with each passing moment.",
+
                 "JumpToScene", "RandomOrgasmTease"
             ]
         },
@@ -268,9 +405,23 @@
             "NameOfScene": "TeasingFocusDrainOrgasm",
             "theScene": [
                 "Her slow, deliberate movements have built up the pressure to an unbearable level. Every sensation is amplified by your focused attention, and the mark has been steadily converting your awareness into pure energy. You can't resist the overwhelming pleasure any longer.",
+
+                
+                "ChangeImageLayer", "Expression", "Orgasm",
+                "ChangeImageLayer", "Cum", "Creampie",
+                "PlaySoundEffect", "Ejaculation",
                 "PlayerOrgasm", "1",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "You explode inside her with a deep, shuddering orgasm, your cum filling her as she continues her maddening rhythm. The mark pulses steadily as it processes your orgasm, converting the intense sensations into pure energy for her to absorb.",
+
+                "ChangeImageLayer", "Expression", "Pleasured",
+                "ChangeImageLayer", "Cum", "Drain",
+                "PlayVisualEffect2", "OrgasmPulse", "white.png",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayMotionEffect", "CrashSmol",
                 "Your focused attention becomes your undoing as the mark converts every moment of awareness into pure energy. The slow, deliberate rhythm continues even as you climax, ensuring that every drop of your essence is properly processed and absorbed by her hungry body.",
+
                 "JumpToScene", "RandomOrgasmTease"
             ]
         },
@@ -278,9 +429,22 @@
             "NameOfScene": "LipLockDrainOrgasm",
             "theScene": [
                 "The passionate kiss has built up the tension to an overwhelming crescendo. Her lips continue to explore yours while her pussy works your cock, and the mark pulses faster with each passing moment. You can feel your climax approaching through the intense connection.",
+
+                "ChangeImageLayer", "Expression", "LongTongue",
+                "ChangeImageLayer", "Cum", "Creampie",
                 "PlayerOrgasm", "1",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "You climax with a powerful release as the passion reaches its peak, your cum shooting deep inside her while your life force flows through your cock. The mark glows with blinding intensity as it processes the magical energy transfer, creating a feedback loop that makes your entire body convulse.",
+
+                "ChangeImageLayer", "Expression", "Slurp",
+                "ChangeImageLayer", "Cum", "Drain",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayVisualEffect2", "OrgasmmPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "The passionate connection amplifies the energy transfer, her lips pushing more magical energy into you while her pussy milks your cock. The mark's glow intensifies with each passing moment as she coaxes additional cum from your exhausted body through the magical stimulation.",
+
                 "JumpToScene", "RandomOrgasmTease"
             ]
         },
@@ -298,6 +462,7 @@
         {
             "NameOfScene": "CanYouFeelItTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "Can you feel it, [ThePlayerName]?♥ The mark is still collecting your energy~"
             ]
@@ -305,6 +470,7 @@
         {
             "NameOfScene": "AlmostDoneTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Hungry",
                 "Speaks",
                 "Almost done, [ThePlayerName]♥~ Your energy is almost ready for me~"
             ]
@@ -312,6 +478,7 @@
         {
             "NameOfScene": "BlowMindTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Smug",
                 "Speaks",
                 "Your mind is going to be blown, [ThePlayerName]♥~ The mark is preparing something special~"
             ]
@@ -319,6 +486,7 @@
         {
             "NameOfScene": "DeliciousTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Lick",
                 "Speaks",
                 "You're being made so delicious, [ThePlayerName]♥~ The mark is enhancing everything~"
             ]
@@ -337,6 +505,7 @@
         {
             "NameOfScene": "YummyTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Lick",
                 "Speaks",
                 "Mmm, your enery was absolutely delicious, [ThePlayerName]♥~ I can feel it coursing through me~"
             ]
@@ -344,6 +513,7 @@
         {
             "NameOfScene": "YouLookExhaustedTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Smug",
                 "Speaks",
                 "Oh my, you look completely exhausted, [ThePlayerName]♥~ That really drained you dry~"
             ]
@@ -351,6 +521,7 @@
         {
             "NameOfScene": "DidThatFeelGoodTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "Did that feel good, [ThePlayerName]?♥ Giving me all your energy like that~"
             ]
@@ -358,6 +529,7 @@
         {
             "NameOfScene": "SoMuchEnergyTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Hungry",
                 "Speaks",
                 "Mmm, so much energy~♥ You really gave me everything you had, [ThePlayerName]~"
             ]

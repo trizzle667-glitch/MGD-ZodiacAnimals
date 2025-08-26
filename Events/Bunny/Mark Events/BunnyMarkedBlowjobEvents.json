@@ -16,10 +16,15 @@
             "NameOfScene": "Marked Blowjob Suggestion",
             "theScene": [
                 "SetPostName", " - Bunny Marked Blowjob",
+
+                "ChangeImageLayer", "Expression", "Slurp",
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Your mark is pulsing so beautifully~ Let me give you a little attention with my mouth~♥",
-                    "I can feel the magic in your mark~ It's making me hungry for your cock~♥",
+                    "I can feel the magic in your mark~ I'm sure you taste perfectly seasoned~♥",
                     "Mmm, I'm feeling a bit peckish~ How about a little snack?~♥",
                     "Let me give you the best blowjob you've ever had~♥",
                     "I want to make you feel amazing with my lips and tongue~♥",
@@ -53,14 +58,18 @@
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Oral", "100", "2",
                 "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "2",
                 "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
-                "Temptation", "15", "ResistMarkedBlowjob",
+                "Temptation", "25", "ResistMarkedBlowjob",
                 "Fail", "MarkedBlowjobFail"
             ]
         },
         {
             "NameOfScene": "ResistMarkedBlowjob",
             "theScene": [
+                "EndVisualEffect",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
                 "You manage to resist Vanesa's enhanced suggestion despite the mark's influence, though you can feel it pulsing with disappointment.",
+
+                "ChangeImageLayer", "Expression", "Shocked",
                 "Speaks",
                 "Oh? You're stronger than I expected~ But your mark will make you mine eventually~♥"
             ]
@@ -69,6 +78,8 @@
             "NameOfScene": "MarkedBlowjobFail",
             "theScene": [
                 "Unable to resist the combination of her enhanced suggestion and the mark's influence, you find yourself nodding in agreement.",
+
+                "ChangeImageLayer", "Expression", "Smug",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Hehe, I saw you trying to resist~ But you couldn't help yourself, could you?~♥",
@@ -83,6 +94,8 @@
             "NameOfScene": "Let her suck you off",
             "theScene": [
                 "You decide to give in to her enhanced suggestion, the mark's influence making her request seem perfectly reasonable.",
+
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "That's a good boy~ Let me show you what I can do~♥",
@@ -97,6 +110,12 @@
             "NameOfScene": "BlowjobStart",
             "theScene": [
                 "ApplyStance", "Blowjob",
+
+
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Blowjob",
+                "ChangeImageLayer", "Expression", "TipSuck",
+                
+                "PlaySoundEffect", "BlowjobLicking",
                 "Vanesa kneels down before you with a hungry smile, her expression full of anticipation as she gently takes your cock into her mouth, the warm wetness making you gasp with pleasure as she begins her masterful work.",
                 "JumpToScene", "RandomBlowjobScene"
             ]
@@ -115,8 +134,12 @@
         {
             "NameOfScene": "SloppyBlowjob",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Stare",
                 "HitPlayerWith", "Bunny's Quick Taste",
+                "PlaySoundEffect", "BlowjobVigorous",
                 "Vanesa's mouth works your cock with messy, sloppy enthusiasm, her saliva coating your shaft as she makes wet, slurping sounds with every movement, the enhanced sensation making your cock throb and pulse with overwhelming pleasure.",
+
+
                 "HitPlayerWith", "Bunny's Quick Taste",
                 "The combination of her saliva and enhanced skills creates an intoxicating friction that makes you gasp and moan with each touch, your cock growing harder with each wet stroke as you lose yourself in the sloppy pleasure.",
                 "IfPlayerOrgasm", "SloppyOrgasm",
@@ -126,8 +149,12 @@
         {
             "NameOfScene": "TipSuckBlowjob",
             "theScene": [
+                "PlaySoundEffect", "BlowjobSucking",
+                "ChangeImageLayer", "Expression", "ClosedEyes",
                 "HitPlayerWith", "Bunny's Quick Taste",
                 "Vanesa focuses her attention on the sensitive tip of your cock, her lips and tongue working the most sensitive area with expert precision, the enhanced stimulation sending waves of intense pleasure through your shaft.",
+
+
                 "HitPlayerWith", "Bunny's Quick Taste",
                 "Each lick and suck makes you gasp with pleasure as the enhanced sensation builds steadily, your body trembling with anticipation while your cock twitches and throbs from her concentrated attention.",
                 "IfPlayerOrgasm", "TipSuckOrgasm",
@@ -137,8 +164,12 @@
         {
             "NameOfScene": "DeepThroatBlowjob",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Stare",
                 "HitPlayerWith", "Bunny's Quick Taste",
+                "PlaySoundEffect", "BlowjobDeepSuction",
                 "Vanesa takes your entire cock deep into her throat, her enhanced skills allowing her to swallow you completely as her throat muscles contract around your shaft, creating an incredibly tight and warm sensation.",
+
+
                 "HitPlayerWith", "Bunny's Quick Taste",
                 "The overwhelming tightness and warmth combined with her enhanced techniques makes you moan helplessly, your cock pulsing with pleasure as she milks you with her throat muscles.",
                 "IfPlayerOrgasm", "DeepThroatOrgasm",
@@ -148,8 +179,11 @@
         {
             "NameOfScene": "HeadBobBlowjob",
             "theScene": [
+                "ChangeImageLayer", "Expression", "ClosedEyes",
                 "HitPlayerWith", "Bunny's Quick Taste",
+                "PlaySoundEffect", "BlowjobLicking",
                 "Vanesa bobs her head up and down on your cock with rhythmic precision, her enhanced skills making each movement perfectly timed as she takes you deep and then pulls back, creating a steady rhythm of pleasure.",
+
                 "HitPlayerWith", "Bunny's Quick Taste",
                 "You gasp and moan with each perfect movement as the consistent motion and enhanced stimulation build pleasure steadily, your cock growing harder with each stroke of her rhythmic bobbing.",
                 "IfPlayerOrgasm", "HeadBobOrgasm",
@@ -160,6 +194,8 @@
         {
             "NameOfScene": "RandomBlowjobTease",
             "theScene": [
+
+                "ChangeImageLayer", "Expression", "Tipsuck",
                 "CallNextSceneJumpThenReturn",
                 "JumpToRandomScene",
                     "HungryBjTease",
@@ -190,7 +226,7 @@
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Oral", "100", "2",
                 "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
                 "ChangeStatCheckDifficulty", "IfHasPerk", "Greater Bunny Zodiac Mark", "2",
-                "Temptation", "15", "Pushher",
+                "Temptation", "25", "Pushher",
                 "Fail", "FailedBJPush"
             ]
         },
@@ -208,6 +244,8 @@
             "NameOfScene": "FailedBJPush",
             "theScene": [
                 "You find yourself unable to muster the motivation to push her away, the overwhelming pleasure of her lips on your cock causing your arms to lose it's strength.",
+                
+                "ChangeImageLayer", "Expression", "TipSuck",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, that's it~ Just let me continue~ You know you want this~♥",
@@ -221,6 +259,8 @@
         {
             "NameOfScene": "Let her continue♥",
             "theScene": [
+                "ChangeImageLayer", "Expression", "TipSuck",
+
                 "Vanesa gives you a smug smile as you make no effort to resist, your cock throbbing with anticipation inside her mouth as you contentedly let it become her snack.",
                 "JumpToScene", "RandomBlowjobScene"
             ]
@@ -228,6 +268,8 @@
         {
             "NameOfScene": "HungryBjTease",
             "theScene": [
+
+                "ChangeImageLayer", "Expression", "TipSuck",
                 "Speaks",
                 "Mmm, I can't wait to taste your cum~ Give me everything you have~♥"
             ]
@@ -235,6 +277,7 @@
         {
             "NameOfScene": "GiveInBjTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "TipSuck",
                 "Speaks",
                 "Mmm, just give in to the pleasure~ Give me what I want~♥"
             ]
@@ -242,21 +285,37 @@
         {
             "NameOfScene": "SeductiveLookTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "TipSuck",
                 "Vanesa looks up at you with a seductive gaze, her crimson eyes gleaming with hunger as she continues to taste your cock with her mouth."
             ]
         },
         {
             "NameOfScene": "CheekNuzzleTease",
             "theScene": [
-                "With a smug expression, Vanesa nuzzles your cock against the inside of her soft, furry cheek as she works it"
+                "ChangeImageLayer", "Expression", "TipSuck",
+                "With a smug expression, Vanesa nuzzles your cock against the inside of her cheek as she works it"
             ]
         },
         {
             "NameOfScene": "SloppyOrgasm",
             "theScene": [
+
+                "ChangeImageLayer", "Expression", "Explode",
+                "PlaySoundEffect2", "Ejaculation",
+                "PlaySoundEffect", "BlowjobVigorous",
                 "PlayerOrgasm", "1",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "Your cock erupts with a powerful burst as Vanesa hungrily swallows every drop, her mouth working overtime to catch every spurt of your cum as you moan helplessly from the overwhelming pleasure.",
+
+                "PlaySoundEffect", "sfx/Erotic/Sucking/gulp.mp3",
+                "ChangeImageLayer", "Expression", "Satisfied",
                 "Vanesa's eyes gleam with satisfaction as she savors your taste, her tongue eagerly lapping up any stray drops while you gasp and shudder from the intense orgasm.",
+
+                "PlaySoundEffect2", "Ejaculation",
+                "PlaySoundEffect", "sfx/Erotic/Sucking/gulp.mp3",
+                "PlayVisualEffect2", "OrgasmPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "Her sloppy technique continues even as you climax, her saliva mixing with your cum as she makes sure not a single drop is wasted. The enhanced sensation of her messy mouth makes your orgasm feel even more intense and satisfying. [PlayerOrgasmLine]",
                 "EmptySpiritCounter",
                 "JumpToScene", "OrgasmEnd"
@@ -266,8 +325,22 @@
             "NameOfScene": "TipSuckOrgasm",
             "theScene": [
                 "PlayerOrgasm", "1",
+                "PlaySoundEffect2", "Ejaculation",
+                "PlaySoundEffect", "BlowjobSucking",
+                "ChangeImageLayer", "Expression", "Explode",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "Your cock twitches and convulses as you explode into Vanesa's mouth, the concentrated stimulation on your tip making the orgasm incredibly intense as she eagerly sucks every drop from you.",
+
+                "ChangeImageLayer", "Expression", "Gulp",
+                "PlaySoundEffect", "sfx/Erotic/Sucking/gulp.mp3",
                 "Vanesa moans with pleasure as she tastes your cum, her lips staying locked around your tip as she sucks you like a straw, leaving you trembling from the overwhelming sensation.",
+
+
+                "PlaySoundEffect2", "Ejaculation",
+                "PlaySoundEffect", "sfx/Erotic/Sucking/gulp.mp3",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "The focused attention on your most sensitive area amplifies every pulse of your orgasm, her lips creating a perfect seal around your tip as she milks you completely dry. The enhanced stimulation makes each spurt feel like pure ecstasy. [PlayerOrgasmLine]",
                 "EmptySpiritCounter",
                 "JumpToScene", "OrgasmEnd"
@@ -277,8 +350,23 @@
             "NameOfScene": "DeepThroatOrgasm",
             "theScene": [
                 "PlayerOrgasm", "1",
+
+                "PlaySoundEffect2", "Ejaculation",
+                "PlaySoundEffect", "BlowjobDeepSuction",
+                "ChangeImageLayer", "Expression", "Explode",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "Your cock pulses violently as you cum deep in Vanesa's throat, the tight warmth of her throat muscles milking every drop from you as she swallows your load with hungry enthusiasm.",
+
+                "ChangeImageLayer", "Expression", "Gulp",
+                "PlaySoundEffect", "sfx/Erotic/Sucking/gulp.mp3",
                 "Vanesa's throat works rhythmically as she drinks down your cum, her eyes rolling back in pleasure as she savors the taste, while you moan and gasp from the incredible tightness.",
+
+
+                "PlaySoundEffect2", "Ejaculation",
+                "PlaySoundEffect", "sfx/Erotic/Sucking/gulp.mp3",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "The deep penetration combined with her throat's natural contractions creates an overwhelming sensation that makes your entire body convulse. Her enhanced skills ensure that every drop is properly swallowed, leaving you completely drained and satisfied. [PlayerOrgasmLine]",
                 "EmptySpiritCounter",
                 "JumpToScene", "OrgasmEnd"
@@ -288,8 +376,22 @@
             "NameOfScene": "HeadBobOrgasm",
             "theScene": [
                 "PlayerOrgasm", "1",
+                "PlaySoundEffect2", "Ejaculation",
+                "PlaySoundEffect", "BlowjobLicking",
+                "ChangeImageLayer", "Expression", "Explode",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
+
                 "Your cock erupts in perfect rhythm with Vanesa's bobbing head, each stroke perfectly timed to catch your cum as she works you through the entire orgasm with masterful precision.",
+
+                "ChangeImageLayer", "Expression", "Satisfied",
+                "PlaySoundEffect", "sfx/Erotic/Sucking/gulp.mp3",
                 "Vanesa's movements become more eager as she tastes your cum, her bobbing intensifying as she tries to get every last drop, leaving you gasping and moaning from the rhythmic pleasure.",
+
+                "PlaySoundEffect2", "Ejaculation",
+                "PlaySoundEffect", "sfx/Erotic/Sucking/gulp.mp3",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "The rhythmic motion continues throughout your climax, each bob perfectly synchronized with your pulses as she ensures maximum pleasure and complete collection. Her enhanced timing makes the entire experience feel like a perfectly choreographed dance of pleasure. [PlayerOrgasmLine]",
                 "EmptySpiritCounter",
                 "JumpToScene", "OrgasmEnd"
@@ -300,9 +402,20 @@
             "theScene": [
                 "SemenHeal", "25",
                 "ApplyStatusEffect", "Bunny's Quick Taste",
+
+                "ChangeImageLayer", "Expression", "Finished",
+                "PlaySoundEffect", "QuickKiss",
                 "You feel more than just your balls being drained as Vanesa absorbs your essence, taking 10% of your damage with it. Her body visibly relaxing as she heals [FinalDamage]",
+
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Normal",
+                "ChangeImageLayer", "Expression", "Pleasure",
                 "ClearStanceFromMonsterAndPlayer", "Blowjob",
+
                 "With a satisfied sigh, Vanesa pulls back from your cock, her lips leaving a glistening trail of saliva as she gracefully rises to her feet, her crimson eyes gleaming with satisfaction.",
+
+                "EndVisualEffect",
+
+                "ChangeImageLayer", "Expression", "Lick",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, thank you for the delicious meal~ Your cum tastes wonderful~♥",
@@ -316,7 +429,13 @@
         {
             "NameOfScene": "Pushher",
             "theScene": [
+
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Normal",
+                "ChangeImageLayer", "Expression", "Shocked",
+                "EndVisualEffect",
                 "With a desperate surge of willpower you manage to pull Vanesa off your cock with a pop and push her away from you, breaking free from her oral pleasure as you stumble back.",
+
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "It would have felt so good to cum in my mouth~♥",

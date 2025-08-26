@@ -59,7 +59,12 @@
         {
             "NameOfScene": "BreastHugResist",
             "theScene": [
+                "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                
                 "Your eyes are drawn to Vanesa's massive, voluptuous breasts, the way they strain against her tight red latex suit making your mouth water. The thought of being smothered by those soft, fluffy mounds sends waves of desire through your body, making it incredibly difficult to resist her invitation...",
+
                 "JumpToScene", "HugTemptationCheck"
             ]
         },
@@ -74,16 +79,18 @@
             "NameOfScene": "HugTemptationCheck",
             "theScene": [
                 "StatCheck",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "50", "2",
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "75", "2",
-                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "100", "2",
-                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
-                "Temptation", "15", "ResistHug",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Breasts", "100", "3",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "5",
+                "Temptation", "20", "ResistHug",
                 "Fail", "HugTemptationFail"
             ]
         },
         {
             "NameOfScene": "ResistHug",
             "theScene": [
+                "EndVisualEffect",
                 "ChangeImageLayer", "Expression", "Stern",
                 "Vanesa's crimson eyes narrow with a hint of disappointment as you resist her invitation, her soft pink aura dimming slightly.",
                 "ChangeImageLayer", "Expression", "ClosedSmile",
@@ -93,16 +100,18 @@
         {
             "NameOfScene": "HugTemptationFail",
             "theScene": [
+                "EndVisualEffect",
                 "ApplyStance", "Breast Smother",
                 "ChangeImageLayer", "ImageSetDontCarryOver", "Breast Smother",
                 "ChangeImageLayer", "Expression", "Smug",
+                "PlayMotionEffect", "CrashSmol",
                 "Unable to control yourself, you walk into her embrace, indulging in the feeling of her soft fur and skin-tight latex. She gently wraps her arms around you and pulls your head into her bountiful cleavage, making you moan softly as you feel her warm breath against your ear.",
                 "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "Mmm, that's it. Just relax and let me take care of everything.♥",
                 "HitPlayerWith", "BunnyTemptationDamage",
                 "ChangeImageLayer", "Expression", "Lick",
-                "Her touch sends shivers down your spine as she begins to caress your cock, her dominance over you growing stronger as you realize you've fallen deeper under her spell."
+                "Her touch sends shivers down your spine as she begins to caress your cock with her hand, her dominance over you growing stronger as you realize you've allowed her to lead."
             ]
         },
         {
@@ -135,7 +144,12 @@
         {
             "NameOfScene": "SexInvitationResistSex",
             "theScene": [
+                "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                
                 "The thought of being taken by Vanesa's pussy sends waves of arousal through your body, your cock hardening at the mere idea. Her seductive words echo in your mind, making it incredibly difficult to resist the primal urge to submit to her desires...",
+                
                 "JumpToScene", "SexInvitationCheck"
             ]
         },
@@ -150,16 +164,18 @@
             "NameOfScene": "SexInvitationCheck",
             "theScene": [
                 "StatCheck",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "50", "2",
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "75", "2",
-                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "2",
-                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
-                "Temptation", "15", "ResistSexInvitation",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "3",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "5",
+                "Temptation", "20", "ResistSexInvitation",
                 "Fail", "SexInvitationFail"
             ]
         },
         {
             "NameOfScene": "ResistSexInvitation",
             "theScene": [
+                "EndVisualEffect",
                 "ChangeImageLayer", "Expression", "Hungry",
                 "Vanesa's eyes flash with a mix of frustration and hunger as you resist her sexual invitation, her body tensing with pent-up desire. She licks her lips slowly, her predatory smile growing wider as she clearly relishes the opportunity to make you beg for what she's offering."
             ]
@@ -167,6 +183,7 @@
         {
             "NameOfScene": "SexInvitationFail",
             "theScene": [
+                
                 "Despite your best efforts to resist, your body betrays you as you stumble forward. Your cock throbs painfully with desire, and every step feels like a battle against your own will. Vanesa's seductive presence proves too overwhelming to resist.",
                 
                 "ChangeImageLayer", "Expression", "Slurp",
@@ -178,10 +195,13 @@
                     "That's my good boy~ I can sense your desire for me♥",
                 "EndLoop",
 
+                "EndVisualEffect",
                 "ApplyStance", "Sex",
                 "ChangeImageLayer", "ImageSetDontCarryOver", "Sex",
                 "ChangeImageLayer", "Expression", "Smug",
                 "HitPlayerWith", "Bunny Smothered Insertion",
+                "PlaySoundEffect", "sfx/Erotic/Sex/Piston gutu overtones once.wav",
+                "PlayMotionEffect", "CrashSmol",
                 "In a smooth, predatory motion, Vanesa pushes you down to the ground. She lowers herself onto your cock, her [SexAdjective][SexWord] surrounding you entirely as she begins to ride you with passionate intensity."
             ]
         },
@@ -190,6 +210,7 @@
             "theScene": [
                 "ChangeImageLayer", "Expression", "Hungry",
                 "You eagerly rush forward, your cock throbbing with anticipation as you move to claim Vanesa's body. However, before you can take control, she meets your advance with a predatory grin and smoothly pushes you down to the ground.",
+                "PlayMotionEffect", "Crash",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, so eager [ThePlayerName]~ But I think I'll be the one in charge this time♥",
@@ -197,11 +218,14 @@
                     "Nice try [ThePlayerName]~ But I'm the one who decides how this goes♥",
                     "Mmm, I love your enthusiasm~ But I think I'll ride you instead♥",
                 "EndLoop",
+                
                 "ApplyStance", "Sex",
                 "ChangeImageLayer", "ImageSetDontCarryOver", "Sex",
                 "ChangeImageLayer", "Expression", "Smug",
                 "HitPlayerWith", "Bunny Smothered Insertion",
-                "With practiced ease, she takes control of the situation, her body sliding down onto your shaft as she establishes a steady rhythm. Her voluptuous figure moves with seductive grace, the contrast between her fluffy white fur and glossy red latex creating a mesmerizing display."
+                "PlaySoundEffect", "sfx/Erotic/Sex/Piston gutu overtones once.wav",
+                "PlayMotionEffect", "CrashSmol",
+                "With predatory confidence, she strides over to you and lowers herself onto your shaft, taking complete control as she establishes a steady rhythm. Her voluptuous figure moves with seductive grace, the contrast between her fluffy white fur and glossy red latex creating a mesmerizing display."
             ]
         },
         {
@@ -232,7 +256,13 @@
         {
             "NameOfScene": "SmotheredInsertionResistSex",
             "theScene": [
+                "PlaySoundEffect", "sfx/Heartbeat-1shot.wav",
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
+                "PlayVisualEffect", "ScreenPulse", "pink.png",
+                
                 "Vanesa's massive breasts press against you, their soft warmth and the tight red latex creating an overwhelming sensory experience. Your cock throbs with desire as you imagine her lowering herself down on you, the combination of her seductive dominance and the intimate embrace making resistance feel impossible...",
+
+                "EndVisualEffect",
                 "JumpToScene", "SmotheredInsertionCheck"
             ]
         },
@@ -247,10 +277,11 @@
             "NameOfScene": "SmotheredInsertionCheck",
             "theScene": [
                 "StatCheck",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "50", "2",
                 "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "75", "2",
-                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "2",
-                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "2",
-                "Temptation", "18", "ResistSmotheredInsertion",
+                "ChangeStatCheckDifficulty", "IfFetishLevelEqualOrGreater", "Sex", "100", "3",
+                "ChangeStatCheckDifficulty", "IfPlayerHasStatusEffect", "Charm", "5",
+                "Temptation", "20", "ResistSmotheredInsertion",
                 "Fail", "SmotheredInsertionFail"
             ]
         },
@@ -259,11 +290,14 @@
             "theScene": [
                 "ClearStanceFromMonsterAndPlayer", "All",
                 "ChangeImageLayer", "ImageSetDontCarryOver", "Normal",
-                "ChangeImageLayer", "Expression", "Smug",
+                "ChangeImageLayer", "Expression", "Shocked",
+                "PlayMotionEffect", "CrashSmol",
                 "With great effort, you manage to push against her weight and prevent her from lowering herself onto your cock. Using this moment of distraction, you quickly roll out from under her and scramble to your feet, your heart pounding with adrenaline from the narrow escape.",
                 
                 
                 "SetPostName", "",
+
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Oh? You're stronger than I expected~ But you're not getting away that easily~",
@@ -272,16 +306,17 @@
                     "Ooh, you actually resisted~ That just makes me want you even more♥",
                 "EndLoop",
                 
-                
                 "ChangeImageLayer", "ImageSetDontCarryOver", "Breast Smother",
                 "ChangeImageLayer", "Expression", "Laughing",
                 "ApplyStance", "Breast Smother",
+                "PlayMotionEffect", "CrashSmol",
                 "Before you can react, Vanesa lunges forward with predatory grace and wraps her arms around your head, pulling you back into her massive cleavage with a playful giggle, her soft fur and warm body enveloping you once again."
             ]
         },
         {
             "NameOfScene": "SmotheredInsertionFail",
             "theScene": [
+
                 "Unable to resist her overwhelming presence, your body betrays you as you submit to her dominance. Your cock throbs painfully with desire, and you can't help but moan softly as she begins to lower herself onto you, her massive breasts still smothering your head in their soft embrace.",
 
                 "ChangeImageLayer", "Expression", "Whisper",
@@ -297,6 +332,8 @@
                 "ChangeImageLayer", "Expression", "Smug",
                 "ApplyStance", "Sex",
                 "HitPlayerWith", "Bunny Smothered Insertion",
+                "PlaySoundEffect", "sfx/Erotic/Sex/Piston gutu overtones once.wav",
+                "PlayMotionEffect", "CrashSmol",
                 "She slowly sinks down onto your shaft, her tight [SexAdjective][SexWord] surrounding you entirely as she begins to ride you with passionate intensity. Your head remains trapped between her massive breasts, the soft white fur and tight red latex creating an intoxicating blend of sensations as she establishes her dominance over the encounter."
             ]
         },
@@ -318,6 +355,8 @@
                 "ChangeImageLayer", "Expression", "Smug",
                 "ApplyStance", "Sex",
                 "HitPlayerWith", "Bunny Smothered Insertion",
+                "PlaySoundEffect", "sfx/Erotic/Sex/Piston gutu overtones once.wav",
+                "PlayMotionEffect", "CrashSmol",
                 "With your help, she slowly sinks down onto your shaft, her tight [SexWord] surrounding you entirely as she begins to ride you with passionate intensity. Your head remains trapped between her massive breasts, the soft white fur and tight red latex creating an intoxicating blend of sensations as she establishes her dominance over the encounter."
             ]
         },
@@ -325,6 +364,7 @@
             "NameOfScene": "Distracting Kiss Escape",
             "theScene": [
                 "ClearStanceFromMonsterAndPlayer", "Making Out",
+                "PlayMotionEffect", "CrashSmol",
                 "Just as the passionate makeout session reaches its peak, Vanesa suddenly pulls away with a teasing smile, her lips still glistening from the intense kiss. She uses the moment of distraction to break free from your embrace, leaving you breathless and wanting more.",
                 "Speaks",
                 "SwapLineIf", "Random",
@@ -337,5 +377,4 @@
             ]
         }
     ]
-
 }

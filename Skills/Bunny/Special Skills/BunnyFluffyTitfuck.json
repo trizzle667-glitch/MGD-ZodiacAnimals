@@ -25,7 +25,7 @@
     "targetType": "single",
     "statusEffect": "Defence",
     "statusChance": "75",
-    "statusDuration": "100",
+    "statusDuration": "999",
     "statusPotency": "-10",
     "statusResistedBy": "Willpower",
     "statusText": "Bunny's Fluffy Titfuck",

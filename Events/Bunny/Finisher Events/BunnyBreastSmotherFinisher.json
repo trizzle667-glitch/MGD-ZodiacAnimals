@@ -17,14 +17,18 @@
             "theScene": [
                 "SkipPlayerAttack",
                 "SetPostName", " - Bunny's Smothering Embrace",
+
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, you're so warm and helpless in my embrace~",
                     "Hehe, trapped in my soft prison~",
                     "Oh yes, completely at my mercy now~",
                 "EndLoop",
+
+                "ChangeImageLayer", "Expression", "Pursed",
                 "HitPlayerWith", "Bunny's Smothering Embrace",
-                "As you feel her massive breasts completely enveloping your face, you can't help but moan in muffled pleasure.",
+                "As you feel her massive breasts completely envelope your face, you can't help but moan in muffled pleasure.",
                 "IfHasPerk", "Greater Bunny Zodiac Mark", "AutoFailSmothering",
                 "Menu",
                     "Try to escape her smothering embrace!",
@@ -35,23 +39,34 @@
         {
             "NameOfScene": "Smothering Embrace Escape",
             "theScene": [
+                "EndVisualEffect",
                 "You muster what little strength remains and begin to pull your face away from her smothering embrace, your willpower straining against the overwhelming softness that had been holding you captive. The sensation of her warm, fluffy breasts releasing their pressure on your face sends a confusing mix of relief and loss.",
+
+                "ChangeImageLayer", "Expression", "Shocked",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Oh? Trying to escape already? How disappointing~",
                     "Mmm, leaving so soon? I was just getting comfortable~",
-                    "Hehe, you think you can pull away that easily?~",
+                    "Were my breasts not good enough for you?~",
                 "EndLoop",
 
                 "CallEventAndSceneThenReturn", "Bunny Charge Events", "ExpendMomentum",
                 "ClearStanceFromMonsterAndPlayer", "Breast Smother",
+                "ChangeImageLayer", "ImageSetDontCarryOver", "Normal",
+                "ChangeImageLayer","Expression", "Shocked",
                 "You finally manage to pull your face free from her smothering embrace and she is left panting slightly, her momentum spent."
             ]
         },
         {
             "NameOfScene": "AutoFailSmothering",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Magic",
+                "PlaySoundEffect", "sfx/HeartBeat-1shot.wav",
+                "PlayVisualEffect2", "ScreenPulse", "pink.png",
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
                 "The empowered Zodiac mark pulses with overwhelming pleasure, completely sapping your will to resist as the magical energy floods through your body. Your muscles go limp and your mind becomes clouded with desire, making any attempt to escape feel pointless and unnecessary.",
+
+                "ChangeImageLayer", "Expression", "Whisper",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, the mark is working perfectly~ You're so much more... accepting of my embrace~♥",
@@ -79,7 +94,11 @@
         {
             "NameOfScene": "Smothering Embrace Escape Fail",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Laughing",
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
                 "Your attempt to escape proves futile as her soft, fluffy breasts easily overpower your weakened resistance. The overwhelming pleasure and comfort of her embrace makes any further struggle feel pointless, your body relaxing back into her smothering hold as you realize you're completely at her mercy.",
+
+                "ChangeImageLayer", "Expression", "Hungry",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, struggling only makes it more fun~",
@@ -92,7 +111,10 @@
         {
             "NameOfScene": "Relax and enjoy her soft prison.",
             "theScene": [
+                "PlayVisualEffect", "SuddenHaze", "pinkHaze.png",
                 "You relax and enjoy the overwhelming softness of her massive breasts as they smother you completely. Your body melts into her embrace, surrendering to the pleasure as you let her take full control of your experience.",
+
+                "ChangeImageLayer", "Expression", "Lick",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, that's it~ Just relax and let me take care of you~♥",
@@ -128,6 +150,7 @@
         {
             "NameOfScene": "RandomOrgasmTease",
             "theScene": [
+                "PlayerOrgasm", "100",
                 "JumpToRandomScene",
                     "WasteOrgasmTease",
                     "NotStoppingOrgasmTease",
@@ -139,6 +162,7 @@
         {
             "NameOfScene": "WasteOrgasmTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Slurp",
                 "Speaks",
                 "Mmm, it's a bit of a waste that you're not inside of me~ But I'll still enjoy every drop~♥",
                 "JumpToScene", "TemptationSmotheringChoice"
@@ -147,6 +171,7 @@
         {
             "NameOfScene": "NotStoppingOrgasmTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Hungry",
                 "Speaks",
                 "Hehe, I'm not stopping~ You're going to cum again and again for me~♥",
                 "JumpToScene", "TemptationSmotheringChoice"
@@ -155,6 +180,7 @@
         {
             "NameOfScene": "CumPumpOrgasmTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Tongue",
                 "Speaks",
                 "Mmm, be my little plaything~ Let me pump every drop of cum from you~♥",
                 "JumpToScene", "TemptationSmotheringChoice"
@@ -163,6 +189,7 @@
         {
             "NameOfScene": "HowMuchOrgasmTease",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Laughing",
                 "Speaks",
                 "Oh? I wonder how much cum you have left in you~ Let me find out~♥",
                 "JumpToScene", "TemptationSmotheringChoice"
@@ -171,10 +198,14 @@
         {
             "NameOfScene": "Gentle Smothering",
             "theScene": [
+                "ChangeImageLayer", "Expression", "ClosedSmile",
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "Vanesa begins to slowly and gently rub your head with her soft, fluffy breasts, the warm fur creating a soothing sensation as she moves them in gentle circles across your face.",
+
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "The rhythmic motion of her massive breasts against your head sends waves of comfort through your body, the soft pressure and warmth making you feel completely safe and cared for in her embrace.",
+
+                "ChangeImageLayer", "Expression", "Smug",
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "You find yourself completely relaxed as she continues her gentle pampering, the overwhelming softness and her tender movements lulling you into a state of pure bliss and contentment.",
                 "IfPlayerOrgasm", "GentleSmotheringOrgasm",
@@ -184,10 +215,15 @@
         {
             "NameOfScene": "Intense Smothering",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Seductive",
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "Vanesa presses her massive breasts more firmly against your face, the soft flesh almost completely cutting off your air supply as she holds you in a tight, suffocating embrace.",
+
+
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "The only thing you can breathe in is her intoxicating scent, the warm, musky aroma filling your lungs and clouding your mind as you struggle to get enough oxygen through the soft prison of her breasts.",
+
+                "ChangeImageLayer", "Expression", "Smug",
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "Your head begins to spin from the lack of air and the overwhelming sensation of being completely enveloped, the combination of suffocation and her scent creating an intense, almost euphoric feeling of helplessness.",
                 "IfPlayerOrgasm", "IntenseSmotheringOrgasm",
@@ -197,10 +233,14 @@
         {
             "NameOfScene": "Rhythmic Smothering",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Magic",
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "Vanesa begins to knead her massive breasts in slow, deliberate circles against your face, each movement pulsing with subtle seduction magic that seeps into your skin with every gentle press.",
+                
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "The rhythmic kneading creates a hypnotic pattern that matches her heartbeat, the magical energy flowing through her soft flesh and into your body, making you feel increasingly entranced and pliable to her desires.",
+
+
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "You can feel the seduction magic building with each circular motion, the warm energy coursing through your veins and clouding your mind, making you completely receptive to her every movement and touch.",
                 "IfPlayerOrgasm", "RhythmicSmotheringOrgasm",
@@ -210,10 +250,16 @@
         {
             "NameOfScene": "Pleasure Smothering",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Smug",
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "Vanesa begins to rub her massive breasts around your head in slow, sensual circles, the soft fur and warm flesh creating an overwhelming pleasure that makes your entire body tingle with desire.",
+
+
+                "ChangeImageLayer", "Expression", "Laughing",
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "The intense stimulation from her breast massage causes your cock to twitch and throb uncontrollably, your hips beginning to thrust unconsciously as the pleasure builds to an almost unbearable level.",
+
+
                 "HitPlayerWith", "Bunny's Smothering Embrace",
                 "You find yourself completely lost in the sensation, your body moving on its own as you thrust with increasing desperation, the combination of her soft breasts and the mounting pleasure making you feel like you're about to explode.",
                 "IfPlayerOrgasm", "PleasureSmotheringOrgasm",
@@ -223,19 +269,32 @@
         {
             "NameOfScene": "RhythmicSmotheringOrgasm",
             "theScene": [
+                "ChangeImageLayer", "Expression", "Magic",
                 "The gentle, soothing sensations from her breast massage become overwhelming as the magical energy builds to an unbearable peak, your cock throbbing desperately as the pleasure finally pushes you over the edge into a powerful orgasm.",
+
+
                 "PlayerOrgasm", "1",
-                "Your entire body convulses with pleasure as you cum, the magical energy coursing through your veins making the orgasm feel more intense than ever before, your cock pulsing and twitching as you release everything into her soft embrace. [PlayerOrgasmLine]",
+                "PlaySoundEffect", "EjaculationLong",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
+                "Your entire body convulses with pleasure as you cum, the magical energy coursing through your veins making the orgasm feel more intense. Your cock pulsing and twitching as you release everything into her soft embrace. [PlayerOrgasmLine]",
+
                 "EmptySpiritCounter",
-        
                 "JumpToScene", "RandomOrgasmTease"
             ]
         },
         {
             "NameOfScene": "IntenseSmotheringOrgasm",
             "theScene": [
+                "ChangeImageLayer","Expression","Whisper",
                 "The combination of her suffocating embrace, the lack of oxygen, and her intoxicating scent becomes too much to bear, your cock twitching and throbbing desperately as the overwhelming sensations push you toward an inevitable climax.",
+                
+                
                 "PlayerOrgasm", "1",
+                "ChangeImageLayer","Expression","Tongue",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "Your vision blurs and your body spasms as you finally cum, the euphoric feeling of being completely at her mercy while drowning in her scent making the orgasm explode with incredible intensity, your cock pulsing wildly as you lose yourself in the pleasure. [PlayerOrgasmLine]",
                 "EmptySpiritCounter",
                 "JumpToScene", "RandomOrgasmTease"
@@ -244,8 +303,14 @@
         {
             "NameOfScene": "GentleSmotheringOrgasm",
             "theScene": [
+                "ChangeImageLayer","Expression","ClosedSmile",
                 "The gentle, soothing movements of her breasts against your face gradually build the pleasure to an unbearable level, your cock slowly hardening and throbbing as the comforting sensations wash over you in waves.",
+
+                "ChangeImageLayer","Expression","Laughing",
                 "PlayerOrgasm", "1",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "The gradual build-up finally reaches its peak as you cum, the gentle pleasure transforming into a warm, satisfying orgasm that spreads through your entire body, your cock pulsing gently as you release in her soft embrace. [PlayerOrgasmLine]",
                 "EmptySpiritCounter",
                 "JumpToScene", "RandomOrgasmTease"
@@ -254,8 +319,15 @@
         {
             "NameOfScene": "PleasureSmotheringOrgasm",
             "theScene": [
+                "ChangeImageLayer","Expression","Lick",
                 "As the pleasure becomes unbearable, Vanesa reaches down with one hand to grasp your throbbing cock, her soft fingers wrapping around your shaft as she begins to stroke in perfect rhythm with her breast movements.",
+                
+                
                 "PlayerOrgasm", "1",
+                "ChangeImageLayer","Expression","Slurp",
+                "PlaySoundEffect", "Ejaculation",
+                "PlayVisualEffect2", "ScreenPulse", "white.png",
+                "PlayMotionEffect", "CrashSmol",
                 "The combination of her hand on your cock and her breasts smothering your face sends you over the edge, your body convulsing with intense pleasure as you cum hard, your cock pulsing and twitching in her grip as you release everything. [PlayerOrgasmLine]",
                 "EmptySpiritCounter",
                 "JumpToScene", "RandomOrgasmTease"
@@ -264,6 +336,7 @@
         {
             "NameOfScene": "GiveInTease",
             "theScene": [
+                "ChangeImageLayer","Expression","Whisper",
                 "Speaks",
                 "Mmm, [ThePlayerName]~ Why don't you just give in to the pleasure?~",
                 "JumpToScene", "TemptationSmotheringChoice"
@@ -272,6 +345,7 @@
         {
             "NameOfScene": "FocusTease",
             "theScene": [
+                "ChangeImageLayer","Expression","Tehe",
                 "Speaks",
                 "Hehe~ Just focus on how good my breasts feel against your face~",
                 "JumpToScene", "TemptationSmotheringChoice"
@@ -280,6 +354,7 @@
         {
             "NameOfScene": "HungryTease",
             "theScene": [
+                "ChangeImageLayer","Expression","Hungry",
                 "Speaks",
                 "Mmm~ Are you ready to be my meal, [ThePlayerName]?~",
                 "JumpToScene", "TemptationSmotheringChoice"
@@ -288,6 +363,7 @@
         {
             "NameOfScene": "PromiseTease",
             "theScene": [
+                "ChangeImageLayer","Expression","Slurp",
                 "Speaks",
                 "Oh [ThePlayerName]~ I promise you'll feel even more pleasure if you just let me continue~",
                 "JumpToScene", "TemptationSmotheringChoice"
@@ -308,6 +384,8 @@
             "NameOfScene": "Feels too good to pull away...",
             "theScene": [
                 "The intoxicating sensation of being completely enveloped in her soft embrace overwhelms your senses, making any thought of resistance seem foolish as you willingly surrender to her continued pampering.",
+
+                "ChangeImageLayer","Expression","Tongue",
                 "Speaks",
                 "SwapLineIf", "Random",
                     "Mmm, that's it~ Just relax and let me take care of you~♥",
