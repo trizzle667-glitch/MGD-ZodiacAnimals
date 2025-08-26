@@ -51,7 +51,7 @@
     {
       "NameOfScene": "FightBunny",
       "theScene": [
-        "CombatEncounter", "NoRunning", "Vanesa", "StartCombat",
+        "CombatEncounter", "NoRunning", "VanesaBunny", "StartCombat",
         "SwapLineIf", "Perk",
             "Minor Bunny Zodiac Mark", "As she fades away from her orgasm, you feel the incomplete mark on you disappate.",
             "Greater Bunny Zodiac Mark", "As she fades away from her orgasm, you feel the completed mark on you disappate.",
