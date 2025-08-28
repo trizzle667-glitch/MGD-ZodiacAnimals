@@ -22,7 +22,9 @@ I'll make a mini-journal comment on how this whole AI process went for those who
 
 **Installation**
 
-Place the "Zodiacs" folder into the Mod folder of the game.
+Place the "Zodiacs" folder into the Mods folder of the game.
+The layout should look like this in the end:
+/Mods/Zodiacs/bunch of sub folders of the Zodiacs mod
 
 
 **Vanesa (Bunny Zodiac) Highlights**
